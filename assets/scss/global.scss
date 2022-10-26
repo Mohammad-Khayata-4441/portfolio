@@ -1,0 +1,18 @@
+html,
+body {
+    overflow-y: overlay;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 7px;
+
+    &:hover {
+        width: 15px;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: theme("colors.text");
+}
