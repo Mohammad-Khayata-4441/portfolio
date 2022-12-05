@@ -4,13 +4,14 @@
       class="rounded-2xl bg-white px-4 md:px-28 shadow-md dark:bg-dark-surface bg-opacity-50 dark:bg-opacity-75 backdrop:blur">
       <ul class="flex items-center justify-center list-none space-x-12 md:space-x-16">
         <nuxt-link class="py-2 md:py-6 flex space-x-1 items-center" active-class="active-nav-link" ta
-          v-for="item in navLinks" :to="item.path">
-          <span :class="`mdi mdi-${item.icon} text-2xl text-center`">
-
-          </span>
+        
+        v-for="item in navLinks" :to="item.path">
+        <client-only>
+            <f-icon class="text-2xl" :icon="`fas fa-${item.icon}`" ></f-icon>
           <span class="text-text text-sm font-semibold hidden md:inline">
             {{ item.title }}
           </span>
+        </client-only>
 
         </nuxt-link>
       </ul>
@@ -24,6 +25,7 @@
   </header>
 </template>
 <script setup lang="ts">
+import { useDark, useToggle } from "@vueuse/core";
 import { ref } from "vue";
 
 
@@ -42,25 +44,25 @@ const navLinks = ref([
     title: "About",
     path: "/about",
     disabled: false,
-    icon: 'card-account-details'
+    icon: 'circle-user'
   },
   {
     title: "Portfolio",
     path: "/portfolio",
     disabled: false,
-    icon: 'cards'
+    icon: 'image'
   },
   {
     title: "Contact",
     path: "/contact",
     disabled: false,
-    icon: 'email-fast'
+    icon: 'paper-plane'
   },
   {
     title: "Blog",
     path: "/blog",
     disabled: false,
-    icon: 'post'
+    icon: 'newspaper'
   },
 ]);
 </script>

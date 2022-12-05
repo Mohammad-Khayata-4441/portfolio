@@ -1,5 +1,7 @@
 <template>
   <div class="page home-page">
+
+    
     <div class="page-lights absolute top-0 h-full">
       <svg class="bottom-left-light absolute bottom-0 right-0 hidden md:block md:left-0 " width="494" height="309"
         viewBox="0 0 494 309" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,11 +20,14 @@
     </div>
 
     <div class="page-overlay"></div>
+
+
+
     <main class="h-full">
       <div class="container m-auto h-full">
         <div class="hero overflow-hidden flex flex-col lg:flex-row justify-center items-center h-full space-y-16">
 
-          <NuxtImg preload quality="50" src="/personal.png" class="rounded-circle lg:rounded-none object-contain 
+          <img src="/personal.png" class="rounded-circle lg:rounded-none object-contain 
           object-top
           border-3
           border-text
@@ -38,9 +43,9 @@
           " />
 
 
-          <article class="hero-text self-center px-2 md:px-10 flex flex-col space-y-4">
+          <article class="hero-text self-center px-2 md:px-10 flex flex-col space-y-2">
             <h6 class="text-3xl hidden lg:block text-text dark:text-gray-300">Hey There , I'm</h6>
-            <h2 class="text-3xl text-center lg:text-left sm:text-5xl lg:text-7xl font-bold uppercase gradiant-heading">
+            <h2 class="text-3xl  text-center lg:text-left sm:text-5xl lg:text-7xl font-bold uppercase gradiant-heading">
               Mohammad Khayata
             </h2>
             <p class="text-md sm:text-xl text-center lg:text-left  text-text dark:text-white">

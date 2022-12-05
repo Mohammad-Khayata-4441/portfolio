@@ -1,9 +1,6 @@
-import { defineNuxtConfig } from 'nuxt'
-// import postcssRTLCSS from 'postcss-rtlcss'
-// import tailwindCss from 'tailwindcss'
 export default defineNuxtConfig({
-  mode: 'universal', // changed from mode: 'spa'
   css: ['~/assets/scss/fonts.scss', '~/assets/scss/reusable.scss', '~/assets/scss/global.scss'],
+  ssr: false,
   head: {
     htmlAttrs: {
       lang: 'ar',
@@ -11,12 +8,11 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxtjs/tailwindcss', 'nuxtjs-mdi-font', '@nuxt/image-edge',],
+
+
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image-edge',],
   buildModules: ["@nuxtjs/svg", '@vueuse/nuxt'],
 
-  router: {
-    base: '/Summary'
-  },
   vite: {
     define: {
       'process.env.DEBUG': false,
