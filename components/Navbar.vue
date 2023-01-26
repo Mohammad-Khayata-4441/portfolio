@@ -1,24 +1,29 @@
 <template>
-  <header class="flex fixed bottom-0 md:top-0 md:bottom-auto w-screen items-center justify-center p-5 z-10">
+  <header
+    class="flex fixed bottom-0 md:top-0 md:bottom-auto w-screen items-center justify-center p-5 z-10">
     <nav
       class="rounded-2xl bg-white px-4 md:px-28 shadow-md dark:bg-dark-surface bg-opacity-50 dark:bg-opacity-75 backdrop:blur">
-      <ul class="flex items-center justify-center list-none space-x-12 md:space-x-16">
-        <nuxt-link class="py-2 md:py-6 flex space-x-1 items-center" active-class="active-nav-link" ta
-        
-        v-for="item in navLinks" :to="item.path">
-        <client-only>
-            <f-icon class="text-2xl" :icon="`fas fa-${item.icon}`" ></f-icon>
-          <span class="text-text text-sm font-semibold hidden md:inline">
-            {{ item.title }}
-          </span>
-        </client-only>
+      <ul
+        class="flex items-center justify-center list-none space-x-12 md:space-x-16">
+        <nuxt-link
+          class="py-2 md:py-6 flex space-x-1 items-center select-none "
+          active-class="active-nav-link" ta v-for="item in navLinks"
+          :to="item.path">
+          <client-only>
+            <f-icon class="text-2xl select-none"
+              :icon="`fas fa-${item.icon}`"></f-icon>
+            <span class="text-text text-sm font-semibold hidden md:inline">
+              {{ item.title }}
+            </span>
+          </client-only>
 
         </nuxt-link>
       </ul>
     </nav>
     <button @click="toggleDark()"
       class="btn btn-square btn-outline hidden md:block absolute right-10 z-10 top-1/2 -translate-y-1/2 rounded-circle ">
-      <span v-if="isDark" class="mdi mdi-white-balance-sunny text-4xl"></span>
+      <span v-if="isDark"
+        class="mdi mdi-white-balance-sunny text-4xl"></span>
       <span v-else class="mdi mdi-moon-waxing-crescent text-4xl"></span>
 
     </button>
@@ -80,6 +85,7 @@ nav {
     height: 2px;
     width: 100%;
     position: absolute;
+    border-radius: 15px;
     top: 0;
     background-color: theme("colors.primary");
     box-shadow: 0 10px 30px 5px theme("colors.primary");
@@ -87,6 +93,10 @@ nav {
 
   span {
     color: theme("colors.primary") !important;
+  }
+
+  .svg-inline--fa {
+    color: theme('colors.primary');
   }
 }
 </style>

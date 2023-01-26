@@ -5,8 +5,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faUserSecret  , faHome , faCircleUser, faImage,   faPaperPlane , faEnvelope, faNewspaper, faArrowRight} from '@fortawesome/free-solid-svg-icons'
-
+import { faUserSecret, faAt, faHome, faCircleUser, faImage, faPaperPlane, faEnvelope, faNewspaper, faArrowRight, faPhone, faMapMarker } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 library.add(...[
     faUserSecret,
     faArrowRight,
@@ -15,11 +15,15 @@ library.add(...[
     faImage,
     faEnvelope,
     faPaperPlane,
-    faNewspaper
+    faNewspaper,
+    faPhone,
+    faMapMarker,
+    faLinkedinIn,
+    faAt
 
 ])
 
-export default defineNuxtPlugin((nuxtApp)=>{
-    nuxtApp.vueApp.component('f-icon',FontAwesomeIcon) 
-    
-} )
+export default defineNuxtPlugin((nuxtApp) => {
+    nuxtApp.vueApp.component('f-icon', FontAwesomeIcon)
+
+})
