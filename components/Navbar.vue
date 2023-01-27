@@ -22,10 +22,8 @@
     </nav>
     <button @click="toggleDark()"
       class="btn btn-square btn-outline hidden md:block absolute right-10 z-10 top-1/2 -translate-y-1/2 rounded-circle ">
-      <span v-if="isDark"
-        class="mdi mdi-white-balance-sunny text-4xl"></span>
-      <span v-else class="mdi mdi-moon-waxing-crescent text-4xl"></span>
-
+      <f-icon v-if="isDark" class="text-4xl" icon="fas fa-moon"></f-icon>
+      <f-icon icon="fas fa-sun" v-else class=" text-4xl"></f-icon>
     </button>
   </header>
 </template>
@@ -63,12 +61,12 @@ const navLinks = ref([
     disabled: false,
     icon: 'paper-plane'
   },
-  {
-    title: "Blog",
-    path: "/blog",
-    disabled: false,
-    icon: 'newspaper'
-  },
+  // {
+  //   title: "Blog",
+  //   path: "/blog",
+  //   disabled: false,
+  //   icon: 'newspaper'
+  // },
 ]);
 </script>
 

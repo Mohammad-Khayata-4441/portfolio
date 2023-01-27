@@ -292,7 +292,8 @@
                                                 class="text-gray-500 ml-4">
                                                 Syria - Aleppo </span>
                                         </h4>
-                                        <p class="my-4 ">
+                                        <p
+                                            class="my-4 max-h-[220px] overflow-auto">
 
                                             In Jan - 2022 i started working
                                             in a new position as Frontend

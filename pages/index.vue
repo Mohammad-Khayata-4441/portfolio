@@ -150,6 +150,9 @@ onMounted(() => {
 
 .home-page {
   .hero {
+    height: 88vh;
+    overflow: hidden;
+
     img {
       width: 350px;
       height: 350px;
