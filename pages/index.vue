@@ -4,21 +4,21 @@
 
     <div class="page-lights absolute top-0 h-full">
       <svg
-        class="bottom-left-light absolute bottom-0 right-0 hidden md:block md:left-0 "
+        class="bottom-left-light absolute blur-[200px] bottom-0 right-0 hidden md:block md:left-0 "
         width="494" height="309" viewBox="0 0 494 309" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <circle r="247" transform="matrix(1 0 0 -1 247 247)" fill="#436CFF"
           fill-opacity="0.77" />
       </svg>
 
-      <svg class="light-top absolute top-0  right-0 md:left-1/4"
+      <svg class="light-top absolute blur-[200px] top-0  right-0 md:left-1/4"
         width="494" height="138" viewBox="0 0 494 138" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <circle r="247" transform="matrix(1 0 0 -1 247 -109)"
           fill="#AC43FF" fill-opacity="0.77" />
       </svg>
 
-      <svg class="absolute right-32 md:right-0" width="486" height="377"
+      <svg class="absolute blur-[200px] right-32 md:right-0" width="486" height="377"
         viewBox="0 0 486 377" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <circle cx="243" cy="134" r="243" fill="#43D2FF"
@@ -31,12 +31,12 @@
 
 
     <main class="h-full">
-      <div class="container m-auto h-full">
+      <div class="container overflow-visible m-auto h-full">
         <div
-          class="hero overflow-hidden flex flex-col lg:flex-row justify-center items-center h-full space-y-16">
+          class="hero  flex flex-col lg:flex-row justify-center items-center h-full space-y-16">
 
-          <img src="/personal.png" class="rounded-circle lg:rounded-none object-contain 
-          object-top
+          <img src="/personal.png" class="rounded-circle lg:rounded-none  object-contain object-bottom relative top-4
+         
           border-3
           border-text
           bg-primary
@@ -47,7 +47,7 @@
             lg:bg-transparent
             lg:shadow-none
             lg:self-end
-            lg:object-contain 
+        
           " />
 
 
@@ -97,14 +97,7 @@
 </template>
 <script setup>
 import gsap from 'gsap'
-console.log('created');
-
-definePageMeta({
-  pageTransition: {
-    mode: "default",
-    appear: true,
-  },
-});
+  
 
 onMounted(() => {
   console.log('mounted');
@@ -138,7 +131,7 @@ onMounted(() => {
     width: 100%;
     min-height: 100%;
     top: 0;
-    backdrop-filter: blur(250px);
+    // backdrop-filter: blur(20px);
   }
 
   .page-lights {
@@ -151,7 +144,6 @@ onMounted(() => {
 .home-page {
   .hero {
     height: 88vh;
-    overflow: hidden;
 
     img {
       width: 350px;

@@ -1,7 +1,7 @@
 export type PortfolioItem = {
     name: string;
     id: string;
-    coverImage: string;
+    screenShots: string[];
     url?: string,
     year: string,
     technologiesIcons: string[];

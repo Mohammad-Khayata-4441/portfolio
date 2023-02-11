@@ -2,7 +2,7 @@
   <header
     class="flex fixed bottom-0 md:top-0 md:bottom-auto w-screen items-center justify-center p-5 z-10">
     <nav
-      class="rounded-2xl bg-white px-4 md:px-28 shadow-md dark:bg-dark-surface bg-opacity-50 dark:bg-opacity-75 backdrop:blur">
+      class="rounded-2xl bg-white px-8 py-2 md:py-0 md:px-28 shadow-md dark:bg-dark-surface bg-opacity-50 dark:bg-opacity-75 backdrop:blur">
       <ul
         class="flex items-center justify-center list-none space-x-12 md:space-x-16">
         <nuxt-link
@@ -10,7 +10,7 @@
           active-class="active-nav-link" ta v-for="item in navLinks"
           :to="item.path">
           <client-only>
-            <f-icon class="text-2xl select-none"
+            <f-icon class="text-3xl md:text-xl select-none"
               :icon="`fas fa-${item.icon}`"></f-icon>
             <span class="text-text text-sm font-semibold hidden md:inline">
               {{ item.title }}
@@ -32,7 +32,7 @@ import { useDark, useToggle } from "@vueuse/core";
 import { ref } from "vue";
 
 
-const isDark = useDark();
+const isDark = useDark({initialValue:'dark'});
 const toggleDark = useToggle(isDark);
 
 

@@ -5,13 +5,17 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faUserSecret, faAt, faHome, faCircleUser, faImage, faPaperPlane, faEnvelope, faNewspaper, faArrowRight, faPhone, faMapMarker, faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faUserSecret, faAt, faHome, faCircleUser, faImage, faPaperPlane, faEnvelope, faNewspaper, faArrowRight, faPhone, faMapMarker, faMoon, faSun, faClose } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedinIn , faTelegramPlane , faGithub, faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 library.add(...[
     faUserSecret,
     faArrowRight,
     faHome,
     faCircleUser,
+    faTelegramPlane,
+    faGithub,
+    faClose,
+    faGithubAlt,
     faImage,
     faEnvelope,
     faPaperPlane,

@@ -36,7 +36,7 @@ useHead({
     top: 0;
     &::after{
       content: '';
-      backdrop-filter: blur(250px);
+      // backdrop-filter: blur(250px);
       background-color: transparent;
       position: absolute;
       height: 100%;

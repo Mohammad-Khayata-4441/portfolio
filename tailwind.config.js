@@ -4,19 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#715DE9",
-        seconadry: "#4BCAFE",
-        dark: "#101010",
+        primary: "#436CFF",
+        seconadry: "#26CDEB",
+        dark: "#211835",
         text: "#546192",
         'dark-overlay': "#423769",
         "dark-surface": "#161A29",
-        lights: {
-          aqua: '#26cdeb',
-          violet: "#532061",
-          pink: "#FB1ADE",
-          blue: "#577dfa",
-          green: "#00b07a"
-        }
+
       },
       borderRadius: {
         "4xl": "2rem",
