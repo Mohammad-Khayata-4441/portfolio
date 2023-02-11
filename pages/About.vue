@@ -154,7 +154,7 @@ useHead({
         <!-- Summary Section -->
         <section>
             <div
-                class="container mx-auto dark:dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-text backdrop-blur-2xl rounded-2xl overflow-hidden backdrop:blur-xl shadow-lg">
+                class="container max-w-7xl mx-auto dark:dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-text backdrop-blur-2xl rounded-2xl overflow-hidden backdrop:blur-xl shadow-lg">
 
                 <h3 class="text-2xl font-bold bg-primary w-max  p-2 pr-4 rounded-br-3xl text-white ">
                     Summary</h3>
@@ -215,7 +215,7 @@ useHead({
 
             <div class="flex mt-40">
 
-                <div class="container mx-auto">
+                <div class="container max-w-7xl mx-auto">
 
                     <div class="relative  flex   items-center   ">
 
@@ -404,7 +404,7 @@ useHead({
 
 
         <section>
-            <div class="container mx-auto">
+            <div class="container max-w-7xl mx-auto">
 
                 <h3 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-text w-max font-bold">
                     MY SKILLS</h3>

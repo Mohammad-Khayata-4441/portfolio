@@ -20,24 +20,24 @@
             </p>
 
             <div class="tecnologies flex items-center my-6">
-                <span class="text-text  hidden lg:block">Built With</span>
+                <span class="dark:text-gray-300  hidden lg:block">Built With</span>
                 <div class="flex mx-auto lg:mx-12 gap-12 items-center  ">
-                    <img class="max-w-[150px]" v-for="img in item?.technologiesIcons" :src="img" alt="">
+                    <img class="max-w-[85px] md:max-w-[150px]" v-for="img in item?.technologiesIcons" :src="img" alt="">
                 </div>
 
             </div>
             <div class="flex items-center gap-4">
-                <a href="" v-if="item?.gitRepo">
+                <a :href="item.gitRepo" class="w-full lg:w-auto" v-if="item?.gitRepo">
                     <button
-                        class="text-xl bg-black hover:bg-black/60 text-white rounded-2xl w-full lg:w-48 py-4 px-4 my-4 transition-all"
+                        class="text-xl  bg-black hover:bg-black/60 text-white rounded-2xl w-full lg:w-48 py-4 px-4 my-4 transition-all"
                         type="button">
                         <f-icon class="text-white mr-2 text-2xl" icon="fab fa-github"></f-icon>
                         Github
                     </button>
                 </a>
-                <a>
+                <a :href="item?.url" class="w-full lg:w-auto">
                     <button
-                        class=" border px-4  hover:bg-primary hover:bg-opacity-20 text-primary border-primary rounded-2xl w-full lg:w-48 py-4 my-4 transition-all"
+                        class=" border px-4 hover:bg-primary hover:bg-opacity-20 text-primary border-primary rounded-2xl w-full lg:w-48 py-4 my-4 transition-all"
                         type="button">
                         Live Preview <f-icon icon="arrow-right"></f-icon>
                     </button>
@@ -48,8 +48,8 @@
 
         <div class="image col-span-12 lg:col-span-6 order-1 lg:order-2 cursor-pointer" @click="openGallery">
             <img :style="{ boxShadow: `0 0 300px -100px ${item?.primaryColor}` }" :src="item?.screenShots[0]"
-                :class="`rounded-2xl border-4 border-seconadry dark:border-text shadow-lg `">
-            <span class="bg-text text-white p-2 rounded-lg relative left-2 bottom-10">10 images</span>
+                :class="`rounded-3xl border-4 border-seconadry dark:border-text shadow-lg `">
+            <span class="bg-primary text-white p-2 rounded-xl relative left-4 bottom-12">{{item?.screenShots.length}} <f-icon icon="fas fa-image" /></span>
         </div>
 
         <Transition name="showGallery" @enter="onEnter" @leave="onLeave">
@@ -59,8 +59,8 @@
                 <button class="absolute right-10 top-10 z-40 " @click="closeGallery"><f-icon class="text-4xl"
                         icon="fas fa-close" /></button>
                 <Swiper ref="swiper">
-                    <SwiperSlide v-for="k in 5" class="">
-                        <img :src="item?.screenShots[0]" class="w-[90vw] max-h-[90vh] mx-auto" alt="">
+                    <SwiperSlide v-for="screen in item?.screenShots" :key="screen" class="">
+                        <img :src="screen" class="w-[90vw] max-h-[90vh] mx-auto" alt="">
                     </SwiperSlide>
                 </Swiper>
             </div>

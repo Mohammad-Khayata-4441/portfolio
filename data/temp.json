@@ -1,0 +1,20 @@
+{
+    "name": "SAS GENERAL CONTRACTING ",
+    "client": "SAS GENERAL CONTRACTING ",
+    "description": "SAS General Contracting & Trading Est. was established in the year 2020, in the Kingdom of Saudi Arabia. A 100% Saudi owned organization, initially started by opening Trading & Contracting Establishment. Based in Al-Jubail city to needs of limited customers. Now, it is considered as one of the leading companies in the Kingdom especially in the Eastern Province",
+    "id": "2",
+    "screenShots": ["/projects/sas/sas.png"],
+    "primaryColor": "#ED1B33",
+    "status": "Finished",
+    "type": [
+        "Landing Page"
+    ],
+    "workInformation": "I Worked on it as a <a class='dark:text-white text-primary'>Freelancer</a> for Sudian Company",
+    "technologiesIcons": [
+        "/icons/nuxt.svg",
+        "/icons/tailwind.webp"
+    ],
+    "year": "2022",
+    "gitRepo": "",
+    "url": ""
+}

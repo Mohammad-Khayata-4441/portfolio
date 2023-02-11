@@ -35,7 +35,7 @@
         <div
           class="hero  flex flex-col lg:flex-row justify-center items-center h-full space-y-16">
 
-          <img src="/personal.png" class="rounded-circle lg:rounded-none  object-contain object-bottom relative top-4
+          <img src="/personal.png" class="rounded-circle lg:rounded-none  object-contain relative bottom-12
          
           border-3
           border-text
@@ -97,7 +97,15 @@
 </template>
 <script setup>
 import gsap from 'gsap'
-  
+useHead({
+  htmlAttrs:{
+    class:'overflow-hidden'
+  },
+  bodyAttrs:{
+    class:'overflow-hidden'
+  }
+})
+
 
 onMounted(() => {
   console.log('mounted');
@@ -142,8 +150,11 @@ onMounted(() => {
 }
 
 .home-page {
+  
   .hero {
-    height: 88vh;
+
+    height: calc(100vh - 68px);
+    
 
     img {
       width: 350px;
