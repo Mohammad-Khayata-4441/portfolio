@@ -1,3 +1,4 @@
+[
 {
     "name": "SAS GENERAL CONTRACTING ",
     "client": "SAS GENERAL CONTRACTING ",
@@ -17,4 +18,51 @@
     "year": "2022",
     "gitRepo": "",
     "url": ""
+},
+
+{
+    "name": "Qr Code Germany",
+    "client": "ELKOOD Company",
+    "description": "Many companies use the QR code in their marketing and advertising campaigns, allowing various types of data to be added, such as: B. Website links, social media, account information, phone numbers, even coupons, opening hours, or a PDF file (with a list of product prices or the services you want to offer your customers).Here at QR Code Germany we have made sure that everything is easy and simple to use for the customer as you will find many simple and useful options that will help you a lot in providing useful and important information to your customers in the easiest and cheapest way to deliver way.",
+    "id": "1",
+    "screenShots": ["/projects/qrGermany/cover.png"],
+    "primaryColor": "#FDD636",
+    "status": "in Progress",
+    "type": [
+        "Landing Page",
+        "Web Application"
+    ],
+    "workInformation": "",
+    "technologiesIcons": [
+        "/icons/nuxt.svg",
+        "/icons/tailwind.webp"
+    ],
+    "year": "2022",
+    "gitRepo": "www.com",
+    "url": ""
+},
+
+{
+    "name": "Vue Admin Dashboard",
+    "client": "ELKOOD Company",
+    "description": "",
+    "id": "7",
+    "screenShots": ["/projects/vueAdminDashboard/cover.jpg"],
+    "primaryColor": "#004A9F",
+    "status": "in Progress",
+    "type": [
+        "eCommerce",
+        "Dashboard"
+    ],
+    "workInformation": "I Worked on it as Vue Developer at <span class='dark:text-white text-primary font-bold '> Elkood </span> frontend  team ",
+    "technologiesIcons": [
+        "/icons/vue.webp",
+        "/icons/tailwind.webp"
+    ],
+    "year": "2022",
+    "gitRepo": "",
+    "url": ""
 }
+
+
+]

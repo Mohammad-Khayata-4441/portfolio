@@ -1,34 +1,13 @@
     [
         {
-            "name": "Qr Code Germany",
-            "client": "ELKOOD Company",
-            "description": "Many companies use the QR code in their marketing and advertising campaigns, allowing various types of data to be added, such as: B. Website links, social media, account information, phone numbers, even coupons, opening hours, or a PDF file (with a list of product prices or the services you want to offer your customers).Here at QR Code Germany we have made sure that everything is easy and simple to use for the customer as you will find many simple and useful options that will help you a lot in providing useful and important information to your customers in the easiest and cheapest way to deliver way.",
-            "id": "1",
-            "screenShots": ["/projects/qrGermany/cover.png"],
-            "primaryColor": "#FDD636",
-            "status": "in Progress",
-            "type": [
-                "Landing Page",
-                "Web Application"
-            ],
-            "workInformation": "",
-            "technologiesIcons": [
-                "/icons/nuxt.svg",
-                "/icons/tailwind.webp"
-            ],
-            "year": "2022",
-            "gitRepo": "www.com",
-            "url": ""
-        },
-
-        {
             "name": "العلم نور",
             "client": "Al Elem Nour Publishing House",
             "description": "A landing page for publishing house in aleppo syria",
             "id": "3",
-            "screenShots": ["/projects/alElemNour/cover.png"],
+            "screenShots": [
+                "/projects/alElemNour/cover.png"
+            ],
             "primaryColor": "#FFD400",
-            
             "status": "in Progress",
             "type": [
                 "Landing Page",
@@ -48,7 +27,9 @@
             "client": "ELKOOD Company",
             "description": "",
             "id": "4",
-            "screenShots": ["/projects/awija/cover.jpg"],
+            "screenShots": [
+                "/projects/awija/cover.jpg"
+            ],
             "primaryColor": "#1ac9fb",
             "status": "in Progress",
             "type": [
@@ -67,9 +48,11 @@
         {
             "name": "Broker Management",
             "client": "ELKOOD Company",
-            "description": "",
+            "description": "Broker is ",
             "id": "5",
-            "screenShots": ["/projects/broker/cover.png"],
+            "screenShots": [
+                "/projects/broker/cover.png"
+            ],
             "primaryColor": "#D19D44",
             "status": "in Progress",
             "type": [
@@ -90,29 +73,10 @@
             "client": "ELKOOD Company",
             "description": "",
             "id": "6",
-            "screenShots": ["/projects/riviraPharma/cover.jpg"],
+            "screenShots": [
+                "/projects/riviraPharma/cover.jpg"
+            ],
             "primaryColor": "#ffffff",
-            "status": "in Progress",
-            "type": [
-                "eCommerce",
-                "Dashboard"
-            ],
-            "workInformation": "I Worked on it as Vue Developer at <span class='dark:text-white text-primary font-bold '> Elkood </span> frontend  team ",
-            "technologiesIcons": [
-                "/icons/vue.webp",
-                "/icons/tailwind.webp"
-            ],
-            "year": "2022",
-            "gitRepo": "",
-            "url": ""
-        },
-        {
-            "name": "Vue Admin Dashboard",
-            "client": "ELKOOD Company",
-            "description": "",
-            "id": "7",
-            "screenShots": ["/projects/vueAdminDashboard/cover.jpg"],
-            "primaryColor": "#004A9F",
             "status": "in Progress",
             "type": [
                 "eCommerce",
@@ -132,7 +96,9 @@
             "client": "ELKOOD Company",
             "description": "",
             "id": "8",
-            "screenShots": ["/projects/goldenWrap/cover.jpg"],
+            "screenShots": [
+                "/projects/goldenWrap/cover.jpg"
+            ],
             "primaryColor": "#1f6b38",
             "status": "in Progress",
             "type": [
@@ -153,7 +119,12 @@
             "client": "ELKOOD Company",
             "description": "",
             "id": "9",
-            "screenShots": ["/projects/proMarketing/cover.jpg"],
+            "screenShots": [
+                "/projects/proMarketing/cover.jpg",
+                "/projects/proMarketing/about.png",
+                "/projects/proMarketing/contact.png",
+                "/projects/proMarketing/services.png"
+            ],
             "primaryColor": "#F28003",
             "status": "in Progress",
             "type": [
@@ -174,7 +145,9 @@
             "client": "ELKOOD Company",
             "description": "",
             "id": "10",
-            "screenShots": ["/projects/mrCourse/cover.jpg"],
+            "screenShots": [
+                "/projects/mrCourse/cover.jpg"
+            ],
             "primaryColor": "#2ec4b6",
             "status": "in Progress",
             "type": [

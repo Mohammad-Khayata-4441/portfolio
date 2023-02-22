@@ -35,19 +35,15 @@
                         Github
                     </button>
                 </a>
-                <a :href="item?.url" class="w-full lg:w-auto">
-                    <button
-                        class=" border px-4 hover:bg-primary hover:bg-opacity-20 text-primary border-primary rounded-2xl w-full lg:w-48 py-4 my-4 transition-all"
-                        type="button">
+                <a :href="item?.url" class="w-full lg:w-auto border px-4 hover:bg-primary hover:bg-opacity-20 text-primary border-primary rounded-2xl w-full lg:w-48 py-4 my-4 transition-all">
                         Live Preview <f-icon icon="arrow-right"></f-icon>
-                    </button>
-                </a>
+                 </a>
             </div>
 
         </div>
 
         <div class="image col-span-12 lg:col-span-6 order-1 lg:order-2 cursor-pointer" @click="openGallery">
-            <img :style="{ boxShadow: `0 0 300px -100px ${item?.primaryColor}` }" :src="item?.screenShots[0]"
+            <img :style="{ boxShadow: `0 20px 400px -90px ${item?.primaryColor}` }" :src="item?.screenShots[0]"
                 :class="`rounded-3xl border-4 border-seconadry dark:border-text shadow-lg `">
             <span class="bg-primary text-white p-2 rounded-xl relative left-4 bottom-12">{{item?.screenShots.length}} <f-icon icon="fas fa-image" /></span>
         </div>
