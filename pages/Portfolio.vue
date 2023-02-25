@@ -17,7 +17,7 @@
 <script setup lang="ts">
 import type { PortfolioItem as Project } from '@/types/PortfolioItem'
 
-import ProjectsList from '@/data/projects.json'
+import ProjectsList from '~/data/projects'
 
 
 import "aos/dist/aos.css";

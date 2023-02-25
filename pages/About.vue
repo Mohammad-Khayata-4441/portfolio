@@ -74,7 +74,7 @@ useHead({
 
                 <div class="img col-span-12 lg:col-span-4 w-full  flex md:justify-center">
 
-                    <img src="~assets/images/personal-1.webp" alt=""
+                    <img src="../assets/images/personal-1.webp" alt=""
                         class="  w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] object-cover m-auto bg-dark-surface rounded-[90px] md:rounded-4xl"
                         style="object-position: 0 30%;" />
                 </div>
@@ -416,7 +416,7 @@ useHead({
 
 
 
-                        <img src="/icons/typescript.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/typescript.webp" class="w-12 md:w-28" alt="">
 
 
                     </div>
@@ -424,7 +424,7 @@ useHead({
 
 
 
-                        <img src="/icons/javascript.webp" class="w-12 md:w-28 rounded-xl" alt="">
+                        <img src="../assets/icons/javascript.webp" class="w-12 md:w-28 rounded-xl" alt="">
 
 
                     </div>
@@ -433,7 +433,7 @@ useHead({
 
 
 
-                        <img src="/icons/vue.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/vue.webp" class="w-12 md:w-28" alt="">
 
 
 
@@ -442,7 +442,7 @@ useHead({
 
 
 
-                        <img src="/icons/nuxt.svg" class="w-12 md:w-40" alt="">
+                        <img src="../assets/icons/nuxt.svg" class="w-12 md:w-40" alt="">
 
 
                     </div>
@@ -450,14 +450,14 @@ useHead({
 
 
 
-                        <img src="/icons/react.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/react.webp" class="w-12 md:w-28" alt="">
 
 
                     </div>
                     <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
-                        <img src="/icons/sass.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/sass.webp" class="w-12 md:w-28" alt="">
 
 
                     </div>
@@ -472,7 +472,7 @@ useHead({
 
 
 
-                        <img src="/icons/vite.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/vite.webp" class="w-12 md:w-28" alt="">
 
 
 
@@ -481,7 +481,7 @@ useHead({
 
 
 
-                        <img src="/icons/pinia.svg" class="w-12 md:w-28  " alt="">
+                        <img src="../assets/icons/pinia.svg" class="w-12 md:w-28  " alt="">
 
 
                     </div>
@@ -490,7 +490,7 @@ useHead({
 
 
 
-                        <img src="/icons/redux.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/redux.webp" class="w-12 md:w-28" alt="">
 
 
                     </div>
@@ -498,7 +498,7 @@ useHead({
 
 
 
-                        <img src="/icons/tailwind.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/tailwind.webp" class="w-12 md:w-28" alt="">
 
 
 
@@ -507,7 +507,7 @@ useHead({
 
 
 
-                        <img src="/icons/bootstrap.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/bootstrap.webp" class="w-12 md:w-28" alt="">
 
 
                     </div>
@@ -515,7 +515,7 @@ useHead({
 
 
 
-                        <img src="/icons/gsap.svg" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/gsap.svg" class="w-12 md:w-28" alt="">
 
 
                     </div>
@@ -529,7 +529,7 @@ useHead({
 
 
 
-                        <img src="/icons/angular.webp" class="w-12 md:w-40" alt="">
+                        <img src="../assets/icons/angular.webp" class="w-12 md:w-40" alt="">
 
 
                     </div>
@@ -537,7 +537,7 @@ useHead({
 
 
 
-                        <img src="/icons/nodejs.webp" class="w-12 md:w-28 " alt="">
+                        <img src="../assets/icons/nodejs.webp" class="w-12 md:w-28 " alt="">
 
 
                     </div>
@@ -546,7 +546,7 @@ useHead({
 
 
 
-                        <img src="/icons/nest.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/nest.webp" class="w-12 md:w-28" alt="">
 
 
                     </div>
@@ -554,7 +554,7 @@ useHead({
 
 
 
-                        <img src="/icons/cpp.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/cpp.webp" class="w-12 md:w-28" alt="">
 
 
 
@@ -563,7 +563,7 @@ useHead({
 
 
 
-                        <img src="/icons/cs.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/cs.webp" class="w-12 md:w-28" alt="">
 
 
                     </div>
@@ -571,7 +571,7 @@ useHead({
 
 
 
-                        <img src="/icons/asp.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/asp.webp" class="w-12 md:w-28" alt="">
 
 
                     </div>

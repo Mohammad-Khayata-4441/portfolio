@@ -40,7 +40,7 @@
             </p>
             <div class="btn-group flex space-x-4 m-auto lg:m-0">
               <NuxtLink to="/cv">
-                <button class="bg-primary p-3 btn text-white rounded-xl">
+                <button class="bg-primary p-3 btn text-white rounded-full px-10">
                   Resume
                 </button>
               </NuxtLink>
@@ -59,13 +59,16 @@
             </div>
           </article>
           <div class="col-span-12 lg:col-span-5 order-1 lg:order-2">
-            <img src="~assets/images/hero.svg" class="
+            <!-- <img src="~assets/images/hero.svg" class="
                             border-3
                             drop-shadow-2xl
                             mx-auto
                             lg:mx-0
                             w-[80%]
-                            lg:w-full" />
+                            lg:w-full" /> -->
+
+          <HeroSvg></HeroSvg>
+
           </div>
         </div>
       </div>
@@ -93,10 +96,10 @@ onMounted(() => {
   })
   const tl = gsap.timeline();
 
-  tl.from('#hi', { y: -1000, duration: 0.7, opacity: 0 })
-  .from('#name', { x: -1000, duration: 0.7, opacity: 0 })
-  .from('#text', { y: -50, duration: 0.7, opacity: 0 })
-  .from('.btn-group', { y: 50, duration: 0.7, opacity: 0 })
+  tl.from('#hi', { y: -1000, duration: 1, opacity: 0 })
+  .from('#name', { x: -1000, duration: 1, opacity: 0 })
+  .from('#text', { y: -50, duration: 1, opacity: 0 })
+  .from('.btn-group', { y: 50, duration: 1, opacity: 0 })
 })
 
 

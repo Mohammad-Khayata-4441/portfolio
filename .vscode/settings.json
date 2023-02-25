@@ -1,0 +1,9 @@
+{
+    // Sets the formatter to format when the file is saved.
+    "editor.formatOnSave": false,
+    // Sets prettier to format your code
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+}
