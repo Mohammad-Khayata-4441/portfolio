@@ -1,10 +1,9 @@
 <template>
     <div class="page">
-        <div class="page-lights absolute top-0 h-full flex-grow-1 overflow-x-hidden">
+        <div class="page-lights absolute top-0 h-full flex-grow-1 overflow-hidden">
             <svg class="absolute blur-[200px] top-0 left-0" width="494" height="494" viewBox="0 0 494 494" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <circle cx="247" cy="247" r="247" transform="matrix(1 0 0 -1 0 494)" fill="#26CDEB"
-                    fill-opacity="0.77" />
+                <circle cx="247" cy="247" r="247" transform="matrix(1 0 0 -1 0 494)" fill="#26CDEB" fill-opacity="0.77" />
             </svg>
             <svg class="absolute blur-[200px] top-96 translate-y-1/2 right-0" width="764" height="751" viewBox="0 0 764 751"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +38,7 @@
                         <ul>
                             <li class="my-4">
                                 <span class="text-gray-400 text-md flex gap-2 hover:text-primary transition-all  ">
-                                    <f-icon icon="fas fa-phone"></f-icon>
+                                    <icon icon="fas fa-phone"></icon>
                                     <a href="tel:+963956954441">
                                         +963 956 954 441
                                     </a>
@@ -47,26 +46,29 @@
 
                             </li>
                             <li class="my-4">
-                                <a href="tel:+963980379067" class="text-gray-400 text-md flex gap-2 hover:text-primary transition-all  ">
-                                    <f-icon icon="fas fa-phone"></f-icon>
+                                <a href="tel:+963980379067"
+                                    class="text-gray-400 text-md flex gap-2 hover:text-primary transition-all  ">
+                                    <icon icon="fas fa-phone"></icon>
                                     <span>
                                         +963 980 379 067
                                     </span>
                                 </a>
                             </li>
                             <li class="my-4">
-                                <a href="mailto:Mohammad_Khayata@outlook.com" class="text-gray-400 text-md flex gap-2 hover:text-primary transition-all  ">
-                                    <f-icon icon="fas fa-at"></f-icon>
+                                <a href="mailto:Mohammad_Khayata@outlook.com"
+                                    class="text-gray-400 text-md flex gap-2 hover:text-primary transition-all  ">
+                                    <icon icon="fas fa-at"></icon>
                                     <span>
-                                        Mohammad_Khayata@outlook.com  
+                                        Mohammad_Khayata@outlook.com
                                     </span>
                                 </a>
                             </li>
                             <li class="my-4">
-                                <a href="mailto:MohammadKhayata.gm@gmail.com" class="text-gray-400 text-md flex gap-2 hover:text-primary transition-all  ">
-                                    <f-icon icon="fas fa-at"></f-icon>
+                                <a href="mailto:MohammadKhayata.gm@gmail.com"
+                                    class="text-gray-400 text-md flex gap-2 hover:text-primary transition-all  ">
+                                    <icon icon="fas fa-at"></icon>
                                     <span>
-                                        MohammadKhayata.gm@gmail.com  
+                                        MohammadKhayata.gm@gmail.com
                                     </span>
                                 </a>
                             </li>
@@ -84,7 +86,7 @@
                             <a class="mx-1.5 dark:hover:text-primary text-gray-400 transition-colors duration-300 transform hover:primary"
                                 href="https://t.me/Mohammadkh4441">
 
-                                <f-icon class="text-2xl mt-1" icon="fab fa-telegram-plane" />
+                                <icon class="text-2xl mt-1" icon="fab fa-telegram-plane" />
                             </a>
 
                             <a class="mx-1.5 dark:hover:text-primary text-gray-400 transition-colors duration-300 transform hover:primary"
@@ -171,3 +173,21 @@
         </div>
     </div>
 </template>
+
+<script lang="ts" setup>
+useHead({
+    title: "Contact",
+    meta: [
+        {
+            name: "description",
+            content: "Mohammad Khayata . frontend web developer ,",
+
+        },
+        {
+            name: "keywords",
+            content: "JavaScript, TypeScript, Css, Html, Scss, Sass, Vue, Nuxt, Nuxt3, Vue.js, Nuxt.js, developer, mohammadKhayata, mohammad khayata,mohammed, mohammad, khayata, frontend, fullstack, glass, ui, lights, node, node.js, programmer, it,",
+
+        },
+    ]
+})
+</script>

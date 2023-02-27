@@ -13,7 +13,22 @@ export default [
         "technologiesIcons": ["vue.webp","bootstrap.webp"],
         "year": "2022",
         "gitRepo": "",
-        "url": ""
+        "url": "https://www.alelmnour.com/"
+    },
+    {
+        "name": "Altin Saray",
+        "client": "ELKOOD Company",
+        "description": "A Template for Turkish Real Estate WordPress Website ",
+        "id": "3",
+        "screenShots": ["altinSaray/index.jpg"],
+        "primaryColor": "#153937",
+        "status": "Finished",
+        "type": ["Landing Page"],
+        "workInformation": "I Worked on it in some parts like index page and code reviews With elkood frontend team ",
+        "technologiesIcons": ["javascript.webp","bootstrap.webp"],
+        "year": "2022",
+        "gitRepo": "",
+        "url": "https://altinsaraygrup.com/"
     },
     {
         "name": "Awija Metal Industries",
@@ -36,7 +51,7 @@ export default [
         ],
         "year": "2022",
         "gitRepo": "",
-        "url": ""
+        "url": "https://www.awijatinplate.com/"
     },
     {
         "name": "Broker Management",
@@ -82,7 +97,7 @@ export default [
         ],
         "year": "2022",
         "gitRepo": "",
-        "url": ""
+        "url": "https://www.rivierapharma-sy.com/"
     },
     {
         "name": "Golden Wrap",
@@ -105,7 +120,7 @@ export default [
         ],
         "year": "2022",
         "gitRepo": "",
-        "url": ""
+        "url": "https://goldenwrap.elkood.com/"
     },
     {
         "name": "Pro Marketing",

@@ -30,7 +30,7 @@
             <h6 id="hi" class="text-3xl hidden lg:block text-text dark:text-gray-300">
               Hey There , I'm</h6>
             <h2 id="name"
-              class="text-3xl text-center lg:text-left sm:text-5xl lg:text-6xl font-bold uppercase gradiant-heading">
+              class="text-4xl text-center lg:text-left sm:text-5xl lg:text-6xl font-bold uppercase gradiant-heading">
               Mohammad Khayyata
             </h2>
             <p id="text" class="text-md sm:text-xl text-center lg:text-left  text-text dark:text-white">
@@ -59,15 +59,12 @@
             </div>
           </article>
           <div class="col-span-12 lg:col-span-5 order-1 lg:order-2">
-            <!-- <img src="~assets/images/hero.svg" class="
-                            border-3
-                            drop-shadow-2xl
-                            mx-auto
-                            lg:mx-0
-                            w-[80%]
-                            lg:w-full" /> -->
+ 
 
-          <HeroSvg></HeroSvg>
+                            <ClientOnly>
+
+                              <HeroSvg></HeroSvg>
+                            </ClientOnly>
 
           </div>
         </div>
@@ -78,13 +75,21 @@
 </template>
 <script setup>
 import gsap from 'gsap'
+
 useHead({
-  htmlAttrs: {
-    class: 'overflow-hidden'
-  },
-  bodyAttrs: {
-    class: 'overflow-hidden'
-  }
+  title: "Mohammad Khayata",
+  meta: [
+    {
+      name: "description",
+      content: "Mohammad Khayata . frontend web developer ,",
+
+    },
+    {
+      name: "keywords",
+      content: "JavaScript, TypeScript, Css, Html, Scss, Sass, Vue, Nuxt, Nuxt3, Vue.js, Nuxt.js, developer, mohammadKhayata, mohammad khayata,mohammed, mohammad, khayata, frontend, fullstack, glass, ui, lights, node, node.js, programmer, it,",
+
+    },
+  ]
 })
 
 
@@ -105,58 +110,13 @@ onMounted(() => {
 
 </script>
 
-<style lang="scss">
-.page {
-  padding-bottom: 90px;
+<style lang="scss" >
 
-  @media (min-width:768px) {
-    padding-bottom: 0px;
-    padding-top: 112px;
-  }
-
-  height: 100vh;
-
-  .page-lights {
-    z-index: -1;
-  }
-
-  .page-overlay {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    min-height: 100%;
-    top: 0;
-    // backdrop-filter: blur(20px);
-  }
-
-  .page-lights {
-    top: 0;
-    min-height: 100%;
-    width: 100%;
-  }
-}
-
+ 
 .home-page {
+display: flex;
+align-items: center;
+justify-content: center;
 
-  .hero {
-
-    height: calc(100vh - 68px);
-
-
-    // img {
-
-    //   @media(min-width:992px) {
-    //     width: 650px;
-    //     height: 650px;
-    //   }
-
-    //   @media(min-width:1200px) {
-    //     width: 40%;
-    //     height: 100%;
-    //   }
-    // }
-
-
-  }
 }
 </style>

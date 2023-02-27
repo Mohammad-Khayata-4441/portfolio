@@ -1,5 +1,5 @@
 <template>
-    <svg class="hero-svg w-full" viewBox="0 0 781 736" fill="none" xmlns="http://www.w3.org/2000/svg"
+    <svg class="hero-svg w-[350px] md:w-[600px] mx-auto" viewBox="0 0 781 736" fill="none" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Group">
             <g id="Layer 2">
@@ -440,8 +440,8 @@
             <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
                 <use xlink:href="#image1_203_12" transform="scale(0.0045045 0.00371747)" />
             </pattern>
-            <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image2_203_12" transform="scale(0.01 0.00492611)" />
+            <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1" >
+                <use xlink:href="#image2_203_12" transform="scale(0.01 0.00492611)" class="opacity-50" />
             </pattern>
             <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
                 <use xlink:href="#image3_203_12" transform="scale(0.00917431 0.0104167)" />
@@ -615,15 +615,15 @@ onMounted(() => {
     tl.restart()
 
     tl.from('.hero-svg .layer', {
-        x: 1000,
-        // y: 3000,
-        stagger: 0.3,
-        ease: Back.easeOut.config(0.8)
+        x: '201vw',
+        stagger: 0.2,
+        duration:0.5,
+        ease: Back.easeOut.config(0.4)
     })
         .from('.hero-svg .card', {
             stagger: 0.3,
             ease: Back.easeOut.config(0.8),
-            y: 1000,
+            y: '1000',
         }).from('.hero-svg .icon', {
             y: 1000,
             stagger: 0.2,
@@ -637,16 +637,18 @@ onMounted(() => {
         }).from('.hero-svg .bar', {
             x: 1000,
             y: 500,
-            stagger: 0.3,
+            stagger: 0.2,
+            duration:0.4,
             ease: Back.easeOut.config(0.8)
         }).from('.hero-svg .obj', {
-            // y: -500,
             scale: 0,
-            stagger: 0.3,
+            stagger: 0.2,
+            duration:0.4,
             ease: Back.easeOut.config(0.8)
         }).from('.hero-svg .ball', {
             scale: 0,
-            stagger: 0.6,
+            stagger: 0.2,
+            duration:0.4,
             ease: Back.easeOut.config(3.8),
         })
 

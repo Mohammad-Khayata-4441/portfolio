@@ -10,8 +10,8 @@
           active-class="active-nav-link" ta v-for="item in navLinks"
           :to="item.path">
           <client-only>
-            <f-icon class="text-3xl md:text-xl select-none"
-              :icon="`fas fa-${item.icon}`"></f-icon>
+            <icon class="text-3xl md:text-xl select-none"
+              :name="`fas fa-${item.icon}`"></icon>
             <span class="text-text text-sm font-semibold hidden md:inline">
               {{ item.title }}
             </span>
@@ -20,11 +20,16 @@
         </nuxt-link>
       </ul>
     </nav>
-    <button @click="toggleDark()"
-      class="btn btn-square btn-outline hidden md:block absolute right-10 z-10 top-1/2 -translate-y-1/2 rounded-circle ">
-      <f-icon v-if="isDark" class="text-4xl" icon="fas fa-moon"></f-icon>
-      <f-icon icon="fas fa-sun" v-else class=" text-4xl"></f-icon>
-    </button>
+<client-only>
+
+
+  <button @click="toggleDark()"
+  class="btn btn-square btn-outline hidden md:block absolute right-10 z-10 top-1/2 -translate-y-1/2 rounded-circle ">
+  <icon v-if="isDark" class="text-4xl" icon="fas fa-moon"></icon>
+  <icon icon="fas fa-sun" v-else class=" text-4xl"></icon>
+</button>
+</client-only>
+
   </header>
 </template>
 <script setup lang="ts">

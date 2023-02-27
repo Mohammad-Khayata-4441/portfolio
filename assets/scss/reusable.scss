@@ -9,3 +9,32 @@
     background-clip: text;
     color: transparent;
 }
+.page {
+  padding-bottom: 102px;
+
+  @media (min-width:768px) {
+    padding-bottom: 0px;
+    padding-top: 112px;
+  }
+
+  height: 100vh;
+
+  .page-lights {
+    z-index: -1;
+  }
+
+  .page-overlay {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    // backdrop-filter: blur(20px);
+  }
+
+  .page-lights {
+    top: 0;
+    min-height: 100%;
+    width: 100%;
+  }
+}

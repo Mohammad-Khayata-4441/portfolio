@@ -403,7 +403,7 @@ useHead({
         </section>
 
 
-        <section>
+        <section class="overflow-y-hidden">
             <div class="container max-w-7xl mx-auto">
 
                 <h3 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-text w-max font-bold">
@@ -412,52 +412,52 @@ useHead({
                 <p class="text-center my-10  dark:text-gray-200"> <span class="text-primary font-bold mx-1"> Proficient
                     </span> with languages and framewoks</p>
                 <div class="grid gap-8  md:gap-0 grid-cols-12 my-20">
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img src="../assets/icons/typescript.webp" class="w-12 md:w-28" alt="">
-
-
-                    </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img src="../assets/icons/javascript.webp" class="w-12 md:w-28 rounded-xl" alt="">
+                        <img src="../assets/icons/typescript.webp" class="w-16 md:w-28" alt="">
 
 
                     </div>
-
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
-                        <img src="../assets/icons/vue.webp" class="w-12 md:w-28" alt="">
+
+                        <img src="../assets/icons/javascript.webp" class="w-16 md:w-28 rounded-xl" alt="">
+
+
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img src="../assets/icons/vue.webp" class="w-16 md:w-28" alt="">
 
 
 
                     </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img src="../assets/icons/nuxt.svg" class="w-12 md:w-40" alt="">
-
-
-                    </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img src="../assets/icons/react.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/nuxt.svg" class="w-16 md:w-40" alt="">
 
 
                     </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
-                        <img src="../assets/icons/sass.webp" class="w-12 md:w-28" alt="">
+
+                        <img src="../assets/icons/react.webp" class="w-16 md:w-28" alt="">
+
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+                        <img src="../assets/icons/sass.webp" class="w-16 md:w-28" alt="">
 
 
                     </div>
@@ -468,54 +468,54 @@ useHead({
 
                 <div class="grid gap-8  md:gap-0 grid-cols-12 my-20">
 
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img src="../assets/icons/vite.webp" class="w-12 md:w-28" alt="">
-
-
-
-                    </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img src="../assets/icons/pinia.svg" class="w-12 md:w-28  " alt="">
-
-
-                    </div>
-
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img src="../assets/icons/redux.webp" class="w-12 md:w-28" alt="">
-
-
-                    </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img src="../assets/icons/tailwind.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/vite.webp" class="w-16 md:w-28" alt="">
 
 
 
                     </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img src="../assets/icons/bootstrap.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/pinia.svg" class="w-16 md:w-28  " alt="">
 
 
                     </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img src="../assets/icons/gsap.svg" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/redux.webp" class="w-16 md:w-28" alt="">
+
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img src="../assets/icons/tailwind.webp" class="w-16 md:w-28" alt="">
+
+
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img src="../assets/icons/bootstrap.webp" class="w-16 md:w-28" alt="">
+
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img src="../assets/icons/gsap.svg" class="w-16 md:w-28" alt="">
 
 
                     </div>
@@ -525,53 +525,53 @@ useHead({
                     with frameworks and languages</p>
 
                 <div class="grid gap-8  md:gap-0 grid-cols-12 my-20">
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img src="../assets/icons/angular.webp" class="w-12 md:w-40" alt="">
-
-
-                    </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img src="../assets/icons/nodejs.webp" class="w-12 md:w-28 " alt="">
+                        <img src="../assets/icons/angular.webp" class="w-16 md:w-40" alt="">
 
 
                     </div>
-
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img src="../assets/icons/nest.webp" class="w-12 md:w-28" alt="">
-
-
-                    </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img src="../assets/icons/cpp.webp" class="w-12 md:w-28" alt="">
-
+                        <img src="../assets/icons/nodejs.webp" class="w-16 md:w-28 " alt="">
 
 
                     </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img src="../assets/icons/cs.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/nest.webp" class="w-16 md:w-28" alt="">
 
 
                     </div>
-                    <div data-aos="zoom-out" data-aos-duration="1500" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img src="../assets/icons/asp.webp" class="w-12 md:w-28" alt="">
+                        <img src="../assets/icons/cpp.webp" class="w-16 md:w-28" alt="">
+
+
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img src="../assets/icons/cs.webp" class="w-16 md:w-28" alt="">
+
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img src="../assets/icons/asp.webp" class="w-16 md:w-28" alt="">
 
 
                     </div>

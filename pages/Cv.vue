@@ -58,26 +58,26 @@
                             class="contact-info list-none flex flex-col gap-y-4 ">
 
                             <li>
-                                <f-icon class="text-gray-700"
-                                    icon="fas fa-map-marker"></f-icon>
+                                <icon class="text-gray-700"
+                                    icon="fas fa-map-marker"></icon>
                                 <span class="text-gray-700 mx-4 ">Aleppo
                                     - Syria </span>
                             </li>
                             <li>
-                                <f-icon class="text-gray-700"
+                                <icon class="text-gray-700"
                                     icon="fas fa-phone" />
                                 <a href="tel:+963956954441"
                                     class="text-gray-700 mx-4 ">+963
                                     956 954 441</a>
                             </li>
                             <li class="relative whitespace-nowrap">
-                                <f-icon class="text-gray-700"
+                                <icon class="text-gray-700"
                                     icon="fas fa-at" />
                                 <span
                                     class="text-gray-700 mx-4">Mohammad_Khayata@outlook.com</span>
                             </li>
                             <li class="relative whitespace-nowrap">
-                                <f-icon class="text-gray-700"
+                                <icon class="text-gray-700"
                                     icon="fas fa-at" />
                                 <a href="mailto:MohammadKhayata.gm@gmail.com"
                                     class="text-gray-700 mx-4">MohammadKhayata.gm@gmail.com</a>
@@ -86,8 +86,8 @@
                             <li>
                                 <a
                                     href="https://www.linkedin.com/in/mohammad-khayata-9169801a9">
-                                    <f-icon class="text-gray-700"
-                                        icon="fab fa-linkedin-in"></f-icon>
+                                    <icon class="text-gray-700"
+                                        icon="fab fa-linkedin-in"></icon>
                                     <span
                                         class="text-gray-700 mx-4 ">Mohammad
                                         Khayata</span>
