@@ -28,7 +28,23 @@ onMounted(() => {
     AOS.init();
     projects.value = ProjectsList as Project[]
 })
- 
+
+
+useHead({
+    title: "Portfolio",
+    meta: [
+        {
+            name: "description",
+            content: "Mohammad Khayata . frontend web developer ,",
+
+        },
+        {
+            name: "keywords",
+            content: "JavaScript, TypeScript, Css, Html, Scss, Sass, Vue, Nuxt, Nuxt3, Vue.js, Nuxt.js, developer, mohammadKhayata, mohammad khayata,mohammed, mohammad, khayata, frontend, fullstack, glass, ui, lights, node, node.js, programmer, it,",
+
+        },
+    ]
+})
 
 definePageMeta({
     layout: "default"
