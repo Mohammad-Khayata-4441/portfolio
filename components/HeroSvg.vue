@@ -4,7 +4,7 @@
         <g id="Group">
             <g id="Layer 2">
                 <g id="OBJECTS">
-                    <g class="ball" id="ball-6">
+                    <!-- <g class="ball" id="ball-6">
                         <path id="Vector"
                             d="M509.732 128.091C533.077 104.746 533.077 66.8953 509.732 43.5497C486.386 20.2042 448.536 20.2042 425.19 43.5497C401.844 66.8953 401.844 104.746 425.19 128.091C448.536 151.437 486.386 151.437 509.732 128.091Z"
                             fill="url(#paint0_radial_203_12)" />
@@ -74,7 +74,8 @@
                     </g>
                     <rect class="ball" id="ball-fade" x="402.5" y="409.205" width="378" height="322"
                         fill="url(#pattern0)" />
-                    <g class="layer" id="layer-1" opacity="0.28">
+                    -->
+                    <g class="layer" id="layer-1" opacity="0.28"> 
                         <g id="Group_12">
                             <path id="Vector_11"
                                 d="M662.013 228.908C672.21 234.788 680.47 249.068 680.423 260.781L679.677 528.835C679.677 540.501 671.347 545.168 661.15 539.381L268.963 313.048C258.743 307.145 250.507 292.888 250.553 281.175L251.3 13.0279C251.3 1.36126 259.63 -3.3054 269.827 2.48126L662.013 228.908Z"
@@ -650,14 +651,15 @@ onMounted(() => {
                 stagger: 0.2,
                 duration: 0.4,
                 ease: Back.easeOut.config(0.8)
-            }).from(myRefSvg.value.querySelectorAll('.ball'), {
-                scale: 0,
-                stagger: 0.2,
-                duration: 0.4,
-                x: 0,
-                y: 0,
-                ease: Back.easeOut.config(3.8),
             })
+            // .from(myRefSvg.value.querySelectorAll('.ball'), {
+            //     scale: 0,
+            //     stagger: 0.2,
+            //     duration: 0.4,
+            //     x: 0,
+            //     y: 0,
+            //     ease: Back.easeOut.config(3.8),
+            // })
 
 
     }
