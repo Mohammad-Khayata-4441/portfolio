@@ -20,6 +20,9 @@ useHead({
         },
     ]
 })
+definePageMeta({
+    layout: 'default'
+})
 </script>
 <template>
     <div class="page about-page  relative z-0 flex flex-col ">

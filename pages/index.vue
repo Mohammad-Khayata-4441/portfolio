@@ -2,7 +2,7 @@
   <div class="page home-page">
 
 
-    <div class="page-lights absolute top-0 h-full">
+    <div ref="pageLights" class="page-lights absolute top-0 h-full">
       <svg class="bottom-left-light absolute blur-[200px] bottom-0 right-0 hidden md:block md:left-0 " width="494"
         height="309" viewBox="0 0 494 309" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle r="247" transform="matrix(1 0 0 -1 247 247)" fill="#436CFF" fill-opacity="0.77" />
@@ -27,18 +27,18 @@
 
           <article
             class="hero-text col-span-12 lg:col-span-7 self-center px-2 md:px-10 flex flex-col space-y-5 order-2 lg:order1 ">
-            <h6 id="hi" class="text-3xl hidden lg:block text-text dark:text-gray-300">
+            <h6 ref="hi" class="text-3xl hidden lg:block text-text dark:text-gray-300">
               Hey There , I'm</h6>
-            <h2 id="name"
+            <h2 ref="name"
               class="text-4xl text-center lg:text-left sm:text-5xl lg:text-6xl font-bold uppercase gradiant-heading">
               Mohammad Khayyata
             </h2>
-            <p id="text" class="text-md sm:text-xl text-center lg:text-left  text-text dark:text-white">
+            <p ref="text" class="text-md sm:text-xl text-center lg:text-left  text-text dark:text-white">
               FullStack JavaScript/TypeScript Developer <br class="md:hidden" />
               Specialist in Frontend Development <br>
               And Software Engineering Student
             </p>
-            <div class="btn-group flex space-x-4 m-auto lg:m-0">
+            <div ref="group" class="btn-group flex space-x-4 m-auto lg:m-0">
               <NuxtLink to="/cv">
                 <button class="bg-primary p-3 btn text-white rounded-full px-10">
                   Resume
@@ -59,12 +59,12 @@
             </div>
           </article>
           <div class="col-span-12 lg:col-span-5 order-1 lg:order-2">
- 
 
-                            <ClientOnly>
 
-                              <HeroSvg></HeroSvg>
-                            </ClientOnly>
+            <ClientOnly>
+
+              <HeroSvg></HeroSvg>
+            </ClientOnly>
 
           </div>
         </div>
@@ -73,9 +73,14 @@
 
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 import gsap from 'gsap'
+const pageLights = ref<HTMLDivElement | null>(null)
 
+const hi = ref<HTMLElement | null>(null)
+const name = ref<HTMLElement | null>(null)
+const text = ref<HTMLElement | null>(null)
+const group = ref<HTMLElement | null>(null)
 useHead({
   title: "Mohammad Khayata",
   meta: [
@@ -92,31 +97,33 @@ useHead({
   ]
 })
 
+definePageMeta({
+  layout: 'default'
+})
 
 onMounted(() => {
-  gsap.from('.page-lights svg', {
-    scale: 0,
-    stagger: 0.8
+  if (pageLights.value)
+    gsap.from(pageLights.value?.querySelectorAll('svg'), {
+      scale: 0,
+      stagger: 0.8
 
-  })
+    })
+
   const tl = gsap.timeline();
-
-  tl.from('#hi', { y: -1000, duration: 1, opacity: 0 })
-  .from('#name', { x: -1000, duration: 1, opacity: 0 })
-  .from('#text', { y: -50, duration: 1, opacity: 0 })
-  .from('.btn-group', { y: 50, duration: 1, opacity: 0 })
+  tl.from(hi.value, { y: -1000, duration: 1, opacity: 0 })
+    .from(name.value, { x: -1000, duration: 1, opacity: 0 })
+    .from(text.value, { y: -50, duration: 1, opacity: 0 })
+    .from(group.value, { y: 50, duration: 1, opacity: 0 })
 })
 
 
 </script>
 
 <style lang="scss" >
-
- 
 .home-page {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 </style>

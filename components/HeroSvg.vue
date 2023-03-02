@@ -1,6 +1,6 @@
 <template>
-    <svg class="hero-svg w-[350px] md:w-[600px] mx-auto" viewBox="0 0 781 736" fill="none" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg ref="myRefSvg" class="hero-svg w-[350px] md:w-[600px] mx-auto" viewBox="0 0 781 736" fill="none"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Group">
             <g id="Layer 2">
                 <g id="OBJECTS">
@@ -440,7 +440,7 @@
             <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
                 <use xlink:href="#image1_203_12" transform="scale(0.0045045 0.00371747)" />
             </pattern>
-            <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1" >
+            <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
                 <use xlink:href="#image2_203_12" transform="scale(0.01 0.00492611)" class="opacity-50" />
             </pattern>
             <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -609,50 +609,58 @@
 
 <script setup lang="ts">
 import gsap, { Back } from 'gsap'
+const myRefSvg = ref<SVGAElement | null>(null)
 onMounted(() => {
-    let tl = gsap.timeline();
 
-    tl.restart()
+    console.log('mounted', myRefSvg.value);
 
-    tl.from('.hero-svg .layer', {
-        x: '201vw',
-        stagger: 0.2,
-        duration:0.5,
-        ease: Back.easeOut.config(0.4)
-    })
-        .from('.hero-svg .card', {
-            stagger: 0.3,
-            ease: Back.easeOut.config(0.8),
-            y: '1000',
-        }).from('.hero-svg .icon', {
-            y: 1000,
+
+    if (process.client && myRefSvg.value) {
+
+        let tl = gsap.timeline();
+
+        tl.from(myRefSvg.value?.querySelectorAll('.layer'), {
+            x: window.innerWidth,
             stagger: 0.2,
-            duration: 0.8,
-            ease: Back.easeOut.config(0.6)
-        }).from('.hero-svg .list-item', {
-            y: 1000,
-            stagger: 0.2,
-            duration: 0.8,
-            ease: Back.easeOut.config(0.6)
-        }).from('.hero-svg .bar', {
-            x: 1000,
-            y: 500,
-            stagger: 0.2,
-            duration:0.4,
-            ease: Back.easeOut.config(0.8)
-        }).from('.hero-svg .obj', {
-            scale: 0,
-            stagger: 0.2,
-            duration:0.4,
-            ease: Back.easeOut.config(0.8)
-        }).from('.hero-svg .ball', {
-            scale: 0,
-            stagger: 0.2,
-            duration:0.4,
-            ease: Back.easeOut.config(3.8),
+            duration: 0.5,
+            ease: Back.easeOut.config(0.4)
         })
+            .from(myRefSvg.value.querySelectorAll('.card'), {
+                stagger: 0.3,
+                ease: Back.easeOut.config(0.8),
+                y: '1000',
+            }).from(myRefSvg.value.querySelectorAll('.icon'), {
+                y: 1000,
+                stagger: 0.2,
+                duration: 0.8,
+                ease: Back.easeOut.config(0.6)
+            }).from(myRefSvg.value.querySelectorAll('.list-item'), {
+                y: 1000,
+                stagger: 0.2,
+                duration: 0.8,
+                ease: Back.easeOut.config(0.6)
+            }).from(myRefSvg.value.querySelectorAll('.bar'), {
+                x: 1000,
+                y: 500,
+                stagger: 0.2,
+                duration: 0.4,
+                ease: Back.easeOut.config(0.8)
+            }).from(myRefSvg.value.querySelectorAll('.obj'), {
+                scale: 0,
+                stagger: 0.2,
+                duration: 0.4,
+                ease: Back.easeOut.config(0.8)
+            }).from(myRefSvg.value.querySelectorAll('.ball'), {
+                scale: 0,
+                stagger: 0.2,
+                duration: 0.4,
+                x: 0,
+                y: 0,
+                ease: Back.easeOut.config(3.8),
+            })
 
 
+    }
 })
 
 </script>

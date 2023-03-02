@@ -25,8 +25,8 @@
 
   <button @click="toggleDark()"
   class="btn btn-square btn-outline hidden md:block absolute right-10 z-10 top-1/2 -translate-y-1/2 rounded-circle ">
-  <icon v-if="isDark" class="text-4xl" icon="fas fa-moon"></icon>
-  <icon icon="fas fa-sun" v-else class=" text-4xl"></icon>
+  <icon v-if="isDark" class="text-4xl" name="fas fa-moon"></icon>
+  <icon name="fas fa-sun" v-else class=" text-4xl"></icon>
 </button>
 </client-only>
 
