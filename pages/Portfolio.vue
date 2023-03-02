@@ -1,5 +1,5 @@
 <template>
-    <div class="page portfolio-page bg-primary bg-opacity-5">
+    <div class="page portfolio-page  bg-opacity-5">
 
         <div class="page-overlay  flex-grow-1 min-h-full"></div>
   
