@@ -24,7 +24,6 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 const projects = ref<Project[]>()
 onMounted(() => {
-
     AOS.init();
     projects.value = ProjectsList as Project[]
 })
