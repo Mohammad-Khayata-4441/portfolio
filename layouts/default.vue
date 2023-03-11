@@ -1,5 +1,5 @@
 <template>
-  <div v-if="true"
+  <div v-if="!isMounted"
     class="loading -z-10 bg-dark fixed top-0 left-0 h-screen w-screen flex items-center justify-center flex-col">
     <svg class="light blur-[200px] absolute left-0 top-0" width="520" height="396" viewBox="0 0 1020 696" fill="none"
       xmlns="http://www.w3.org/2000/svg">
