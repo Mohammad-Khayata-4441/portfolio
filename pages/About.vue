@@ -157,7 +157,7 @@ definePageMeta({
         <!-- Summary Section -->
         <section>
             <div
-                class="container max-w-7xl mx-auto dark:dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-text backdrop-blur-2xl rounded-2xl overflow-hidden backdrop:blur-xl shadow-lg">
+                class="container max-w-7xl mx-auto dark:dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-text rounded-2xl overflow-hidden  shadow-lg">
 
                 <h3 class="text-2xl font-bold bg-primary w-max  p-2 pr-4 rounded-br-3xl text-white ">
                     Summary</h3>
