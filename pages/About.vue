@@ -52,16 +52,17 @@ definePageMeta({
 
             <svg width="964" height="614" viewBox="0 0 964 614" fill="none"
                 class="absolute blur-[200px] right-0 top-[220vh] opacity-50" xmlns="http://www.w3.org/2000/svg">
-                <path d="M426.68 559.425C547.323 293.214 574.779 45.529 488.005 6.20416C401.231 -33.1207 233.086 150.807 112.443 417.017C-8.19962 683.228 -35.6556 930.913 51.1186 970.238C137.893 1009.56 306.038 825.636 426.68 559.425Z" fill="#577DFA" fill-opacity="1"/>
+                <path
+                    d="M426.68 559.425C547.323 293.214 574.779 45.529 488.005 6.20416C401.231 -33.1207 233.086 150.807 112.443 417.017C-8.19962 683.228 -35.6556 930.913 51.1186 970.238C137.893 1009.56 306.038 825.636 426.68 559.425Z"
+                    fill="#577DFA" fill-opacity="1" />
 
             </svg>
 
 
 
-            <svg width="600" height="600" viewBox="0 0 494 494" fill="none"
-                class="absolute blur-[200px] left-0 bottom-0" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="247" cy="247" r="247" transform="matrix(1 0 0 -1 0 494)" fill="#26CDEB"
-                    fill-opacity="0.77" />
+            <svg width="600" height="600" viewBox="0 0 494 494" fill="none" class="absolute blur-[200px] left-0 bottom-0"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="247" cy="247" r="247" transform="matrix(1 0 0 -1 0 494)" fill="#26CDEB" fill-opacity="0.77" />
             </svg>
 
         </div>
@@ -133,7 +134,8 @@ definePageMeta({
 
                         <span class="text-text">Email</span>
                         <span class="dark:text-white  font-bold">
-                            <a href="mailto:mohammad_khayata@outlook.com">Mohammad_khayata@outlook.com</a>
+                            <a class="hover:text-primary"
+                                href="mailto:mohammad_khayata@outlook.com">Mohammad_khayata@outlook.com</a>
                         </span>
                     </div>
                     <div
@@ -141,7 +143,7 @@ definePageMeta({
 
                         <span class="text-text">Phone</span>
                         <span class="dark:text-white  font-bold">
-                            <a href="tel:+963956954441">
+                            <a class="hover:text-primary" href="tel:+963956954441">
                                 +963 956 954 441
                             </a>
                         </span>
@@ -162,7 +164,7 @@ definePageMeta({
                 <h3 class="text-2xl font-bold bg-primary w-max  p-2 pr-4 rounded-br-3xl text-white ">
                     Summary</h3>
                 <summary
-                     class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4 max-h-[400px] lg:max-h-max overflow-auto ">
+                    class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4 max-h-[400px] lg:max-h-max overflow-auto ">
                     <p>
 
                         My career in Web Applications Development began
@@ -224,13 +226,13 @@ definePageMeta({
 
                         <!-- left handler col -->
 
-                        <div data-aos="fade-up" class="h-[1300px] w-1 bg-primary relative hidden md:block">
+                        <div data-aos="fade-up" class="h-[1300px] w-1 bg-primary relative hidden lg:block">
                         </div>
 
 
 
 
-                        <div class="w-full space-y-8 flex flex-col items-center md:items-stretch ">
+                        <div class="w-full space-y-8 flex flex-col items-center lg:items-stretch ">
                             <!-- EXP1 -->
 
                             <div class="flex items-center  ">
@@ -244,10 +246,10 @@ definePageMeta({
 
 
                                 <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
-                              backdrop:blur-xl shadow-lg">
+                                  backdrop:blur-xl shadow-lg">
 
                                     <article
-                                         class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
+                                        class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
                                         <h2 class="text-2xl mb-2 font-bold">
                                             Frontend Vue.js Developer</h2>
                                         <h4 class="text-sm text-primary  font-bold">
@@ -287,10 +289,10 @@ definePageMeta({
 
 
                                 <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
-                              backdrop:blur-xl shadow-lg">
+                                  backdrop:blur-xl shadow-lg">
 
                                     <article
-                                         class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
+                                        class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
                                         <h2 class="text-2xl mb-2 font-bold">
                                             Frontend Team Lead</h2>
                                         <h4 class="text-sm text-primary  font-bold">
@@ -326,7 +328,7 @@ definePageMeta({
                                             more cohesive projects and
                                             better
                                             development environment
-                                            and for optimized CEO and
+                                            and for optimized SEO and
                                             Server Side Rendering , I
                                             started Uing Nuxt Js
                                             with pinia state management
@@ -348,10 +350,10 @@ definePageMeta({
 
 
                                 <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
-                              backdrop:blur-xl shadow-lg">
+                                  backdrop:blur-xl shadow-lg">
 
                                     <article
-                                         class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
+                                        class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
                                         <h2 class="text-2xl mb-2 font-bold">
                                             Frontend Vue.js Developer</h2>
                                         <h4 class="text-sm text-primary  font-bold">
@@ -415,52 +417,64 @@ definePageMeta({
                 <p class="text-center my-10  dark:text-gray-200"> <span class="text-primary font-bold mx-1"> Proficient
                     </span> with languages and framewoks</p>
                 <div class="grid gap-8  md:gap-0 grid-cols-12 my-20">
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img height="100" width="100" src="../assets/icons/typescript.webp" class="w-16 md:w-28" alt="technology-typescript">
-
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img height="100" width="100" src="../assets/icons/javascript.webp" class="w-16 md:w-28 rounded-xl" javascriptalt="technology-">
+                        <img height="100" width="100" src="../assets/icons/typescript.webp" class="w-16 md:w-28"
+                            alt="technology-typescript">
 
 
                     </div>
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+                        <img height="100" width="100" src="../assets/icons/javascript.webp" class="w-16 md:w-28 rounded-xl"
+                            javascriptalt="technology-">
+
+
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img height="100" width="100" src="../assets/icons/vue.webp" class="w-16 md:w-28" alt="technology-vue">
+                        <img height="100" width="100" src="../assets/icons/vue.webp" class="w-16 md:w-28"
+                            alt="technology-vue">
 
 
 
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img height="100" width="100" src="../assets/icons/nuxt.svg" class="w-16 md:w-40" alt="technology-nuxt">
-
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img height="100" width="100" src="../assets/icons/react.webp" class="w-16 md:w-28" alt="technology-react">
+                        <img height="100" width="100" src="../assets/icons/nuxt.svg" class="w-16 md:w-40"
+                            alt="technology-nuxt">
 
 
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
-                        <img height="100" width="100" src="../assets/icons/sass.webp" class="w-16 md:w-28" alt="technology-sass">
+
+                        <img height="100" width="100" src="../assets/icons/react.webp" class="w-16 md:w-28"
+                            alt="technology-react">
+
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+                        <img height="100" width="100" src="../assets/icons/sass.webp" class="w-16 md:w-28"
+                            alt="technology-sass">
 
 
                     </div>
@@ -471,54 +485,66 @@ definePageMeta({
 
                 <div class="grid gap-8  md:gap-0 grid-cols-12 my-20">
 
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img height="100" width="100" src="../assets/icons/vite.webp" class="w-16 md:w-28" alt="technology-vite">
-
-
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img height="100" width="100" src="../assets/icons/pinia.svg" class="w-16 md:w-28  " alt="tpiniaechnology-">
-
-
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img height="100" width="100" src="../assets/icons/redux.webp" class="w-16 md:w-28" alt="technology-redux">
-
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img height="100" width="100" src="../assets/icons/tailwind.webp" class="w-16 md:w-28" alt="technology-tailwind">
+                        <img height="100" width="100" src="../assets/icons/vite.webp" class="w-16 md:w-28"
+                            alt="technology-vite">
 
 
 
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img height="100" width="100" src="../assets/icons/bootstrap.webp" class="w-16 md:w-28" alt="technology-bootstrap">
+                        <img height="100" width="100" src="../assets/icons/pinia.svg" class="w-16 md:w-28  "
+                            alt="tpiniaechnology-">
 
 
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+                    <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img height="100" width="100" src="../assets/icons/gsap.svg" class="w-16 md:w-28" alt="technology-gsap">
+                        <img height="100" width="100" src="../assets/icons/redux.webp" class="w-16 md:w-28"
+                            alt="technology-redux">
+
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img height="100" width="100" src="../assets/icons/tailwind.webp" class="w-16 md:w-28"
+                            alt="technology-tailwind">
+
+
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img height="100" width="100" src="../assets/icons/bootstrap.webp" class="w-16 md:w-28"
+                            alt="technology-bootstrap">
+
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img height="100" width="100" src="../assets/icons/gsap.svg" class="w-16 md:w-28"
+                            alt="technology-gsap">
 
 
                     </div>
@@ -528,72 +554,82 @@ definePageMeta({
                     with frameworks and languages</p>
 
                 <div class="grid gap-8  md:gap-0 grid-cols-12 my-20">
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img height="100" width="100" src="../assets/icons/angular.webp" class="w-16 md:w-40" alt="technology-angular">
-
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img height="100" width="100" src="../assets/icons/nodejs.webp" class="w-16 md:w-28 " alt="technology-nodejs">
+                        <img height="100" width="100" src="../assets/icons/angular.webp" class="w-16 md:w-40"
+                            alt="technology-angular">
 
 
                     </div>
-
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img height="100" width="100" src="../assets/icons/nest.webp" class="w-16 md:w-28" alt="technology-nest">
-
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img height="100" width="100" src="../assets/icons/cpp.webp" class="w-16 md:w-28" alt="technology-cpp">
-
+                        <img height="100" width="100" src="../assets/icons/nodejs.webp" class="w-16 md:w-28 "
+                            alt="technology-nodejs">
 
 
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+                    <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img height="100" width="100" src="../assets/icons/cs.webp" class="w-16 md:w-28" alt="technology-cs">
-
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="700" class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img height="100" width="100" src="../assets/icons/asp.webp" class="w-16 md:w-28" alt="technology-asp">
+                        <img height="100" width="100" src="../assets/icons/nest.webp" class="w-16 md:w-28"
+                            alt="technology-nest">
 
 
                     </div>
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img height="100" width="100" src="../assets/icons/cpp.webp" class="w-16 md:w-28"
+                            alt="technology-cpp">
+
+
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img height="100" width="100" src="../assets/icons/cs.webp" class="w-16 md:w-28"
+                            alt="technology-cs">
+
+
                 </div>
+                <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
+                    class="col-span-4 md:col-span-2 flex justify-center items-center">
 
+
+
+                    <img height="100" width="100" src="../assets/icons/asp.webp" class="w-16 md:w-28"
+                        alt="technology-asp">
+
+
+                </div>
             </div>
 
-
-        </section>
-
+        </div>
 
 
+    </section>
 
-    </div>
-</template>
+
+
+
+</div></template>
  
 
-<style lang="scss">
-.page.about-page {
+<style lang="scss">.page.about-page {
     height: auto !important;
     min-height: 100vh;
 
@@ -601,5 +637,4 @@ definePageMeta({
 
         line-height: 35px;
     }
-}
-</style>
+}</style>

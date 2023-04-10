@@ -44,7 +44,7 @@
                   Resume
                 </button>
               </NuxtLink>
-              <button class=" p-3 text-seconadry btn flex items-center space-x-4 ">
+              <NuxtLink to="/portfolio"  class=" p-3 text-seconadry btn flex items-center space-x-4 ">
                 <span>
 
                   Portfolio
@@ -55,7 +55,7 @@
                     fill="#4BCAFE" />
                 </svg>
 
-              </button>
+              </NuxtLink>
             </div>
           </article>
           <div class="col-span-12 lg:col-span-5 order-1 lg:order-2">
@@ -110,10 +110,10 @@ onMounted(() => {
     })
 
   const tl = gsap.timeline();
-  tl.from(hi.value, { y: -1000, duration: 1, opacity: 0 })
-    .from(name.value, { x: -1000, duration: 1, opacity: 0 })
-    .from(text.value, { y: -50, duration: 1, opacity: 0 })
-    .from(group.value, { y: 50, duration: 1, opacity: 0 })
+  tl.from(hi.value, { y: -1000, duration: 0.7, opacity: 0 })
+    .from(name.value, { x: -1000, duration: 0.7, opacity: 0 })
+    .from(text.value, { y: -50, duration: 0.7, opacity: 0 })
+    .from(group.value, { y: -50, duration: 0.7, opacity: 0 })
 })
 
 

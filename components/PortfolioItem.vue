@@ -23,7 +23,7 @@
             <div class="tecnologies flex items-center my-6">
                 <span class="dark:text-gray-300  hidden lg:block">Built With</span>
                 <div class="flex mx-auto lg:mx-12 gap-12 items-center  ">
-                    <img class="max-w-[85px] md:max-w-[150px]" v-for="img in item?.technologiesIcons" :src="iconUrl(img)"
+                    <img class="max-w-[65px] md:max-w-[100px] rounded" v-for="img in item?.technologiesIcons" :src="iconUrl(img)"
                         alt="">
                 </div>
 
@@ -59,9 +59,9 @@
 
                 <button class="absolute right-10 top-10 z-40 " @click="closeGallery"><icon class="text-4xl"
                         name="fas fa-close" /></button>
-                <Swiper ref="swiper">
+                <Swiper ref="swiper" wrapper-class="items-center">
                     <SwiperSlide v-for="screen in item?.screenShots" :key="screen" class="">
-                        <img :src="url(screen)" class="w-[90vw] max-h-[90vh] mx-auto" alt="">
+                        <img :src="url(screen)" class="w-[90vw] max-h-[90vh] mx-auto object-contain" alt="">
                     </SwiperSlide>
                 </Swiper>
             </div>

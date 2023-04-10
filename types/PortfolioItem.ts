@@ -1,9 +1,14 @@
 export type PortfolioItem = {
     name: string;
     id: string;
-    screenShots: string[];
     url?: string,
     year: string,
+    teamMates?:{name:string , url?:string , role:'Frontend Developer' | 'CTO' | 'Backend Developer' | 'Frontend Team Leader'}[]
+    techFeatures?: string[],
+    businessFeatures?: string[]
+    screenShots: string[];
+    promoVideo?: string;
+    order:number,
     technologiesIcons: string[];
     description: string;
     workInformation: string;

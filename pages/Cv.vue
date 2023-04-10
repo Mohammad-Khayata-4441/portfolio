@@ -1,5 +1,7 @@
 <template>
-    <div class="resume mx-auto container bg-gray-100">
+    <div class="resume my-2 print:my-0 ">
+        <div class="container max-w-screen-lg mx-auto bg-gray-50 border  rounded" >
+
         <div class="grid grid-cols-12">
             <aside
                 class="col-span-12 md:col-span-4 lg:col-span-3 print:col-span-4 py-6">
@@ -8,7 +10,7 @@
                         class="text-gray-700 text-3xl print:text-2xl whitespace-nowrap  font-bold">
                         Mohammad Khayata</h2>
                     <h2
-                        class="text-primary my-2 text-xl print:text-sm font-bold ">
+                        class="text-text my-2 text-lg print:text-sm font-bold ">
                         FullStack Web Developer</h2>
                     <div class="flex flex-col my-8">
 
@@ -47,7 +49,7 @@
                 <div>
 
                     <div
-                        class="bg-primary bg-opacity-10 rounded-r-full p-4 my-4">
+                        class="bg-gray-600 bg-opacity-10  p-4 my-4 print:py-1">
                         <h2 class="text-gray-700 font-bold text-xl">Contact
                         </h2>
                     </div>
@@ -58,48 +60,50 @@
                             class="contact-info list-none flex flex-col gap-y-4 ">
 
                             <li>
-                                <icon class="text-gray-700"
-                                    icon="fas fa-map-marker"></icon>
-                                <span class="text-gray-700 mx-4 ">Aleppo
+                                <icon class="text-text mr-2"
+                                    name="fas fa-map-marker"></icon>
+
+                                <span class="text-gray-700  ">Aleppo
                                     - Syria </span>
                             </li>
                             <li>
-                                <icon class="text-gray-700"
-                                    icon="fas fa-phone" />
+                                <icon class="text-text mr-2"
+                                    name="fas fa-phone" />
                                 <a href="tel:+963956954441"
-                                    class="text-gray-700 mx-4 ">+963
+                                    class="text-gray-700  ">+963
                                     956 954 441</a>
                             </li>
                             <li class="relative whitespace-nowrap">
-                                <icon class="text-gray-700"
-                                    icon="fas fa-at" />
+                                <icon class="text-text mr-2"
+                                    name="fas fa-at" />
                                 <span
-                                    class="text-gray-700 mx-4">Mohammad_Khayata@outlook.com</span>
+                                    class="text-gray-700 ">Mohammad_Khayata@outlook.com</span>
                             </li>
                             <li class="relative whitespace-nowrap">
-                                <icon class="text-gray-700"
-                                    icon="fas fa-at" />
+                                <icon class="text-text mr-2"
+                                    name="fas fa-at" />
                                 <a href="mailto:MohammadKhayata.gm@gmail.com"
-                                    class="text-gray-700 mx-4">MohammadKhayata.gm@gmail.com</a>
+                                    class="text-gray-700 ">MohammadKhayata.gm@gmail.com</a>
                             </li>
-
+<!-- 
                             <li>
+                                      <icon class="text-text mr-2"
+                                        name="fab fa-linkedin" />
                                 <a
                                     href="https://www.linkedin.com/in/mohammad-khayata-9169801a9">
-                                    <icon class="text-gray-700"
-                                        icon="fab fa-linkedin-in"></icon>
+                              
                                     <span
-                                        class="text-gray-700 mx-4 ">Mohammad
+                                        class="text-gray-700  ">Mohammad
                                         Khayata</span>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
                 <div>
 
                     <div
-                        class="bg-primary bg-opacity-10 rounded-r-full p-4 my-4">
+                        class="bg-gray-600 bg-opacity-10  p-4 my-4 print:py-1">
                         <h2 class="text-gray-700 font-bold text-xl  ">
                             Key Skills
                         </h2>
@@ -113,14 +117,14 @@
 
                             <h4 class=" my-2 text-text font-bold">Advanced
                             </h4>
-                            <ul class="contact-info  flex  gap-y-4 ">
+                            <ul class="contact-info flex gap-y-4 gap-x-4 ">
 
 
                                 <li>
                                     <span
                                         class="mdi mdi-language-javascript  text-gray-700"></span>
                                     <span
-                                        class="text-gray-700  mx-4">JavaScript
+                                        class="text-gray-700 ">JavaScript
                                     </span>
 
                                 </li>
@@ -128,7 +132,7 @@
                                     <span
                                         class="mdi mdi-vuejs  text-gray-700"></span>
                                     <span
-                                        class="text-gray-700  mx-4">Vue.Js
+                                        class="text-gray-700 ">Vue.Js
                                     </span>
 
                                 </li>
@@ -137,7 +141,7 @@
                                     <span
                                         class="mdi mdi-nuxt  text-gray-700"></span>
                                     <span
-                                        class="text-gray-700  mx-4">Nuxt.Js</span>
+                                        class="text-gray-700 ">Nuxt.Js</span>
                                 </li>
 
 
@@ -149,12 +153,12 @@
                             <h4 class=" my-2 text-text font-bold">Proficent
                             </h4>
                             <ul
-                                class="contact-info list-none flex  gap-y-4">
+                                class="contact-info list-none flex  gap-x-4 ">
                                 <li>
                                     <span
                                         class="mdi mdi-react  text-gray-700"></span>
                                     <span
-                                        class="text-gray-700  mx-4">React.js
+                                        class="text-gray-700 ">React.js
                                     </span>
 
                                 </li>
@@ -163,14 +167,14 @@
                                     <span
                                         class="mdi mdi-language-typescript  text-gray-700"></span>
                                     <span
-                                        class="text-gray-700  mx-4">TypeScript
+                                        class="text-gray-700 ">TypeScript
                                     </span>
 
                                 </li>
                                 <li>
                                     <span
                                         class="mdi mdi-sass  text-gray-700"></span>
-                                    <span class="text-gray-700  mx-4">Scss
+                                    <span class="text-gray-700 ">Scss
                                     </span>
 
                                 </li>
@@ -182,12 +186,12 @@
                             <h4 class=" my-2 text-text font-bold">
                                 Intermediate </h4>
                             <ul
-                                class="contact-info list-none flex  gap-y-4">
+                                class="contact-info list-none flex  gap-x-4 ">
                                 <li>
                                     <span
                                         class="mdi mdi-angular  text-gray-700"></span>
                                     <span
-                                        class="text-gray-700  mx-4">Angular
+                                        class="text-gray-700 ">Angular
                                     </span>
 
                                 </li>
@@ -195,7 +199,7 @@
                                     <span
                                         class="mdi mdi-nodejs  text-gray-700"></span>
                                     <span
-                                        class="text-gray-700  mx-4">Node.js
+                                        class="text-gray-700 ">Node.js
                                     </span>
                                 </li>
 
@@ -206,7 +210,7 @@
 
 
                     <div
-                        class="bg-primary bg-opacity-10 rounded-r-full p-4 my-4">
+                        class="bg-gray-600 bg-opacity-10  p-4 my-4 print:py-1">
                         <h2 class="text-gray-700 font-bold text-xl  ">
                             Job Skills
                         </h2>
@@ -267,7 +271,7 @@
                 <div>
 
                     <h3
-                        class=" text-3xl print:text-xl font-bold text-gray-700 ">
+                        class=" text-2xl print:text-lg font-bold text-gray-700 ">
                         SUMMARY
                     </h3>
                     <article class="my-4   ">
@@ -289,9 +293,9 @@
                     </article>
                 </div>
 
-                <div class="mt-8 py-6 education">
+                <div class="mt-6 print:mt-2 py-6 education">
                     <h3
-                        class=" text-3xl print:text-xl font-bold text-gray-700 ">
+                        class=" text-2xl print:text-lg font-bold text-gray-700 ">
                         EDUCATION</h3>
                     <ul class="list-none flex flex-col gap-y-6 my-6">
                         <li class="pl-20 relative">
@@ -348,9 +352,9 @@
 
                 </div>
 
-                <div class="mt-8 py-6 work-experience">
+                <div class="mt-6 print:mt-2 py-6 work-experience">
                     <h3
-                        class=" text-3xl print:text-xl font-bold text-gray-700 ">
+                        class=" text-2xl print:text-lg font-bold text-gray-700 ">
                         WORK
                         EXPERIENCE</h3>
                     <ul class="list-none flex flex-col gap-y-6 my-6">
@@ -441,7 +445,7 @@
                                     Vue.js 3 and Vite to build more
                                     cohesive projects
                                     and better development environment <br>
-                                    and for optimized CEO and Server Side
+                                    and for optimized SEO and Server Side
                                     Rendering , I started Uing Nuxt Js with
                                     pinia
                                     state management
@@ -518,6 +522,7 @@
 
             </main>
         </div>
+            </div>
 
     </div>
 </template>
