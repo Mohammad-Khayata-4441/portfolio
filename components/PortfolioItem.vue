@@ -33,32 +33,35 @@
                     <button
                         class="text-xl  bg-black hover:bg-black/60 text-white rounded-2xl w-full lg:w-48 py-4 px-4 my-4 transition-all"
                         type="button">
-                        <icon class="text-white mr-2 text-2xl" name="fab fa-github"></icon>
+                        <icon class="text-white mr-2 text-2xl" name="codicon:github"></icon>
                         Github
                     </button>
                 </a>
-                <a :href="item?.url"
+                <a :href="item?.url" v-if="item?.url"
                     class="w-full text-center  border px-4 hover:bg-primary hover:bg-opacity-20 text-primary border-primary rounded-2xl  lg:w-48 py-4 my-4 transition-all">
-                    Live Preview <icon name="arrow-right"></icon>
+                    Live Preview <icon class="text-2xl" name="tabler:external-link"></icon>
                 </a>
             </div>
 
         </div>
 
         <div class="image col-span-12 lg:col-span-6 order-1 lg:order-2 cursor-pointer" @click="openGallery">
-            <img :style="{ boxShadow: `0 20px 400px -90px ${item?.primaryColor}` }" v-if="item?.screenShots[0]"
+            <img :style="{ boxShadow: getBoxShadow(item.primaryColor) }" v-if="item?.screenShots[0]"
                 :src="url(item?.screenShots[0])"
                 :class="`rounded-3xl border-4 border-seconadry dark:border-text shadow-lg `">
             <span class="bg-primary text-white p-2 rounded-xl relative left-4 bottom-12">{{ item?.screenShots.length }}
-                <icon name="fas fa-image" /></span>
+                <icon name="clarity:image-gallery-solid" /></span>
         </div>
 
+
+
+
         <Transition name="showGallery" @enter="onEnter" @leave="onLeave">
-            <div v-if="showGallery" :class="{ 'bg-black bg-opacity-75': showGallery }"
+            <div v-if="showGallery" :class="{ 'bg-black bg-opacity-80': showGallery }"
                 class="gallery  flex items-center justify-center h-screen w-screen z-20 transition fixed top-0 left-0  ">
 
-                <button class="absolute right-10 top-10 z-40 " @click="closeGallery"><icon class="text-4xl"
-                        name="fas fa-close" /></button>
+                <button class="absolute right-10 top-10 z-40 " @click="closeGallery"><icon class="text-5xl text-white"
+                        name="solar:close-circle-linear" /></button>
                 <Swiper ref="swiper" wrapper-class="items-center">
                     <SwiperSlide v-for="screen in item?.screenShots" :key="screen" class="">
                         <img :src="url(screen)" class="w-[90vw] max-h-[90vh] mx-auto object-contain" alt="">
@@ -67,6 +70,7 @@
             </div>
         </Transition>
 
+    
     </div>
 </template>
 
@@ -74,7 +78,7 @@
 import type { PortfolioItem } from '@/types/PortfolioItem';
 import { PropType } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { onClickOutside } from '@vueuse/core'
+import { breakpointsTailwind, onClickOutside, useBreakpoints } from '@vueuse/core'
 import gsap from 'gsap'
 import 'swiper/css';
 const showGallery = ref(false)
@@ -82,7 +86,7 @@ const swiper = ref(null)
 
 const url = (imageName: string) => new URL(`../assets/projects/${imageName}`, import.meta.url).href
 const iconUrl = (icon: string) => new URL(`../assets/icons/${icon}`, import.meta.url).href
-
+const {isSmaller } = useBreakpoints(breakpointsTailwind)
 
 const bodyClass = computed(() => showGallery.value ? 'overflow-hidden' : 'overflow-auto')
 
@@ -98,6 +102,11 @@ const onEnter = (el: any, done: any) => {
 
     gsap.from(el.querySelector('.swiper'), { opacity: 0, duration: 0.4, scale: 0, onComplete: () => { done() } })
 
+}
+
+function getBoxShadow(color: string) {
+    return isSmaller('md')? `0 20px 400px -50px ${color}`:  `0 20px 400px -75px ${color}`
+    
 }
 
 function openGallery() {

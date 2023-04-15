@@ -61,27 +61,27 @@
 
                             <li>
                                 <icon class="text-text mr-2"
-                                    name="fas fa-map-marker"></icon>
+                                    name="fa:map-marker"></icon>
 
                                 <span class="text-gray-700  ">Aleppo
                                     - Syria </span>
                             </li>
                             <li>
                                 <icon class="text-text mr-2"
-                                    name="fas fa-phone" />
+                                    name="fas fa:phone" />
                                 <a href="tel:+963956954441"
                                     class="text-gray-700  ">+963
                                     956 954 441</a>
                             </li>
                             <li class="relative whitespace-nowrap">
                                 <icon class="text-text mr-2"
-                                    name="fas fa-at" />
+                                    name="fa:at" />
                                 <span
                                     class="text-gray-700 ">Mohammad_Khayata@outlook.com</span>
                             </li>
                             <li class="relative whitespace-nowrap">
                                 <icon class="text-text mr-2"
-                                    name="fas fa-at" />
+                                    name="fa:at" />
                                 <a href="mailto:MohammadKhayata.gm@gmail.com"
                                     class="text-gray-700 ">MohammadKhayata.gm@gmail.com</a>
                             </li>

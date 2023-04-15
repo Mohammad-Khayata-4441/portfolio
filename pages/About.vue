@@ -423,7 +423,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/typescript.webp" class="w-16 md:w-28"
-                            alt="technology-typescript">
+                            alt="technology-typescript" title="typescript">
 
 
                     </div>
@@ -433,7 +433,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/javascript.webp" class="w-16 md:w-28 rounded-xl"
-                            javascriptalt="technology-">
+                            alt="technology-javascript" title="javascript">
 
 
                     </div>
@@ -444,7 +444,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/vue.webp" class="w-16 md:w-28"
-                            alt="technology-vue">
+                            alt="technology-vue" title="vue">
 
 
 
@@ -455,7 +455,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/nuxt.svg" class="w-16 md:w-40"
-                            alt="technology-nuxt">
+                            alt="technology-nuxt" title="nuxt">
 
 
                     </div>
@@ -465,7 +465,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/react.webp" class="w-16 md:w-28"
-                            alt="technology-react">
+                            alt="technology-react" title="react">
 
 
                     </div>
@@ -474,7 +474,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/sass.webp" class="w-16 md:w-28"
-                            alt="technology-sass">
+                            alt="technology-sass" title="sass">
 
 
                     </div>
@@ -491,7 +491,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/vite.webp" class="w-16 md:w-28"
-                            alt="technology-vite">
+                            alt="technology-vite" title="vite">
 
 
 
@@ -513,7 +513,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/redux.webp" class="w-16 md:w-28"
-                            alt="technology-redux">
+                            alt="technology-redux" title="redux">
 
 
                     </div>
@@ -523,7 +523,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/tailwind.webp" class="w-16 md:w-28"
-                            alt="technology-tailwind">
+                            alt="technology-tailwind" title="tailwind">
 
 
 
@@ -534,7 +534,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/bootstrap.webp" class="w-16 md:w-28"
-                            alt="technology-bootstrap">
+                            alt="technology-bootstrap" title="bootstrap">
 
 
                     </div>
@@ -544,7 +544,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/gsap.svg" class="w-16 md:w-28"
-                            alt="technology-gsap">
+                            alt="technology-gsap" title="gsap">
 
 
                     </div>
@@ -560,7 +560,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/angular.webp" class="w-16 md:w-40"
-                            alt="technology-angular">
+                            alt="technology-angular" title="angular">
 
 
                     </div>
@@ -570,7 +570,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/nodejs.webp" class="w-16 md:w-28 "
-                            alt="technology-nodejs">
+                            alt="technology-nodejs" title="nodejs">
 
 
                     </div>
@@ -581,7 +581,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/nest.webp" class="w-16 md:w-28"
-                            alt="technology-nest">
+                            alt="technology-nest" title="nest">
 
 
                     </div>
@@ -591,7 +591,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/cpp.webp" class="w-16 md:w-28"
-                            alt="technology-cpp">
+                            alt="technology-cpp" title="cpp">
 
 
 
@@ -602,7 +602,7 @@ definePageMeta({
 
 
                         <img height="100" width="100" src="../assets/icons/cs.webp" class="w-16 md:w-28"
-                            alt="technology-cs">
+                            alt="technology-cs" title="cs">
 
 
                 </div>
@@ -612,7 +612,7 @@ definePageMeta({
 
 
                     <img height="100" width="100" src="../assets/icons/asp.webp" class="w-16 md:w-28"
-                        alt="technology-asp">
+                        alt="technology-asp" title="asp">
 
 
                 </div>

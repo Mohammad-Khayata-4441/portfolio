@@ -9,13 +9,11 @@
           class="py-2 md:py-6 flex space-x-1 items-center select-none "
           active-class="active-nav-link" ta v-for="item in navLinks"
           :to="item.path">
-          <client-only>
-            <icon class="text-3xl md:text-xl select-none"
-              :name="`fas fa-${item.icon}`"></icon>
+            <Icon class="text-4xl md:text-2xl select-none"
+              :name="item.icon"></Icon>
             <span class="text-text text-sm font-semibold hidden md:inline">
               {{ item.title }}
             </span>
-          </client-only>
 
         </nuxt-link>
       </ul>
@@ -25,8 +23,8 @@
 
   <button @click="toggleDark()"
   class="btn btn-square btn-outline hidden md:block absolute right-10 z-10 top-1/2 -translate-y-1/2 rounded-circle ">
-  <icon v-if="isDark" class="text-4xl" name="fas fa-moon"></icon>
-  <icon name="fas fa-sun" v-else class=" text-4xl"></icon>
+  <icon  name="ph:sun-dim-duotone" v-if="isDark" class="text-primary text-4xl"></icon>
+  <icon  name="ion:moon-sharp" v-else class="text-text text-4xl"></icon>
 </button>
 </client-only>
 
@@ -46,25 +44,25 @@ const navLinks = ref([
     title: "Home",
     path: "/",
     disabled: false,
-    icon: 'home'
+    icon: 'ph:house-duotone'
   },
   {
     title: "About",
     path: "/about",
     disabled: false,
-    icon: 'circle-user'
+    icon: 'solar:user-id-bold'
   },
   {
     title: "Portfolio",
     path: "/portfolio",
     disabled: false,
-    icon: 'image'
+    icon: 'bxs:collection'
   },
   {
     title: "Contact",
     path: "/contact",
     disabled: false,
-    icon: 'paper-plane'
+    icon: 'ant-design:message-twotone'
   },
   // {
   //   title: "Blog",
@@ -89,16 +87,16 @@ nav {
     width: 100%;
     position: absolute;
     border-radius: 15px;
-    top: 0;
     background-color: theme("colors.primary");
-    box-shadow: 0 10px 30px 5px theme("colors.primary");
+    box-shadow: 0 25px 50px 10px theme("colors.primary");
+    top: 0;
   }
 
   span {
     color: theme("colors.primary") !important;
   }
 
-  .svg-inline--fa {
+  svg {
     color: theme('colors.primary');
   }
 }

@@ -2,7 +2,7 @@ import { PortfolioItem } from '@/types/PortfolioItem'
 const projects: PortfolioItem[] = [
     {
         "order": 3,
-        "name": "Al Elem Nour",
+        "name": "العلم نور",
         "client": "Al Elem Nour Publishing House",
         "description": "Landing page for publishing house in aleppo syria",
         "techFeatures": [
@@ -28,6 +28,7 @@ const projects: PortfolioItem[] = [
         "workInformation": "I Worked on it as a <a class='dark:text-white text-primary'>Freelancer</a> for publishing house in aleppo syria",
         "technologiesIcons": [
             "vue.webp",
+            "javascript.webp",
             "bootstrap.webp"
         ],
         "year": "2022",
@@ -298,6 +299,7 @@ const projects: PortfolioItem[] = [
         "workInformation": "I Worked on it as Vue Developer at <span class='dark:text-white text-primary font-bold '> Elkood </span> frontend  team ",
         "technologiesIcons": [
             "vue.webp",
+            "javascript.webp",
             "bootstrap.webp"
         ],
         "year": "2022",
@@ -361,6 +363,7 @@ const projects: PortfolioItem[] = [
         "workInformation": "I Worked on it as Vue Developer at <span class='dark:text-white text-primary font-bold '> Elkood </span> frontend  team ",
         "technologiesIcons": [
             "vue.webp",
+            "javascript.webp",
             "bootstrap.webp"
         ],
         "year": "2022",
