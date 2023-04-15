@@ -9,11 +9,15 @@ export default defineNuxtConfig({
   },
 
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image-edge' , 'nuxt-icon'],
-
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image-edge', 'nuxt-icon','nuxt-delay-hydration'],
+  delayHydration: {
+    mode: 'init',
+    debug: process.env.NODE_ENV === 'development',
+  },
   vite: {
     define: {
       'process.env.DEBUG': false,
+      
     },
   },
 })
