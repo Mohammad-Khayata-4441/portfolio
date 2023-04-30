@@ -257,7 +257,7 @@ definePageMeta({
                                         <h4 class="text-sm text-primary  font-bold">
                                             MindTorches <span class="text-gray-500 ml-4">
                                                 Irbid - Jordan </span></h4>
-                                        <p class="my-4  text-gray-300">
+                                        <p class="my-4  dark:text-gray-300">
 
                                             I Worked as Freelancer at
                                             MindTorches Company on JetOrder
@@ -301,7 +301,7 @@ definePageMeta({
                                             ELKOOD <span class="text-gray-500 ml-4">
                                                 Syria - Aleppo </span>
                                         </h4>
-                                        <p class="my-4 max-h-[220px] overflow-auto">
+                                        <p class="my-4 max-h-[220px] dark:text-gray-300 overflow-auto">
 
                                             In Jan - 2022 i started working
                                             in a new position as Frontend
@@ -362,7 +362,7 @@ definePageMeta({
                                             ELKOOD <span class="text-gray-500 ml-4">
                                                 Syria - Aleppo </span>
                                         </h4>
-                                        <p class="my-4  text-gray-300">
+                                        <p class="my-4  dark:text-gray-300">
 
                                             I started in EKOOD as Vue.js
                                             jonior developer , I Worked on
@@ -415,7 +415,7 @@ definePageMeta({
                                             Freelancer <span class="text-gray-500 ml-4">
                                                 online </span>
                                         </h4>
-                                        <p class="my-4  text-gray-300">
+                                        <p class="my-4  dark:text-gray-300">
 
                                             After learning the basics of developing web applications, I created some
                                             training projects for practicing .. in addition to working on some small projects (such as
