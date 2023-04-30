@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   
   googleFonts: {
     families: {
-      Comfortaa:true,
+      Poppins:true,
       Almarai:true,
       Roboto: true,
   
