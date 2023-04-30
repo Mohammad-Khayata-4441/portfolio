@@ -29,7 +29,7 @@ definePageMeta({
         <Title>About Me</Title>
     </Head>
     <div class="page about-page  relative z-0 flex flex-col ">
-        <div class="page-lights absolute top-0 h-full flex-grow-1 overflow-x-hidden">
+        <div class="page-lights hidden dark:block absolute top-0 h-full flex-grow-1 overflow-x-hidden">
 
             <svg width="950" height="696" viewBox="0 0 1020 696" class="blur-[200px]" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -74,8 +74,8 @@ definePageMeta({
         <!-- Personal Info Section  -->
         <section class="container mx-auto">
 
-            <h3 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-text w-max font-bold">
-                PERSONAL INFO</h3>
+            <h3 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-primary dark:border-text w-max font-bold">
+                Personal Info</h3>
 
             <div class="grid info grid-cols-12 py-12 lg:py-24">
 
@@ -162,12 +162,12 @@ definePageMeta({
         <!-- Summary Section -->
         <section>
             <div
-                class="container max-w-7xl mx-auto dark:dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-text rounded-2xl overflow-hidden  shadow-lg">
+                class="container max-w-7xl mx-auto dark:dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-primary dark:border-text rounded-2xl overflow-hidden  shadow-lg">
 
                 <h3 class="text-2xl font-bold bg-primary w-max  p-2 pr-4 rounded-br-3xl text-white ">
                     Summary</h3>
                 <summary
-                    class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4 max-h-[400px] lg:max-h-max overflow-auto ">
+                    class="mx-auto list-none text-gray-700 dark:text-white relative p-4 max-h-[400px] lg:max-h-max overflow-auto ">
                     <p>
 
                         My career in Web Applications Development began
@@ -218,8 +218,8 @@ definePageMeta({
         </section>
         <!-- Work Experince Section -->
         <section class="my-20">
-            <h3 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-text w-max font-bold">
-                WORK EXPERIENCE</h3>
+            <h3 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-primary dark:border-text w-max font-bold">
+                Work Experience</h3>
 
             <div class="flex mt-40">
 
@@ -247,17 +247,17 @@ definePageMeta({
                                 </div>
 
 
-                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
+                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-primary dark:border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
                                   backdrop:blur-xl shadow-lg">
 
                                     <article
-                                        class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
+                                        class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
                                         <h2 class="text-2xl mb-2 font-bold">
                                             Frontend Vue.js Developer</h2>
                                         <h4 class="text-sm text-primary  font-bold">
                                             MindTorches <span class="text-gray-500 ml-4">
                                                 Irbid - Jordan </span></h4>
-                                        <p class="my-4 ">
+                                        <p class="my-4  text-gray-300">
 
                                             I Worked as Freelancer at
                                             MindTorches Company on JetOrder
@@ -290,11 +290,11 @@ definePageMeta({
                                 </div>
 
 
-                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
+                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-primary dark:border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
                                   backdrop:blur-xl shadow-lg">
 
                                     <article
-                                        class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
+                                        class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
                                         <h2 class="text-2xl mb-2 font-bold">
                                             Frontend Team Lead</h2>
                                         <h4 class="text-sm text-primary  font-bold">
@@ -351,18 +351,18 @@ definePageMeta({
                                 </div>
 
 
-                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
+                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-primary dark:border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
                                   backdrop:blur-xl shadow-lg">
 
                                     <article
-                                        class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
+                                        class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
                                         <h2 class="text-2xl mb-2 font-bold">
                                             Frontend Vue.js Developer</h2>
                                         <h4 class="text-sm text-primary  font-bold">
                                             ELKOOD <span class="text-gray-500 ml-4">
                                                 Syria - Aleppo </span>
                                         </h4>
-                                        <p class="my-4 ">
+                                        <p class="my-4  text-gray-300">
 
                                             I started in EKOOD as Vue.js
                                             jonior developer , I Worked on
@@ -404,18 +404,18 @@ definePageMeta({
                                 </div>
 
 
-                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
+                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-primary dark:border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
                                   backdrop:blur-xl shadow-lg">
 
                                     <article
-                                        class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
+                                        class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
                                         <h2 class="text-2xl mb-2 font-bold">
                                             Frontend Vue.js Developer</h2>
                                         <h4 class="text-sm text-primary  font-bold">
                                             Freelancer <span class="text-gray-500 ml-4">
                                                 online </span>
                                         </h4>
-                                        <p class="my-4 ">
+                                        <p class="my-4  text-gray-300">
 
                                             After learning the basics of developing web applications, I created some
                                             training projects for practicing .. in addition to working on some small projects (such as
@@ -447,8 +447,8 @@ definePageMeta({
         <section class="overflow-y-hidden">
             <div class="container max-w-7xl mx-auto">
 
-                <h3 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-text w-max font-bold">
-                    MY SKILLS</h3>
+                <h3 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-primary dark:border-text w-max font-bold">
+                    My Skills</h3>
 
                 <p class="text-center my-10  dark:text-gray-200"> <span class="text-primary font-bold mx-1"> Proficient
                     </span> with languages and framewoks</p>
