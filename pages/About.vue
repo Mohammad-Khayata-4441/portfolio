@@ -417,8 +417,8 @@ definePageMeta({
                                         </h4>
                                         <p class="my-4 ">
 
-                                            After learning the basics of developing web applications, I implemented some
-                                            training projects in addition to implementing some small projects (such as
+                                            After learning the basics of developing web applications, I created some
+                                            training projects for practicing .. in addition to working on some small projects (such as
                                             landing pages) for some clients in the region.
 
                                         </p>
