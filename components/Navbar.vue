@@ -2,7 +2,7 @@
   <header
     class="flex fixed bottom-0 md:top-0 md:bottom-auto w-screen items-center justify-center p-5 z-10">
     <nav
-      class="rounded-2xl bg-white px-8 py-2 md:py-0 md:px-28 shadow-md dark:bg-dark-surface bg-opacity-50 dark:bg-opacity-75 backdrop:blur">
+      class="rounded-2xl bg-white px-8 py-2 md:py-0 md:px-28 shadow-md dark:bg-dark-surface/80 dark:bg-opacity-75 backdrop-blur-md">
       <ul
         class="flex items-center justify-center list-none space-x-12 md:space-x-16">
         <nuxt-link
@@ -74,9 +74,6 @@ const navLinks = ref([
 </script>
 
 <style lang="scss">
-nav {
-  backdrop-filter: blur(20px);
-}
 
 .active-nav-link {
   position: relative;

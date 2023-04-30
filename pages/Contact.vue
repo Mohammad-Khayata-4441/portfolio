@@ -17,15 +17,15 @@
         <div class="page-overlay "></div>
 
         <div class="container mx-auto">
-            <section class="min-h-[80vh]   lg:flex">
-                <div class="flex flex-col justify-center w-full p-8   lg:px-12 xl:px-32 lg:w-1/2">
+            <section class="min-h-[80vh] lg:flex">
+                <div class="flex flex-col justify-center w-full p-8 lg:px-12 xl:px-32 lg:w-1/2">
                     <h1 class="text-3xl font-semibold text-gray-800 capitalize dark:text-white lg:text-4xl">
-                        Contact With Me </h1>
+                        Contact Me</h1>
 
                     <p class="mt-4 text-gray-500 dark:text-gray-300">
-                        If you want to work togeather with me or ask me for
-                        somting .. send a message or use social media links
-                        bellow
+                        If you want to work together, or ask for
+                        something ... send a message or use social media links
+                        below
 
                     </p>
 
@@ -37,10 +37,11 @@
 
                         <ul>
                             <li class="my-4">
-                                <span class="text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
+                                <span
+                                    class="text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:phone"></icon>
                                     <a href="tel:+963956954441">
-963 956 954 441
+                                        +963 956 954 441
                                     </a>
                                 </span>
 
@@ -92,25 +93,25 @@
                             <a class="mx-1.5 dark:hover:text-primary text-gray-300 transition-colors duration-300 transform hover:primary"
                                 href="https://twitter.com/Mohammad_Kh4441">
                                 <icon class="text-2xl mt-1" name="mdi:twitter" />
-                                
+
                             </a>
-                            
-                            
+
+
                             <a class="mx-1.5 dark:hover:text-primary text-gray-300 transition-colors duration-300 transform hover:primary"
-                            href="https://www.linkedin.com/in/mohammad-khayata-9169801a9">
-                            <icon class="text-2xl mt-1" name="ri:linkedin-fill" />
-                            
-                        </a>
-                        
-                        <a class="mx-1.5 dark:hover:text-primary text-gray-300 transition-colors duration-300 transform hover:primary"
-                        href="https://www.facebook.com/mohammed.kh.165033/">
-                        <icon class="text-2xl mt-1" name="fa-brands:facebook-f" />
-                        
-                    </a>
-                    
-                    <a class="mx-1.5 dark:hover:text-primary text-gray-300 transition-colors duration-300 transform hover:primary"
-                    href="https://www.instagram.com/mohammad_khayat4441/">
-                    <icon class="text-2xl mt-1" name="mdi:instagram" />
+                                href="https://www.linkedin.com/in/mohammad-khayata-9169801a9">
+                                <icon class="text-2xl mt-1" name="ri:linkedin-fill" />
+
+                            </a>
+
+                            <a class="mx-1.5 dark:hover:text-primary text-gray-300 transition-colors duration-300 transform hover:primary"
+                                href="https://www.facebook.com/mohammed.kh.165033/">
+                                <icon class="text-2xl mt-1" name="fa-brands:facebook-f" />
+
+                            </a>
+
+                            <a class="mx-1.5 dark:hover:text-primary text-gray-300 transition-colors duration-300 transform hover:primary"
+                                href="https://www.instagram.com/mohammad_khayat4441/">
+                                <icon class="text-2xl mt-1" name="mdi:instagram" />
 
                             </a>
 
@@ -128,14 +129,14 @@
                                 <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full
                                     Name</label>
                                 <input type="text" placeholder="John Doe"
-                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-surface dark:bg-opacity-60 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                             </div>
 
                             <div class="flex-1 px-2 mt-4 md:mt-0">
                                 <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email
                                     address</label>
                                 <input type="email" placeholder="johndoe@example.com"
-                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-surface dark:bg-opacity-60 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                             </div>
 
                         </div>
@@ -143,13 +144,14 @@
                         <div class="w-full mt-4">
                             <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
                             <textarea
-                                class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-dark-surface dark:bg-opacity-60 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                 placeholder="Message"></textarea>
                         </div>
 
                         <button
-                            class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-primary rounded-lg hover:bg-primary  focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 ">
+                            class="w-full text-[1rem] px-4 py-2 mt-4 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-primary rounded-lg focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 ">
                             get in touch
+                            <Icon name="tabler:send" size="1.5rem"></Icon>
                         </button>
                     </form>
                 </div>
