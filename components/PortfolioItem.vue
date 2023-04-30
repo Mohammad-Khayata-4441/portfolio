@@ -23,8 +23,8 @@
             <div class="tecnologies flex items-center my-6">
                 <span class="dark:text-gray-300  hidden lg:block">Built With</span>
                 <div class="flex mx-auto lg:mx-12 gap-12 items-center  ">
-                    <img class="max-w-[65px] md:max-w-[100px] rounded" v-for="img in item?.technologiesIcons" :src="iconUrl(img)"
-                        alt="">
+                    <img class="max-w-[65px] md:max-w-[100px] rounded" v-for="img in item?.technologiesIcons"
+                        :src="iconUrl(img)" alt="">
                 </div>
 
             </div>
@@ -46,11 +46,12 @@
         </div>
 
         <div class="image col-span-12 lg:col-span-6 order-1 lg:order-2 cursor-pointer" @click="openGallery">
-            <img :style="{ boxShadow: getBoxShadow(item.primaryColor) }" v-if="item?.screenShots[0]"
+            <NuxtImg preload  placeholder="https://placehold.co/600x400.png" :style="{ boxShadow: getBoxShadow(item.primaryColor) }" v-if="item?.screenShots[0]"
                 :src="url(item?.screenShots[0])"
-                :class="`rounded-3xl border-4 border-seconadry dark:border-text shadow-lg `">
-            <span class="bg-primary text-white p-2 rounded-xl relative left-4 bottom-12">{{ item?.screenShots.length }}
-                <icon name="clarity:image-gallery-solid" /></span>
+                :class="`rounded-3xl border-4 border-seconadry dark:border-text shadow-lg `" />
+                <span class="bg-primary text-white p-2 rounded-xl relative left-4 bottom-12">{{ item?.screenShots.length }}
+                    <icon name="clarity:image-gallery-solid" />
+                </span>
         </div>
 
 
@@ -60,17 +61,18 @@
             <div v-if="showGallery" :class="{ 'bg-black bg-opacity-80': showGallery }"
                 class="gallery  flex items-center justify-center h-screen w-screen z-20 transition fixed top-0 left-0  ">
 
-                <button class="absolute right-10 top-10 z-40 " @click="closeGallery"><icon class="text-5xl text-white"
-                        name="solar:close-circle-linear" /></button>
+                <button class="absolute right-10 top-10 z-40 " @click="closeGallery">
+                    <icon class="text-5xl text-white" name="solar:close-circle-linear" />
+                </button>
                 <Swiper ref="swiper" wrapper-class="items-center">
                     <SwiperSlide v-for="screen in item?.screenShots" :key="screen" class="">
-                        <img :src="url(screen)" class="w-[90vw] max-h-[90vh] mx-auto object-contain" alt="">
+                        <NuxtImg  :src="url(screen)" class="w-[90vw] max-h-[90vh] mx-auto object-contain" alt="" />
                     </SwiperSlide>
                 </Swiper>
             </div>
         </Transition>
 
-    
+
     </div>
 </template>
 
@@ -86,7 +88,7 @@ const swiper = ref(null)
 
 const url = (imageName: string) => new URL(`../assets/projects/${imageName}`, import.meta.url).href
 const iconUrl = (icon: string) => new URL(`../assets/icons/${icon}`, import.meta.url).href
-const {isSmaller } = useBreakpoints(breakpointsTailwind)
+const { isSmaller } = useBreakpoints(breakpointsTailwind)
 
 const bodyClass = computed(() => showGallery.value ? 'overflow-hidden' : 'overflow-auto')
 
@@ -105,8 +107,8 @@ const onEnter = (el: any, done: any) => {
 }
 
 function getBoxShadow(color: string) {
-    return isSmaller('md')? `0 20px 400px -50px ${color}`:  `0 20px 400px -75px ${color}`
-    
+    return isSmaller('md') ? `0 20px 400px -50px ${color}` : `0 20px 400px -75px ${color}`
+
 }
 
 function openGallery() {

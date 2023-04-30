@@ -152,7 +152,7 @@ const projects: PortfolioItem[] = [
         "order": 2,
         "name": "Broker Management",
         "client": "ELKOOD Company",
-        "description": "A data and document management system for Broker, a specialized contracting company",
+        "description": "Hr , Files and Documents Management system for Broker, a specialized contracting company ",
         "id": "5",
         "screenShots": [
             "broker/cover.png"
@@ -181,7 +181,7 @@ const projects: PortfolioItem[] = [
             "eCommerce",
             "Dashboard"
         ],
-        "workInformation": "I Worked on it as Vue Developer at <span class='dark:text-white text-primary font-bold '> Elkood </span> frontend  team ",
+        "workInformation": "I Worked on it as Vue Team Leader at <span class='dark:text-white text-primary font-bold '> Elkood </span> frontend  team ",
         "technologiesIcons": [
             "vue.webp",
             "typescript.webp",

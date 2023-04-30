@@ -3,6 +3,7 @@
   "compilerOptions": {
     "types": [
       "@nuxt/types",
+      "@nuxt/image"
     ]
   }
 }

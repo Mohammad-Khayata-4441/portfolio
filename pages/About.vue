@@ -25,6 +25,9 @@ definePageMeta({
 })
 </script>
 <template>
+    <Head>
+        <Title>About Me</Title>
+    </Head>
     <div class="page about-page  relative z-0 flex flex-col ">
         <div class="page-lights absolute top-0 h-full flex-grow-1 overflow-x-hidden">
 
