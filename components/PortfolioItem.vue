@@ -46,7 +46,7 @@
         </div>
 
         <div class="image col-span-12 lg:col-span-6 order-1 lg:order-2 cursor-pointer" @click="openGallery">
-            <NuxtImg height="400" width="700" class="h-[400px] w-full" preload  placeholder="https://placehold.co/700x400.png" :style="{ boxShadow: getBoxShadow(item.primaryColor) }" v-if="item?.screenShots[0]"
+            <NuxtImg height="400" width="700" class="h-[400px] w-full" preload  placeholder="https://placehold.co/700x400/161A29BF/FFF" :style="{ boxShadow: getBoxShadow(item.primaryColor) }" v-if="item?.screenShots[0]"
                 :src="url(item?.screenShots[0])"
                 :class="`rounded-3xl border-4 border-seconadry dark:border-text shadow-lg `" />
                 <span class="bg-primary text-white p-2 rounded-xl relative left-4 bottom-12">{{ item?.screenShots.length }}
