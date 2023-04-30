@@ -237,7 +237,6 @@ definePageMeta({
 
                         <div class="w-full space-y-8 flex flex-col items-center lg:items-stretch ">
                             <!-- EXP1 -->
-
                             <div class="flex items-center  ">
                                 <div
                                     class=" hidden lg:block h-px bg-transparent border border-dashed border-primary flex-grow relative">
@@ -394,6 +393,40 @@ definePageMeta({
 
 
                             </div>
+                            <!-- EXP4 -->
+                            <div class="flex items-center  ">
+                                <div
+                                        class=" hidden lg:block h-px bg-transparent border border-dashed max-w-[400px]  border-primary flex-grow relative">
+                                        <div
+                                        class="h-[30px]  w-[30px] top-0 left-0 -translate-x-1/2 -translate-y-1/2  rounded-full bg-primary absolute">
+                                    </div>
+
+                                </div>
+
+
+                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
+                                  backdrop:blur-xl shadow-lg">
+
+                                    <article
+                                        class="mx-auto list-none text-gray-700 dark:text-stone-300 relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
+                                        <h2 class="text-2xl mb-2 font-bold">
+                                            Frontend Vue.js Developer</h2>
+                                        <h4 class="text-sm text-primary  font-bold">
+                                            Freelancer <span class="text-gray-500 ml-4">
+                                                online </span>
+                                        </h4>
+                                        <p class="my-4 ">
+
+                                            After learning the basics of developing web applications, I implemented some
+                                            training projects in addition to implementing some small projects (such as
+                                            landing pages) for some clients in the region.
+
+                                        </p>
+                                    </article>
+                                </div>
+
+
+                            </div>
 
 
                         </div>
@@ -457,7 +490,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/nuxt.svg" class="w-16 md:w-40"
+                        <img height="150" width="100" src="../assets/icons/nuxt.svg" class="h-32 md:w-40"
                             alt="technology-nuxt" title="nuxt">
 
 
@@ -604,35 +637,37 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/cs.webp" class="w-16 md:w-28"
-                            alt="technology-cs" title="cs">
+                        <img height="100" width="100" src="../assets/icons/cs.webp" class="w-16 md:w-28" alt="technology-cs"
+                            title="cs">
 
 
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
+                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+
+
+
+                        <img height="100" width="100" src="../assets/icons/asp.webp" class="w-16 md:w-28"
+                            alt="technology-asp" title="asp">
+
+
+                    </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
-                    class="col-span-4 md:col-span-2 flex justify-center items-center">
 
-
-
-                    <img height="100" width="100" src="../assets/icons/asp.webp" class="w-16 md:w-28"
-                        alt="technology-asp" title="asp">
-
-
-                </div>
             </div>
 
-        </div>
 
-
-    </section>
+        </section>
 
 
 
 
-</div></template>
+    </div>
+</template>
  
 
-<style lang="scss">.page.about-page {
+<style lang="scss">
+.page.about-page {
     height: auto !important;
     min-height: 100vh;
 

@@ -38,9 +38,10 @@
                     </button>
                 </a>
                 <a :href="item?.url" v-if="item?.url"
-                    class="w-full text-center  border px-4 hover:bg-primary hover:bg-opacity-20 text-primary border-primary rounded-2xl  lg:w-48 py-4 my-4 transition-all">
+                    class="w-full text-center  border px-4 hover:bg-primary hover:bg-opacity-20 text-primary border-primary rounded-lg  lg:w-48 py-4 my-4 transition-all">
                     Live Preview <icon class="text-2xl" name="tabler:external-link"></icon>
                 </a>
+                <span v-else class="text-gray-400 text-sm">This Project is a Private Dashboard 😅</span>
             </div>
 
         </div>

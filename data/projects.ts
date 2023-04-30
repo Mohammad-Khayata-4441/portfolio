@@ -2,7 +2,7 @@ import { PortfolioItem } from '@/types/PortfolioItem'
 const projects: PortfolioItem[] = [
     {
         "order": 3,
-        "name": "العلم نور",
+        "name": "Al E'lm Nour",
         "client": "Al Elem Nour Publishing House",
         "description": "Landing page for publishing house in aleppo syria",
         "techFeatures": [
