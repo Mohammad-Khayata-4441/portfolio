@@ -39,25 +39,29 @@
               And Software Engineering Student
             </p>
             <div ref="group" class="btn-group flex space-x-4 m-auto lg:m-0">
-              <NuxtLink to="/cv">
+
+              <a target="_blank" href=" https://docs.google.com/document/d/1sYRpK8tcoPdnADpcVO6mrJc3Gz3W6WGmkhvZEGo05vI/edit?usp=sharing">
+
                 <button class="bg-primary space-x-4 p-3 btn text-white rounded-lg px-6">
                   Resume
                   <Icon size="1.6rem" name="material-symbols:switch-account"></Icon>
                 </button>
-              </NuxtLink>
-              <NuxtLink to="/portfolio"  class=" p-3 px-6 text-seconadry transition hover:bg-seconadry/5 rounded-lg btn flex items-center space-x-4 ">
+              </a>
+
+
+              <NuxtLink to="/portfolio"
+                class=" p-3 px-6 text-seconadry transition hover:bg-seconadry/5 rounded-lg btn flex items-center space-x-4 ">
                 <span>
 
                   Portfolio
                 </span>
-             
+
                 <icon size="1.6rem" name="bxs:collection" />
 
               </NuxtLink>
             </div>
           </article>
           <div class="col-span-12 lg:col-span-5 order-1 lg:order-2">
-
 
             <ClientOnly>
 
@@ -114,6 +118,12 @@ onMounted(() => {
     .from(group.value, { y: -50, duration: 0.7, opacity: 0 })
 })
 
+
+const downloadResume = () => {
+  fetch('/public/Cv.txt').then(res => {
+    res.blob()
+  }).then(data => console.log(data))
+}
 
 </script>
 
