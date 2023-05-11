@@ -152,7 +152,7 @@ const projects: PortfolioItem[] = [
         "order": 2,
         "name": "Broker Management",
         "client": "ELKOOD Company",
-        "description": "Hr , Files and Documents Management system for Broker, a specialized contracting company ",
+        description:"Broker Management is an application for automating the operations of a brokerage company electronically through various services, including human resource management, project and department management, document and correspondence management, and a file management system for storing files in the cloud via AWS. It also supports authentication for employees with different permissions.",
         "id": "5",
         "screenShots": [
             "broker/cover.png",
