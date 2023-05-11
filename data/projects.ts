@@ -367,7 +367,7 @@ const projects: PortfolioItem[] = [
         ],
         "workInformation": "I Worked on it as Vue Developer at <span class='dark:text-white text-primary font-bold '> Elkood </span> frontend  team ",
         "technologiesIcons": [
-            "vue.webp",..
+            "vue.webp",
             "javascript.webp",
             "bootstrap.webp"
         ],
