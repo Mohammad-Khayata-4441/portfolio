@@ -367,7 +367,7 @@ const projects: PortfolioItem[] = [
         ],
         "workInformation": "I Worked on it as Vue Developer at <span class='dark:text-white text-primary font-bold '> Elkood </span> frontend  team ",
         "technologiesIcons": [
-            "vue.webp",
+            "vue.webp",..
             "javascript.webp",
             "bootstrap.webp"
         ],
@@ -384,7 +384,7 @@ const projects: PortfolioItem[] = [
         "order": 1,
         "name": "Fly Order",
         "client": "ELKOOD Company",
-        "description": "Dashboard For CRM Mobile Application Content Managment",
+        "description": "flyOrder is an application for managing food delivery orders within the Damascus governorate. It is a Dashboard that includes many features, including management of areas and cities, management of stores and branches, management of products, processing orders created from the mobile application, processing invoices and sales and profit percentages for the stores and application management, management of notifications via WebSocket and Signal-R, and many other features.",
         "techFeatures": [
             "Single Page Application",
             "Responsive Design",
