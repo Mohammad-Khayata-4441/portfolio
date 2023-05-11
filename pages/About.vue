@@ -169,44 +169,22 @@ definePageMeta({
                     class="mx-auto list-none text-gray-700 dark:text-white relative p-4 max-h-[400px] lg:max-h-max overflow-auto ">
                     <p>
 
-                        My career in Web Applications Development began
-                        after entering the Faculty of Informatics
-                        Engineering,
-                        where I began to learn the basics of programming,
-                        OOP, algorithms and data structures in C++ and
-                        Java
-                        languages. <br>
-                        I decided to use what I learned to develop web
-                        applications, because I saw that the world tends
-                        towards
-                        web applications broadly,<br>
-                        so, I started learning HTML, CSS and JavaScript, in
-                        2019 .
-                        I benefited from the quarantine period in 2020 as I
-                        learned a lot about Vue.js, React, Nuxt.js
-                        and Next
-                        Frameworks.
-                        <br>
-                        I always like to search for and learn new and
-                        popular technologies, and I try to find the best
-                        practices, and this has earned me the experience of
-                        searching the Internet and reaching the best
-                        solutions . <br>
-                        I worked in my career as a trainer, and after a
-                        long period of training and work, I worked as a
-                        mentor,
-                        and this gave me experience in dealing with new
-                        employees and trainees and knowing the way most
-                        beginners think and help them . <br>
-                        I aim to learn everything related to web
-                        application development, and I seek to have a role
-                        in
-                        developing new technologies or improving existing
-                        ones. <br>
-                        I tend to be more interested in issues of logic and
-                        programming than those of graphics and
-                        design.
-
+                        My career in Web Applications Development began after entering the Faculty of Informatics
+                        Engineering, where I began to learn the basics of programming, OOP, algorithms, and data structures
+                        in C++ and Java languages. <br>
+                        I decided to use what I learned to develop web applications because I saw that the world tends
+                        towards web applications broadly. In 2019, I started learning HTML, CSS, and JavaScript. During the
+                        quarantine period in 2020, I benefited from learning a lot about Vue.js, React, Nuxt.js, and Next
+                        Frameworks. <br>
+                        I always like to search for and learn new and popular technologies, and I try to find the best
+                        practices. This has earned me the experience of searching the Internet and reaching the best
+                        solutions. <br>
+                        I worked in my career as a trainer, and after a long period of training and work, I worked as a
+                        mentor. This gave me experience in dealing with new employees and trainees and knowing the way most
+                        beginners think and how to help them. <br>
+                        I aim to learn everything related to web application development, and I seek to have a role in
+                        developing new technologies or improving existing ones. <br>
+                        I tend to be more interested in issues of logic and programming than those of graphics and design.
 
                     </p>
 
@@ -395,8 +373,8 @@ definePageMeta({
                             <!-- EXP4 -->
                             <div class="flex items-center  ">
                                 <div
-                                        class=" hidden lg:block h-px bg-transparent border border-dashed max-w-[400px]  border-primary flex-grow relative">
-                                        <div
+                                    class=" hidden lg:block h-px bg-transparent border border-dashed max-w-[400px]  border-primary flex-grow relative">
+                                    <div
                                         class="h-[30px]  w-[30px] top-0 left-0 -translate-x-1/2 -translate-y-1/2  rounded-full bg-primary absolute">
                                     </div>
 
@@ -417,7 +395,8 @@ definePageMeta({
                                         <p class="my-4  dark:text-gray-300">
 
                                             After learning the basics of developing web applications, I created some
-                                            training projects for practicing .. in addition to working on some small projects (such as
+                                            training projects for practicing .. in addition to working on some small
+                                            projects (such as
                                             landing pages) for some clients in the region.
 
                                         </p>
@@ -446,7 +425,8 @@ definePageMeta({
         <section class="overflow-y-hidden">
             <div class="container max-w-7xl mx-auto">
 
-                <h3 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-primary dark:border-text w-max font-bold">
+                <h3
+                    class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-primary dark:border-text w-max font-bold">
                     My Skills</h3>
 
                 <p class="text-center my-10  dark:text-gray-200"> <span class="text-primary font-bold mx-1"> Proficient
@@ -665,8 +645,7 @@ definePageMeta({
 </template>
  
 
-<style lang="scss">
-.page.about-page {
+<style lang="scss">.page.about-page {
     height: auto !important;
     min-height: 100vh;
 

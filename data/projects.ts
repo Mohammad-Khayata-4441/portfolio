@@ -155,7 +155,12 @@ const projects: PortfolioItem[] = [
         "description": "Hr , Files and Documents Management system for Broker, a specialized contracting company ",
         "id": "5",
         "screenShots": [
-            "broker/cover.png"
+            "broker/cover.png",
+            "broker/broker_employee_details.png",
+            "broker/broker_section.png",
+            "broker/employees.png",
+            "broker/fileManagement.png",
+            "broker/broker_file_management.pdf.png",
         ],
         "teamMates": [
             {
@@ -376,7 +381,7 @@ const projects: PortfolioItem[] = [
         ]
     },
     {
-        "order":1,
+        "order": 1,
         "name": "Fly Order",
         "client": "ELKOOD Company",
         "description": "Dashboard For CRM Mobile Application Content Managment",
@@ -416,8 +421,8 @@ const projects: PortfolioItem[] = [
             "View financial statistics and bills ",
             "Controlling profits from stores and delivery"
         ],
-        
-        
+
+
 
     }
 ];

@@ -97,6 +97,8 @@
           >
             <NuxtImg
               :src="url(screen)"
+              height="1080"
+              width="1920"
               class="w-[90vw] max-h-[90vh] mx-auto object-contain"
               alt=""
             />
