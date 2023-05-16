@@ -52,7 +52,7 @@
           Live Preview
           <icon class="text-2xl" name="tabler:external-link"></icon>
         </a>
-        <span v-else class="text-gray-400 text-sm"
+        <span v-else-if="!item?.gitRepo" class="text-gray-400 text-sm"
           >This Project is a Private Dashboard 😅</span
         >
       </div>
