@@ -1,6 +1,35 @@
 import { PortfolioItem } from '@/types/PortfolioItem'
 const projects: PortfolioItem[] = [
     {
+        description: `A web application for managing data and sales for an auto parts trading company. It includes management of inventory, products, invoice generation, account reconciliation, as well as profit and debt management and customer information. Built using React and Mui 5, in addition to Tailwind CSS.`,
+        client: "Freelance",
+        id: '52',
+        name: "Auto Parts Manager",
+        order: 1,
+        primaryColor: "#3761E9",
+        screenShots: [
+            "carManagement/cars.png",
+            "carManagement/car-management-add-car.png",
+            "carManagement/car-management-add-part.png",
+            "carManagement/car-parts-brands.png",
+            "carManagement/car-parts.png",
+            "carManagement/create-invoice.png",
+        ],
+        status: 'in Progress',
+        technologiesIcons: ['react.webp' , 'typescript.webp','tailwind.webp'],
+        type: ['Dashboard'],
+        workInformation: "I worked on this project as a freelancer for a close client in the city of Aleppo.",
+        year: '2022',
+        businessFeatures: [],
+        gitRepo: "",
+        promoVideo: "",
+        teamMates: [],
+        techFeatures: [],
+        url: ""
+
+
+    },
+    {
         "order": 3,
         "name": "Al E'lm Nour",
         "client": "Al Elem Nour Publishing House",
@@ -152,7 +181,7 @@ const projects: PortfolioItem[] = [
         "order": 2,
         "name": "Broker Management",
         "client": "ELKOOD Company",
-        description:"Broker Management is an application for automating the operations of a brokerage company electronically through various services, including human resource management, project and department management, document and correspondence management, and a file management system for storing files in the cloud via AWS. It also supports authentication for employees with different permissions.",
+        description: "Broker Management is an application for automating the operations of a brokerage company electronically through various services, including human resource management, project and department management, document and correspondence management, and a file management system for storing files in the cloud via AWS. It also supports authentication for employees with different permissions.",
         "id": "5",
         "screenShots": [
             "broker/cover.png",
