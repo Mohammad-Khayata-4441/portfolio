@@ -21,13 +21,11 @@ const projects: PortfolioItem[] = [
         workInformation: "I worked on this project as a freelancer for a close client in the city of Aleppo.",
         year: '2022',
         businessFeatures: [],
-        gitRepo: "",
+        gitRepo: "https://github.com/Mohammad-Khayata-4441/portfolio",
         promoVideo: "",
         teamMates: [],
         techFeatures: [],
         url: ""
-
-
     },
     {
         "order": 3,
