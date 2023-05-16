@@ -21,7 +21,7 @@ const projects: PortfolioItem[] = [
         workInformation: "I worked on this project as a freelancer for a close client in the city of Aleppo.",
         year: '2022',
         businessFeatures: [],
-        gitRepo: "https://github.com/Mohammad-Khayata-4441/portfolio",
+        gitRepo: "https://github.com/Mohammad-Khayata-4441/CarParts_Client.git",
         promoVideo: "",
         teamMates: [],
         techFeatures: [],
