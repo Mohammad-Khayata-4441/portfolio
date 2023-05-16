@@ -1,5 +1,5 @@
 <template>
-  <!-- <div v-if="!isMounted"
+  <div v-if="!isMounted"
     class="loading -z-10 bg-dark fixed top-0 left-0 h-screen w-screen flex items-center justify-center flex-col">
     <svg class="light blur-[200px] absolute left-0 top-0" width="520" height="396" viewBox="0 0 1020 696" fill="none"
       xmlns="http://www.w3.org/2000/svg">
@@ -15,8 +15,8 @@
 
     <h1 class="text-3xl text-center text-white">Welcome To Mohammad Khayata Portfolio <span class="text-primary text-4xl"> :) </span> </h1>
     <h4 class="my-2 text-lg">Loading ... </h4>
-  </div> -->
-  <template>
+  </div>
+  <template v-else>
     <div class="relative">
       <Navbar></Navbar>
       <NuxtPage></NuxtPage>
