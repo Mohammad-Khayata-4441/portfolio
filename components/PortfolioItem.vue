@@ -27,7 +27,7 @@
         <span class="dark:text-gray-300 hidden lg:block">Built With</span>
         <div class="flex mx-auto lg:mx-12 gap-12 items-center">
           <img
-            class="max-w-[65px] md:max-w-[100px] rounded"
+            class="max-w-[65px] md:max-w-[100px]"
             v-for="img in item?.technologiesIcons"
             :src="iconUrl(img)"
             alt=""

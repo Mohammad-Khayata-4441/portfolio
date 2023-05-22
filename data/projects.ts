@@ -1,6 +1,28 @@
 import { PortfolioItem } from '@/types/PortfolioItem'
 const projects: PortfolioItem[] = [
     {
+        description: `Real Estate Landing Page Template Made with Next.js 13 and Tailwind`,
+        client: "Freelance",
+        id: '55',
+        name: "JDM Contracts",
+        order: 1,
+        primaryColor: "#EA5400",
+        screenShots: [
+            "jdm/cover.png",
+        ],
+        status: 'in Progress',
+        technologiesIcons: ['next.png','typescript.webp',  'tailwind.webp'],
+        type: ['Dashboard'],
+        workInformation: "I worked on this project as a freelancer for a close client in the city of Aleppo.",
+        year: '2022',
+        businessFeatures: [],
+        gitRepo: "https://github.com/Mohammad-Khayata-4441/construction-templaet.git",
+        promoVideo: "",
+        teamMates: [],
+        techFeatures: [],
+        url: ""
+    },
+    {
         description: `A web application for managing data and sales for an auto parts trading company. It includes management of inventory, products, invoice generation, account reconciliation, as well as profit and debt management and customer information. Built using React and Mui 5, in addition to Tailwind CSS.`,
         client: "Freelance",
         id: '52',
@@ -16,7 +38,7 @@ const projects: PortfolioItem[] = [
             "carManagement/create-invoice.png",
         ],
         status: 'in Progress',
-        technologiesIcons: ['react.webp' , 'typescript.webp','tailwind.webp'],
+        technologiesIcons: ['react.webp', 'typescript.webp', 'tailwind.webp'],
         type: ['Dashboard'],
         workInformation: "I worked on this project as a freelancer for a close client in the city of Aleppo.",
         year: '2022',
