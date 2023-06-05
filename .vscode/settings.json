@@ -7,7 +7,7 @@
         "editor.defaultFormatter": "Vue.volar"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "Vue.volar"
     },
     "editor.tabCompletion": "on",
     "diffEditor.codeLens": true,

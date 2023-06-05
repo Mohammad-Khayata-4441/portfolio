@@ -1,5 +1,6 @@
 import { PortfolioItem } from '@/types/PortfolioItem'
 const projects: PortfolioItem[] = [
+
     {
         description: `Real Estate Landing Page Template Made with Next.js 13 and Tailwind`,
         client: "Freelance",
@@ -27,7 +28,7 @@ const projects: PortfolioItem[] = [
         client: "Freelance",
         id: '52',
         name: "Auto Parts Manager",
-        order: 1,
+        order: 2,
         primaryColor: "#3761E9",
         screenShots: [
             "carManagement/cars.png",
@@ -430,7 +431,7 @@ const projects: PortfolioItem[] = [
         ]
     },
     {
-        "order": 1,
+        "order": 3,
         "name": "Fly Order",
         "client": "ELKOOD Company",
         "description": "FlyOrder is an application for managing food delivery orders within the Damascus governorate. It is a Dashboard that includes many features, including management of areas and cities, management of stores and branches, management of products, processing orders created from the mobile application, processing invoices and sales and profit percentages for the stores and application management, management of notifications via WebSocket and Signal-R, and many other features.",

@@ -1,5 +1,5 @@
 <template>
-    <div class="page">
+    <div class="page ">
         <div class="page-lights absolute top-0 h-full flex-grow-1 overflow-hidden">
             <svg class="absolute blur-[200px] top-0 left-0" width="494" height="494" viewBox="0 0 494 494" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -14,10 +14,10 @@
 
 
         </div>
-        <div class="page-overlay "></div>
+        <div class="page-overlay"></div>
 
-        <div class="container mx-auto">
-            <section class="min-h-[80vh] lg:flex">
+        <div class="container mx-auto ">
+            <section class="lg:flex">
                 <div class="flex flex-col justify-center w-full p-8 lg:px-12 xl:px-32 lg:w-1/2">
                     <h1 class="text-3xl font-semibold text-gray-800 capitalize dark:text-white lg:text-4xl">
                         Contact Me</h1>

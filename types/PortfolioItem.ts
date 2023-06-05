@@ -12,9 +12,10 @@ export type PortfolioItem = {
     technologiesIcons: string[];
     description: string;
     workInformation: string;
-    client: string;
+    client?: string;
     gitRepo?: string,
+    npmPackage?:string
     primaryColor: string,
-    type: ("Landing Page" | "Website" | "eCommerce" | "Dashboard" | "Web Application")[];
+    type: ("Landing Page" | "Website" | "eCommerce" | "Dashboard" | "Web Application" | "Package")[];
     status: "Pending" | "in Progress" | "Finished" | "Deprated";
 }
