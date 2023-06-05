@@ -22,7 +22,7 @@
                     <h1 class="text-3xl font-semibold text-gray-800 capitalize dark:text-white lg:text-4xl">
                         Contact Me</h1>
 
-                    <p class="mt-4 text-gray-500 dark:text-gray-300">
+                    <p class="mt-4 text-gray-500 dark:dark:text-gray-300">
                         If you want to work together, or ask for
                         something ... send a message or use social media links
                         below
@@ -38,7 +38,7 @@
                         <ul>
                             <li class="my-4">
                                 <span
-                                    class="text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
+                                    class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:phone"></icon>
                                     <a href="tel:+963956954441">
                                         +963 956 954 441
@@ -48,7 +48,7 @@
                             </li>
                             <li class="my-4">
                                 <a href="tel:+963980379067"
-                                    class="text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
+                                    class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:phone"></icon>
                                     <span>
                                         +963 980 379 067
@@ -57,7 +57,7 @@
                             </li>
                             <li class="my-4">
                                 <a href="mailto:Mohammad_Khayata@outlook.com"
-                                    class="text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
+                                    class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:at"></icon>
                                     <span>
                                         Mohammad_Khayata@outlook.com
@@ -66,7 +66,7 @@
                             </li>
                             <li class="my-4">
                                 <a href="mailto:MohammadKhayata.gm@gmail.com"
-                                    class="text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
+                                    class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:at"></icon>
                                     <span>
                                         MohammadKhayata.gm@gmail.com
@@ -84,32 +84,32 @@
                         <hr class="border-text">
                         <div class="flex mt-4 -mx-1.5 ">
 
-                            <a class="mx-1.5 dark:hover:text-primary text-gray-300 transition-colors duration-300 transform hover:primary"
+                            <a class="mx-1.5 dark:hover:text-primary dark:text-gray-300 transition-colors duration-300 transform hover:primary"
                                 href="https://t.me/Mohammadkh4441">
 
                                 <icon class="text-2xl mt-1" name="fa-brands:telegram-plane" />
                             </a>
 
-                            <a class="mx-1.5 dark:hover:text-primary text-gray-300 transition-colors duration-300 transform hover:primary"
+                            <a class="mx-1.5 dark:hover:text-primary dark:text-gray-300 transition-colors duration-300 transform hover:primary"
                                 href="https://twitter.com/Mohammad_Kh4441">
                                 <icon class="text-2xl mt-1" name="mdi:twitter" />
 
                             </a>
 
 
-                            <a class="mx-1.5 dark:hover:text-primary text-gray-300 transition-colors duration-300 transform hover:primary"
+                            <a class="mx-1.5 dark:hover:text-primary dark:text-gray-300 transition-colors duration-300 transform hover:primary"
                                 href="https://www.linkedin.com/in/mohammad-khayata-9169801a9">
                                 <icon class="text-2xl mt-1" name="ri:linkedin-fill" />
 
                             </a>
 
-                            <a class="mx-1.5 dark:hover:text-primary text-gray-300 transition-colors duration-300 transform hover:primary"
+                            <a class="mx-1.5 dark:hover:text-primary dark:text-gray-300 transition-colors duration-300 transform hover:primary"
                                 href="https://www.facebook.com/mohammed.kh.165033/">
                                 <icon class="text-2xl mt-1" name="fa-brands:facebook-f" />
 
                             </a>
 
-                            <a class="mx-1.5 dark:hover:text-primary text-gray-300 transition-colors duration-300 transform hover:primary"
+                            <a class="mx-1.5 dark:hover:text-primary dark:text-gray-300 transition-colors duration-300 transform hover:primary"
                                 href="https://www.instagram.com/mohammad_khayat4441/">
                                 <icon class="text-2xl mt-1" name="mdi:instagram" />
 
@@ -129,14 +129,14 @@
                                 <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full
                                     Name</label>
                                 <input type="text" placeholder="John Doe"
-                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                             </div>
 
                             <div class="flex-1 px-2 mt-4 md:mt-0">
                                 <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email
                                     address</label>
                                 <input type="email" placeholder="johndoe@example.com"
-                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                             </div>
 
                         </div>
@@ -144,7 +144,7 @@
                         <div class="w-full mt-4">
                             <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
                             <textarea
-                                class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                 placeholder="Message"></textarea>
                         </div>
 

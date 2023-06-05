@@ -28,7 +28,7 @@ definePageMeta({
         <Title>About Me</Title>
     </Head>
     <div class="page about-page  relative z-0 flex flex-col ">
-        <div class="page-lights hidden dark:block absolute top-0 h-full flex-grow-1 overflow-x-hidden">
+        <div class="page-lights  dark:block absolute top-0 h-full flex-grow-1 overflow-x-hidden">
 
             <svg width="950" height="696" viewBox="0 0 1020 696" class="blur-[200px]" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
