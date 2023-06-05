@@ -13,14 +13,14 @@
 
 
         </div>
-        <h2 class="text-center mt-12 text-2xl text-white">Packages and Templates</h2>
+        <!-- <h2 class="text-center mt-12 text-2xl text-white">Packages and Templates</h2>
         <div class="container  px-4 mx-auto space-y-12">
             <PortfolioItem v-memo class="items-center " data-aos-duration="1000" v-for="(item, i) in packages"
                 :key="item.id" :item="item">
             </PortfolioItem>
 
 
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -33,7 +33,6 @@ import ProjectsList from '~/data/projects'
 
 import "aos/dist/aos.css";
 const projects = computed(() => ProjectsList.sort((a, b) => a.order > b.order ? 1 : -1))
-
 const websites = computed(() => projects.value.filter(p => !p.type.includes('Package')))
 const packages = computed(() => projects.value.filter(p => p.type.includes('Package')))
 

@@ -37,7 +37,7 @@
       <div class="flex items-center gap-4">
         <a :href="item.gitRepo" class="w-full lg:w-auto" v-if="item?.gitRepo">
           <button
-            class="text-xl bg-black hover:bg-black/60 text-white rounded-2xl w-full lg:w-48 py-4 px-4 my-4 transition-all"
+            class="text-xl bg-black hover:bg-black/60 text-white rounded-lg w-full lg:w-48 py-4 px-4 my-4 transition-all"
             type="button"
           >
             <icon class="text-white mr-2 text-2xl" name="codicon:github"></icon>

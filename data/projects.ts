@@ -21,7 +21,7 @@ const projects: PortfolioItem[] = [
         promoVideo: "",
         teamMates: [],
         techFeatures: [],
-        url: ""
+        url: "https://jdm-construction.vercel.app/"
     },
     {
         description: `A web application for managing data and sales for an auto parts trading company. It includes management of inventory, products, invoice generation, account reconciliation, as well as profit and debt management and customer information. Built using React and Mui 5, in addition to Tailwind CSS.`,
