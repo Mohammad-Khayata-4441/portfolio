@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  css: ['~/assets/scss/fonts.scss', '~/assets/scss/reusable.scss', '~/assets/scss/global.scss'],
+  css: ['~/assets/scss/fonts.scss', '~/assets/scss/reusable.scss', '~/assets/scss/global.scss' , 'viewerjs/dist/viewer.css'],
   ssr: true,
  
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image-edge', 'nuxt-icon', '@nuxtjs/google-fonts'],

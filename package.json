@@ -8,7 +8,7 @@
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "@nuxt/image-edge": "^1.0.0-27954023.4cee565",
+    "@nuxt/image-edge": "^1.0.0-rc.1-28112642.b1c2038",
     "@nuxt/postcss8": "^1.1.3",
     "@nuxtjs/google-fonts": "^3.0.0",
     "@vueuse/core": "^9.6.0",
@@ -21,16 +21,16 @@
     "tailwindcss": "^3.2.4"
   },
   "dependencies": {
-    "@nuxt/image": "^0.7.1",
     "@nuxt/types": "^2.15.8",
     "@nuxtjs/tailwindcss": "^6.1.3",
     "@types/aos": "^3.0.4",
     "aos": "^2.3.4",
     "gsap": "^3.11.3",
-    "nuxt": "3.2",
+    "nuxt": "^3.5.3",
     "nuxt-icon": "^0.4.0",
     "sass": "^1.56.1",
     "swiper": "^9.0.4",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "v-viewer": "^3.0.11"
   }
 }
