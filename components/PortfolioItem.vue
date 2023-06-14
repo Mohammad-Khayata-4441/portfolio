@@ -47,7 +47,7 @@
         :src="url(item?.screenShots[0])" :class="`rounded-3xl border-4 border-seconadry dark:border-text shadow-lg `" /> -->
       <img height="400" width="750" class="h-[400px] w-full object-contain lg:object-cover" preload
         placeholder="https://placehold.co/750x400/161A29/546192?text=Loading..."
-        :style="{ boxShadow: getBoxShadow(item.primaryColor) }" v-if="item?.screenShots[0]"
+         v-if="item?.screenShots[0]"
         :src="url(item?.screenShots[0])" :class="`rounded-3xl border-4 border-seconadry dark:border-text shadow-lg `" />
       <span class="bg-primary text-white p-2 rounded-xl relative left-4 bottom-12">{{ item?.screenShots.length }}
         <icon name="clarity:image-gallery-solid" />
@@ -139,8 +139,8 @@ const onEnter = (el: any, done: any) => {
 
 function getBoxShadow(color: string) {
   return isSmaller("md")
-    ? `0 20px 400px -50px ${color}`
-    : `0 20px 400px -75px ${color}`;
+    ? `0 20px 100px -50px ${color}`
+    : `0 20px 150px -75px ${color}`;
 }
 
 function openGallery(items: string[]) {

@@ -1,6 +1,7 @@
 <template>
     <div class="page portfolio-page  bg-opacity-5">
 
+            <LightsGenerator></LightsGenerator>
         <div class="page-overlay  flex-grow-1 min-h-full"></div>
 
 
@@ -42,21 +43,21 @@ const openGallery = (images: string[]) => {
 
     api({
         images: images.map(url => `/projects/${url}`),
-        options:{
-            rotatable:false,
-            fullscreen:true,
-            
-            toolbar:{
-                next:true,
-                prev:true,
-                flipHorizontal:false,
-                flipVertical:false,
-                oneToOne:false,
-                reset:false,
-                rotateLeft:false,
-                rotateRight:false,
-                zoomOut:false,
-                zoomIn:false
+        options: {
+            rotatable: false,
+            fullscreen: true,
+
+            toolbar: {
+                next: true,
+                prev: true,
+                flipHorizontal: false,
+                flipVertical: false,
+                oneToOne: false,
+                reset: false,
+                rotateLeft: false,
+                rotateRight: false,
+                zoomOut: false,
+                zoomIn: false
             }
         }
     })

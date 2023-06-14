@@ -1,19 +1,7 @@
 <template>
     <div class="page ">
-        <div class="page-lights absolute top-0 h-full flex-grow-1 overflow-hidden">
-            <svg class="absolute blur-[200px] top-0 left-0" width="494" height="494" viewBox="0 0 494 494" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="247" cy="247" r="247" transform="matrix(1 0 0 -1 0 494)" fill="#26CDEB" fill-opacity="0.77" />
-            </svg>
-            <svg class="absolute blur-[200px] top-96 translate-y-1/2 right-0" width="764" height="751" viewBox="0 0 764 751"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="501" cy="187.5" rx="501" ry="187.5"
-                    transform="matrix(0.714449 0.699688 0.699688 -0.714449 -106.936 158.962)" fill="#FB1ADE"
-                    fill-opacity="0.77" />
-            </svg>
+        <LightsGenerator></LightsGenerator>
 
-
-        </div>
         <div class="page-overlay"></div>
 
         <div class="container mx-auto ">

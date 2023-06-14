@@ -8,8 +8,9 @@ module.exports = {
         seconadry: "#26CDEB",
         dark: "#211835",
         text: "#546192",
-        'dark-overlay': "#423769",
+        "dark-overlay": "#423769",
         "dark-surface": "#161A29",
+
 
       },
       borderRadius: {

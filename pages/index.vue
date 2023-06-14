@@ -1,7 +1,7 @@
 <template>
   <div class="page home-page">
 
-
+<!-- 
     <div ref="pageLights" class="page-lights absolute top-0 h-full">
       <svg class="bottom-left-light absolute blur-[200px] bottom-0 right-0 hidden md:block md:left-0 " width="494"
         height="309" viewBox="0 0 494 309" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +17,9 @@
         xmlns="http://www.w3.org/2000/svg">
         <circle cx="243" cy="134" r="243" fill="#43D2FF" fill-opacity="0.42" />
       </svg>
-    </div>
+    </div> -->
+
+    <LightsGenerator></LightsGenerator>
 
     <div class="page-overlay"></div>
 

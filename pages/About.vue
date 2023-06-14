@@ -28,46 +28,7 @@ definePageMeta({
         <Title>About Me</Title>
     </Head>
     <div class="page about-page  relative z-0 flex flex-col ">
-        <div class="page-lights  dark:block absolute top-0 h-full flex-grow-1 overflow-x-hidden">
-
-            <svg width="950" height="696" viewBox="0 0 1020 696" class="blur-[200px]" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="220" cy="576" rx="220" ry="576"
-                    transform="matrix(0.505321 -0.862932 -0.862932 -0.505321 896.097 828.819)" fill="#26CDEB"
-                    fill-opacity="0.3" />
-            </svg>
-
-            <svg class="absolute right-0 top-[720px] blur-[200px]" width="669" height="668" viewBox="0 0 669 668"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="334" cy="334" r="334" transform="matrix(1 0 0 -1 0.683594 668)" fill="#FB1ADE"
-                    fill-opacity="0.3" />
-            </svg>
-
-
-            <svg width="539" height="976" viewBox="0 0 539 976" class=" absolute blur-[200px] left-0 translate-y-1/4"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M426.68 559.425C547.323 293.214 574.779 45.529 488.005 6.20416C401.231 -33.1207 233.086 150.807 112.443 417.017C-8.19962 683.228 -35.6556 930.913 51.1186 970.238C137.893 1009.56 306.038 825.636 426.68 559.425Z"
-                    fill="#577DFA" fill-opacity="0.77" />
-            </svg>
-
-
-            <svg width="964" height="614" viewBox="0 0 964 614" fill="none"
-                class="absolute blur-[200px] right-0 top-[220vh] opacity-50" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M426.68 559.425C547.323 293.214 574.779 45.529 488.005 6.20416C401.231 -33.1207 233.086 150.807 112.443 417.017C-8.19962 683.228 -35.6556 930.913 51.1186 970.238C137.893 1009.56 306.038 825.636 426.68 559.425Z"
-                    fill="#577DFA" fill-opacity="1" />
-
-            </svg>
-
-
-
-            <svg width="600" height="600" viewBox="0 0 494 494" fill="none" class="absolute blur-[200px] left-0 bottom-0"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="247" cy="247" r="247" transform="matrix(1 0 0 -1 0 494)" fill="#26CDEB" fill-opacity="0.77" />
-            </svg>
-
-        </div>
+            <LightsGenerator></LightsGenerator>
         <div class="page-overlay "></div>
 
         <!-- Personal Info Section  -->
