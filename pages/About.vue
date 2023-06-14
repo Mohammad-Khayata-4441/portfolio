@@ -80,7 +80,7 @@ definePageMeta({
 
                 <div class="img col-span-12 lg:col-span-4 w-full  flex md:justify-center">
 
-                    <img height="250" width="250" src="../assets/images/personal-1.webp" alt="mohammad_khayata"
+                    <img height="350" width="350" src="../assets/images/personal-1.webp" alt="mohammad_khayata"
                         class="  w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] object-cover m-auto bg-dark-surface rounded-[90px] md:rounded-4xl"
                         style="object-position: 0 30%;" />
                 </div>
@@ -437,7 +437,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/typescript.webp" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/typescript.webp" class="w-16 md:w-28"
                             alt="technology-typescript" title="typescript">
 
 
@@ -447,7 +447,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/javascript.webp" class="w-16 md:w-28 rounded-xl"
+                        <img height="100" width="100" src="/icons/javascript.webp" class="w-16 md:w-28 rounded-xl"
                             alt="technology-javascript" title="javascript">
 
 
@@ -458,7 +458,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/vue.webp" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/vue.webp" class="w-16 md:w-28"
                             alt="technology-vue" title="vue">
 
 
@@ -469,7 +469,7 @@ definePageMeta({
 
 
 
-                        <img height="150" width="100" src="../assets/icons/nuxt.svg" class="h-32 md:w-40"
+                        <img height="150" width="100" src="/icons/nuxt.svg" class="h-32 md:w-40"
                             alt="technology-nuxt" title="nuxt">
 
 
@@ -479,7 +479,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/react.webp" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/react.webp" class="w-16 md:w-28"
                             alt="technology-react" title="react">
 
 
@@ -488,7 +488,7 @@ definePageMeta({
                         class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
-                        <img height="100" width="100" src="../assets/icons/sass.webp" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/sass.webp" class="w-16 md:w-28"
                             alt="technology-sass" title="sass">
 
 
@@ -505,7 +505,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/vite.webp" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/vite.webp" class="w-16 md:w-28"
                             alt="technology-vite" title="vite">
 
 
@@ -516,7 +516,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/pinia.svg" class="w-16 md:w-28  "
+                        <img height="100" width="100" src="/icons/pinia.svg" class="w-16 md:w-28  "
                             alt="tpiniaechnology-">
 
 
@@ -527,7 +527,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/redux.webp" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/redux.webp" class="w-16 md:w-28"
                             alt="technology-redux" title="redux">
 
 
@@ -537,7 +537,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/tailwind.webp" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/tailwind.webp" class="w-16 md:w-28"
                             alt="technology-tailwind" title="tailwind">
 
 
@@ -548,7 +548,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/bootstrap.webp" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/bootstrap.webp" class="w-16 md:w-28"
                             alt="technology-bootstrap" title="bootstrap">
 
 
@@ -558,7 +558,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/gsap.svg" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/gsap.svg" class="w-16 md:w-28"
                             alt="technology-gsap" title="gsap">
 
 
@@ -574,7 +574,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/angular.webp" class="w-16 md:w-40"
+                        <img height="100" width="100" src="/icons/angular.webp" class="w-16 md:w-40"
                             alt="technology-angular" title="angular">
 
 
@@ -584,7 +584,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/nodejs.webp" class="w-16 md:w-28 "
+                        <img height="100" width="100" src="/icons/nodejs.webp" class="w-16 md:w-28 "
                             alt="technology-nodejs" title="nodejs">
 
 
@@ -595,7 +595,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/nest.webp" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/nest.webp" class="w-16 md:w-28"
                             alt="technology-nest" title="nest">
 
 
@@ -605,7 +605,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/cpp.webp" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/cpp.webp" class="w-16 md:w-28"
                             alt="technology-cpp" title="cpp">
 
 
@@ -616,7 +616,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/cs.webp" class="w-16 md:w-28" alt="technology-cs"
+                        <img height="100" width="100" src="/icons/cs.webp" class="w-16 md:w-28" alt="technology-cs"
                             title="cs">
 
 
@@ -626,7 +626,7 @@ definePageMeta({
 
 
 
-                        <img height="100" width="100" src="../assets/icons/asp.webp" class="w-16 md:w-28"
+                        <img height="100" width="100" src="/icons/asp.webp" class="w-16 md:w-28"
                             alt="technology-asp" title="asp">
 
 
