@@ -18,11 +18,11 @@
 <script lang="ts" setup>
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger)
 const lightsCount = ref(0);
 const pageLight = ref<SVGAElement[] | null>(null)
 const devidedTo = computed(() => 100 / lightsCount.value)
 onMounted(() => {
+    gsap.registerPlugin(ScrollTrigger)
     if (process.client) {
         const html: HTMLHtmlElement = document.querySelector('html') as HTMLHtmlElement;
         const windowHegiht = window.innerHeight;
