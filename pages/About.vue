@@ -41,8 +41,8 @@ definePageMeta({
 
                 <div class="img col-span-12 lg:col-span-4 w-full  flex md:justify-center">
 
-                    <img height="350" width="350" src="../assets/images/personal-1.webp" alt="mohammad_khayata"
-                        class="  w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] object-cover m-auto bg-dark-surface rounded-[90px] md:rounded-4xl"
+                    <NuxtImg quality="0.5" preload height="350" width="350" :src="useDriveResolver('https://drive.google.com/file/d/15hlCwRxuWBjUfn_3o6D9Kyop-2xlLC30/view?usp=drive_link')" alt="mohammad_khayata"
+                        class="w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] object-cover m-auto bg-dark rounded-[90px] md:rounded-4xl"
                         style="object-position: 0 30%;" />
                 </div>
 

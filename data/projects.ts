@@ -9,10 +9,10 @@ const projects: PortfolioItem[] = [
         order: 1,
         primaryColor: "#EA5400",
         screenShots: [
-            "jdm/cover.png",
+            "https://drive.google.com/file/d/1NO9fMz63yfsHVI0X1MZL3n1myCqZ-Msv/view?usp=drive_link",
         ],
         status: 'in Progress',
-        technologiesIcons: ['next.png','typescript.webp',  'tailwind.webp'],
+        technologiesIcons: ['next.png', 'typescript.webp', 'tailwind.webp'],
         type: ['Dashboard'],
         workInformation: "I worked on this project as a freelancer for a close client in the city of Aleppo.",
         year: '2022',
@@ -31,13 +31,14 @@ const projects: PortfolioItem[] = [
         order: 2,
         primaryColor: "#3761E9",
         screenShots: [
-            "carManagement/cars.png",
-            "carManagement/car-management-add-car.png",
-            "carManagement/car-management-add-part.png",
-            "carManagement/car-parts-brands.png",
-            "carManagement/car-parts.png",
-            "carManagement/create-invoice.png",
+            "https://drive.google.com/file/d/1GyYinbNefPTPi0xA47gJKljNzyoHXM4z/view?usp=sharing",
+            "https://drive.google.com/file/d/1PB9LijHrkE6UXqzeFj1ObG07BUPxFqNP/view?usp=sharing",
+            "https://drive.google.com/file/d/1Pe5G9kQdrNwHNJCXMdQ6ygiBgLTa_qXZ/view?usp=sharing",
+            "https://drive.google.com/file/d/1bfJ83bpxv25IohO9l2xLiV5gA2iH9ZtV/view?usp=sharing",
+            "https://drive.google.com/file/d/1oTk8T6WsO7yCvqmzzZfU-04_u87TCpmE/view?usp=sharing",
+            "https://drive.google.com/file/d/1stwQ18begJk6U1QW4vH9K3ue1SbgGTHn/view?usp=sharing"
         ],
+
         status: 'in Progress',
         technologiesIcons: ['react.webp', 'typescript.webp', 'tailwind.webp'],
         type: ['Dashboard'],
@@ -67,7 +68,7 @@ const projects: PortfolioItem[] = [
         ],
         "id": "3",
         "screenShots": [
-            "alElemNour/cover.png"
+            "https://drive.google.com/file/d/1ZL4zd-Y-dHNaD30jz784QwNAS190oZU3/view?usp=drive_link"
         ],
         "primaryColor": "#FFD400",
         "status": "Finished",
@@ -115,7 +116,7 @@ const projects: PortfolioItem[] = [
             "Project Details Page"
         ],
         "screenShots": [
-            "altinSaray/index.jpg"
+            "https://drive.google.com/file/d/1MLxW0icmtH5zifORBmkAyuftPidVIlfN/view?usp=drive_link"
         ],
         "primaryColor": "#153937",
         "status": "Finished",
@@ -179,7 +180,7 @@ const projects: PortfolioItem[] = [
         ],
         "id": "4",
         "screenShots": [
-            "awija/cover.jpg"
+            "https://drive.google.com/file/d/1Nq2BPNTuB0zQHx8VoxcZ7EFAgackTNTV/view?usp=drive_link"
         ],
         "primaryColor": "#1ac9fb",
         "status": "Finished",
@@ -205,12 +206,12 @@ const projects: PortfolioItem[] = [
         description: "Broker Management is an application for automating the operations of a brokerage company electronically through various services, including human resource management, project and department management, document and correspondence management, and a file management system for storing files in the cloud via AWS. It also supports authentication for employees with different permissions.",
         "id": "5",
         "screenShots": [
-            "broker/cover.png",
-            "broker/broker_employee_details.png",
-            "broker/broker_section.png",
-            "broker/employees.png",
-            "broker/fileManagement.png",
-            "broker/broker_file_management.pdf.png",
+            "https://drive.google.com/file/d/1BKRqnb8vpG93iTvnyqb6lNOfr0djgDfn/view?usp=sharing",
+            "https://drive.google.com/file/d/1EYzbz8Y50G0vS0YM84OLCw8iEiKlc-5u/view?usp=sharing",
+            "https://drive.google.com/file/d/1JZqRcHU3ufYlecKAU-OmZNTOnjw3W-9l/view?usp=sharing",
+            "https://drive.google.com/file/d/1JvyRnDpkMBfqkbg0aP7lSN6DR21FfEmp/view?usp=sharing",
+            "https://drive.google.com/file/d/1NwKOiRa5wfzSLmpzZmb7SL4Jo_XALHNk/view?usp=sharing",
+            "https://drive.google.com/file/d/1i10qtEpTatBDllp-LuYGuR-Y_R2Ft2Bs/view?usp=sharing"
         ],
         "teamMates": [
             {
@@ -271,7 +272,7 @@ const projects: PortfolioItem[] = [
         "description": "Content Management System For Rivera Company for Pharmaceutical Industries and Food Supplements",
         "id": "6",
         "screenShots": [
-            "riviraPharma/cover.jpg"
+            "https://drive.google.com/file/d/1VtxgVrZfWtiMCnXw9iUntvj3cqc6PkKc/view?usp=drive_link"
         ],
         "teamMates": [
             {
@@ -329,7 +330,7 @@ const projects: PortfolioItem[] = [
         "description": "A simple menu display app for Golden Wrap Restaurant with a content dashboard",
         "id": "8",
         "screenShots": [
-            "goldenWrap/cover.jpg"
+            "https://drive.google.com/file/d/1DMwPbI8bTnXTGqOpBXTjBiFaUMbqQcYT/view?usp=drive_link"
         ],
         "teamMates": [
             {
@@ -374,10 +375,10 @@ const projects: PortfolioItem[] = [
         ],
         "id": "9",
         "screenShots": [
-            "proMarketing/cover.jpg",
-            "proMarketing/about.png",
-            "proMarketing/contact.png",
-            "proMarketing/services.png"
+            "https://drive.google.com/file/d/15kNwM5AY6wEs-96W7BR71h4YPeAqKVnx/view?usp=sharing",
+            "https://drive.google.com/file/d/1A6xqWTaWQZ7oCCESvJ6-boVLbw4en8Av/view?usp=sharing",
+            "https://drive.google.com/file/d/1J7zWCsesC-ljg7mMol3-q5RjJ9fsP0Vv/view?usp=sharing",
+            "https://drive.google.com/file/d/1WtGtBIpaX41V9qonQjrh7xA0eT5lzmJJ/view?usp=sharing"
         ],
         "primaryColor": "#F28003",
         "status": "in Progress",
@@ -401,7 +402,7 @@ const projects: PortfolioItem[] = [
         "description": "Dashboard For E-learn Mobile Application Content Management",
         "id": "10",
         "screenShots": [
-            "mrCourse/cover.jpg"
+            "https://drive.google.com/file/d/1PgyjvGi-xRmwk5XMo6cFlJXK9p1HTsoP/view?usp=drive_link"
         ],
         "primaryColor": "#2ec4b6",
         "businessFeatures": [
@@ -445,12 +446,12 @@ const projects: PortfolioItem[] = [
         "primaryColor": "#F8AD24",
         id: "10",
         screenShots: [
-            "flyOrder/shops.png",
-            "flyOrder/create-order.png",
-            "flyOrder/edit-product.png",
-            "flyOrder/login.png",
-            "flyOrder/notifications.png",
-            "flyOrder/order.png",
+            "https://drive.google.com/file/d/13bRFWIul6EXhTSXXXuQdEuhgcU5cTRla/view?usp=sharing",
+            "https://drive.google.com/file/d/1DztSMowvlyHDV2ZiU0KJPpmcopBzgO2V/view?usp=sharing",
+            "https://drive.google.com/file/d/1ffzH-xC1S3VkR7KfSBcyYx61rfCxtV3p/view?usp=sharing",
+            "https://drive.google.com/file/d/1mxzgSV_DEKqOR-_3TiO1OLuhaeXRKwZv/view?usp=sharing",
+            "https://drive.google.com/file/d/1x5pb2HQstzT3en-D97Lr9PjY5esazYpA/view?usp=sharing",
+            "https://drive.google.com/file/d/1ySk-cgdgcYAutyHomT3ucoEhh9R-5bsy/view?usp=sharing"
         ],
 
         status: "Finished",

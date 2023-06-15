@@ -39,47 +39,20 @@
       </div>
     </div>
 
-    <div v-if="item?.screenShots" class="image col-span-12 lg:col-span-6 order-1 lg:order-2 cursor-pointer"
+    <div v-if="item?.screenShots && item.screenShots.length" class="image col-span-12 lg:col-span-6 order-1 lg:order-2 cursor-pointer"
       @click="openGallery(item.screenShots)">
-      <!-- <NuxtImg height="400" width="750" class="h-[400px] w-full object-contain lg:object-cover" preload
+      <NuxtImg  height="400" width="750" class="h-[400px] w-full object-contain lg:object-cover" preload quality="0.2"
         placeholder="https://placehold.co/750x400/161A29/546192?text=Loading..."
-        :style="{ boxShadow: getBoxShadow(item.primaryColor) }" v-if="item?.screenShots[0]"
-        :src="url(item?.screenShots[0])" :class="`rounded-3xl border-4 border-seconadry dark:border-text shadow-lg `" /> -->
-      <img height="400" width="750" class="h-[400px] w-full object-contain lg:object-cover" preload
-        placeholder="https://placehold.co/750x400/161A29/546192?text=Loading..."
-         v-if="item?.screenShots[0]"
-        :src="url(item?.screenShots[0])" :class="`rounded-3xl border-4 border-primary dark:border-text shadow-lg `" />
+        v-if="item?.screenShots[0]"
+        :src="useDriveResolver(item?.screenShots[0])"
+        :class="`rounded-3xl border-4 border-seconadry dark:border-text shadow-lg `" />
+ 
       <span class="bg-primary text-white p-2 rounded-xl relative left-4 bottom-12">{{ item?.screenShots.length }}
         <icon name="clarity:image-gallery-solid" />
       </span>
     </div>
 
-    <!-- <Transition name="showGallery" @enter="onEnter" @leave="onLeave">
-      <div
-        v-if="showGallery"
-        :class="{ 'bg-black bg-opacity-80': showGallery }"
-        class="gallery flex items-center justify-center h-screen w-screen z-20 transition fixed top-0 left-0"
-      >
-        <button class="absolute right-10 top-10 z-40" @click="closeGallery">
-          <icon class="text-5xl text-white" name="solar:close-circle-linear" />
-        </button>
-        <Swiper ref="swiper" wrapper-class="items-center">
-          <SwiperSlide
-            v-for="screen in item?.screenShots"
-            :key="screen"
-            class=""
-          >
-            <NuxtImg
-              :src="url(screen)"
-              height="1080"
-              width="1920"
-              class="w-[90vw] max-h-[90vh] mx-auto object-contain"
-              alt=""
-            />
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    </Transition> -->
+ 
 
 
   </div>
@@ -98,9 +71,7 @@ import "swiper/css";
 const showGallery = ref(false);
 const swiper = ref(null);
 
-const url = (imageName: string) => `/projects/${imageName}`
 const iconUrl = (icon: string) => `/icons/${icon}`
-const { isSmaller } = useBreakpoints(breakpointsTailwind);
 
 const bodyClass = computed(() =>
   showGallery.value ? "overflow-hidden" : "overflow-auto"
@@ -109,47 +80,16 @@ const bodyClass = computed(() =>
 
 const emit = defineEmits(['onDetails'])
 
-const onLeave = (el: any, done: any) => {
-  console.log("on leave");
-
-  gsap.to(el.querySelector(".swiper"), {
-    opacity: 0,
-    duration: 0.4,
-    scale: 0,
-    onComplete: () => {
-      done();
-    },
-  });
-};
+ 
 onClickOutside(swiper.value, () => {
   showGallery.value = false;
 });
+ 
 
-const onEnter = (el: any, done: any) => {
-  gsap.from(el.querySelector(".swiper"), {
-    opacity: 0,
-    duration: 0.4,
-    scale: 0,
-    onComplete: () => {
-      done();
-    },
-  });
-};
-
-function getBoxShadow(color: string) {
-  return isSmaller("md")
-    ? `0 20px 100px -50px ${color}`
-    : `0 20px 150px -75px ${color}`;
-}
-
+ 
 function openGallery(items: string[]) {
   emit('onDetails', items)
-  if (process.client) {
-
-    // document.documentElement.requestFullscreen();
-    // showGallery.value = true;
-
-  }
+ 
 }
 
 // function closeGallery() {

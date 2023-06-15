@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   ssr: true,
 
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image-edge', 'nuxt-icon', '@nuxtjs/google-fonts'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxtjs/google-fonts', '@nuxt/image',],
 
   googleFonts: {
     families: {
@@ -17,16 +17,22 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      link: [
+        {
+          rel: 'icon',
+          href: '/fav.png'
+        }
+      ],
       title: "Mohammad Khayata",
       meta: [
         {
-          name:'keywords',
-          content:'Mohammad Khayata, developer, react, frontend, vue, typescript, javascript  '
+          name: 'keywords',
+          content: 'Mohammad Khayata, developer, react, frontend, vue, typescript, javascript  '
 
         },
         {
           name: 'description',
-          content:"3 Yars + Forntent Web Developer Using Vuejs , React and TypeScript"
+          content: "3 Yars + Forntent Web Developer Using Vuejs , React and TypeScript"
         }
       ],
       htmlAttrs: {

@@ -42,7 +42,7 @@ const openGallery = (images: string[]) => {
     console.log('open', images)
 
     api({
-        images: images.map(url => `/projects/${url}`),
+        images: images.map(url => useDriveResolver(url)),
         options: {
             rotatable: false,
             fullscreen: true,
