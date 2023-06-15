@@ -33,7 +33,7 @@
               Hey There , I'm</h6>
             <h2 ref="name"
               class="text-4xl text-center lg:text-left sm:text-5xl lg:text-6xl font-bold capitalize gradiant-heading">
-              Mohammad Khayyata
+              Mohammad Khayata
             </h2>
             <p ref="text" class="text-md sm:text-xl text-center lg:text-left  text-text dark:text-white">
               FullStack JavaScript/TypeScript Developer <br class="md:hidden" />
