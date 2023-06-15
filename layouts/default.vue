@@ -8,3 +8,9 @@
 
 
 </script>
+
+<style>
+body{
+  background-color: theme('colors.dark');
+}
+</style>

@@ -74,7 +74,7 @@ watch(pageLight, (nv) => {
     svg:nth-child(odd) {
         left: 0;
         ellipse {
-            @apply  fill-lightPurple;
+            @apply  dark:fill-lightPurple ;
         }
     }
 
@@ -82,7 +82,7 @@ watch(pageLight, (nv) => {
         right: 0;
         transform: rotate(90deg);
         ellipse {
-            @apply fill-lightBlue;
+            @apply dark:fill-lightBlue;
         }
 
     }
