@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         },
         {
           name: 'description',
-          content: "3 Yars + Forntent Web Developer Using Vuejs , React and TypeScript"
+          content: "3 Years + Forntent Web Developer Using Vuejs , React and TypeScript"
         }
       ],
       htmlAttrs: {
