@@ -41,7 +41,7 @@
 
     <div v-if="item?.screenShots && item.screenShots.length" class="image col-span-12 lg:col-span-6 order-1 lg:order-2 cursor-pointer"
       @click="openGallery(item.screenShots)">
-      <NuxtImg  height="400" width="750" class="h-[400px] w-full object-contain lg:object-cover" preload quality="0.2"
+      <NuxtImg  height="400" width="750" class="h-auto md:h-[400px] w-full object-contain lg:object-cover" preload quality="0.2"
         placeholder="https://placehold.co/750x400/161A29/546192?text=Loading..."
         v-if="item?.screenShots[0]"
         :src="useDriveResolver(item?.screenShots[0])"
