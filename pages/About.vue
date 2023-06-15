@@ -179,14 +179,13 @@ definePageMeta({
                                 <div
                                     class=" hidden lg:block h-px bg-transparent border border-dashed border-primary flex-grow relative">
                                     <div
-                                        class="h-[30px]  w-[30px] top-0 left-0 -translate-x-1/2 -translate-y-1/2  rounded-full bg-primary absolute">
+                                        class="h-[30px] w-[30px] top-0 left-0 -translate-x-1/2 -translate-y-1/2  rounded-full bg-primary absolute">
                                     </div>
 
                                 </div>
 
 
-                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-primary dark:border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
-                                  backdrop:blur-xl shadow-lg">
+                                <div data-aos="fade-right" class="glass-paper rounded-2xl overflow-hidden">
 
                                     <article
                                         class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
@@ -228,8 +227,7 @@ definePageMeta({
                                 </div>
 
 
-                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-primary dark:border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
-                                  backdrop:blur-xl shadow-lg">
+                                <div data-aos="fade-right" class="glass-paper rounded-2xl overflow-hidden">
 
                                     <article
                                         class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
@@ -289,8 +287,7 @@ definePageMeta({
                                 </div>
 
 
-                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-primary dark:border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
-                                  backdrop:blur-xl shadow-lg">
+                                <div data-aos="fade-right" class="glass-paper rounded-2xl overflow-hidden">
 
                                     <article
                                         class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
@@ -342,8 +339,7 @@ definePageMeta({
                                 </div>
 
 
-                                <div data-aos="fade-right" class=" dark:bg-dark-overlay dark:bg-opacity-10 border border-primary dark:border-text backdrop-blur-2xl rounded-2xl overflow-hidden 
-                                  backdrop:blur-xl shadow-lg">
+                                <div data-aos="fade-right" class="glass-paper rounded-2xl overflow-hidden">
 
                                     <article
                                         class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">

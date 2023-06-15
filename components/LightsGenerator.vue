@@ -7,7 +7,7 @@
 
         }" class="svg-light blur-[200px]" fill="none" xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="220" cy="576" rx="220" ry="576"
-                transform="matrix(0.505321 -0.862932 -0.862932 -0.505321 896.097 828.819)" fill-opacity="0.3" />
+                transform="matrix(0.505321 -0.862932 -0.862932 -0.505321 896.097 828.819)" fill-opacity="0.2" />
         </svg>
 
 
@@ -47,7 +47,7 @@ const animate = () => {
             gsap.from(light, {
                 scale: 0,
                 opacity:0,
-                duration: 0.8,
+                duration: 0.8 ,
                 scrollTrigger: {
                     trigger: light,
                     onEnter: () => console.log('enter to', light),
@@ -73,18 +73,16 @@ watch(pageLight, (nv) => {
 
     svg:nth-child(odd) {
         left: 0;
-
         ellipse {
-            fill: #26CDEB
+            @apply  fill-lightPurple;
         }
     }
 
     svg:nth-child(even) {
         right: 0;
         transform: rotate(90deg);
-
         ellipse {
-            fill: #FB1ADE
+            @apply fill-lightBlue;
         }
 
     }

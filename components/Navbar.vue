@@ -2,7 +2,7 @@
   <header
     class="flex fixed bottom-0 md:top-0 md:bottom-auto w-screen items-center justify-center p-5 z-10">
     <nav
-      class="rounded-2xl bg-white px-8 py-2 md:py-0 md:px-28 shadow-md dark:bg-dark-surface/80 dark:bg-opacity-75 backdrop-blur-md">
+      class="rounded-2xl  px-8 py-2 md:py-0 md:px-28 glass-paper">
       <ul
         class="flex items-center justify-center list-none space-x-12 md:space-x-16">
         <nuxt-link
