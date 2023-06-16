@@ -27,11 +27,9 @@
 
 
 <script setup lang="ts">
-import type { PortfolioItem as Project } from '@/types/PortfolioItem'
 import ProjectsList from '~/data/projects'
 import "aos/dist/aos.css";
-import { api } from 'v-viewer'
-const { vueApp } = useNuxtApp()
+import {api as viewer} from 'v-viewer'
 const projects = computed(() => ProjectsList.sort((a, b) => a.order > b.order ? 1 : -1))
 const websites = computed(() => projects.value.filter(p => !p.type.includes('Package')))
 const packages = computed(() => projects.value.filter(p => p.type.includes('Package')))
@@ -40,8 +38,7 @@ const packages = computed(() => projects.value.filter(p => p.type.includes('Pack
 
 const openGallery = (images: string[]) => {
     console.log('open', images)
-
-    api({
+    viewer({
         images: images.map(url => useDriveResolver(url)),
         options: {
             rotatable: false,
