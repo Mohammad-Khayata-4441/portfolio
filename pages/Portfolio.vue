@@ -8,7 +8,7 @@
 
         <!-- <h2 class="text-center mt-12 text-2xl text-white">Web Applications & Landing Pages</h2> -->
         <div class="xl:container px-4 mx-auto space-y-12">
-            <PortfolioItem v-memo class="items-center" @on-details="openGallery" data-aos-duration="1000"
+            <PortfolioItem v-memo class="items-center"  data-aos-duration="1000"
                 v-for="(item, i) in websites" :index="i" :key="item.id" :item="item">
             </PortfolioItem>
 
@@ -29,36 +29,35 @@
 <script setup lang="ts">
 import ProjectsList from '~/data/projects'
 import "aos/dist/aos.css";
-import {api as viewer} from 'v-viewer'
 const projects = computed(() => ProjectsList)
 const websites = computed(() => projects.value.filter(p => !p.type.includes('Package')))
 const packages = computed(() => projects.value.filter(p => p.type.includes('Package')))
 
 
 
-const openGallery = (images: string[]) => {
-    console.log('open', images)
-    viewer({
-        images: images.map(url => useDriveResolver(url)),
-        options: {
-            rotatable: false,
-            fullscreen: true,
+// const openGallery = (images: string[]) => {
+//     console.log('open', images)
+//     viewer({
+//         images: images.map(url => useDriveResolver(url)),
+//         options: {
+//             rotatable: false,
+//             fullscreen: true,
 
-            toolbar: {
-                next: true,
-                prev: true,
-                flipHorizontal: false,
-                flipVertical: false,
-                oneToOne: false,
-                reset: false,
-                rotateLeft: false,
-                rotateRight: false,
-                zoomOut: false,
-                zoomIn: false
-            }
-        }
-    })
-}
+//             toolbar: {
+//                 next: true,
+//                 prev: true,
+//                 flipHorizontal: false,
+//                 flipVertical: false,
+//                 oneToOne: false,
+//                 reset: false,
+//                 rotateLeft: false,
+//                 rotateRight: false,
+//                 zoomOut: false,
+//                 zoomIn: false
+//             }
+//         }
+//     })
+// }
 
 
 useHead({
