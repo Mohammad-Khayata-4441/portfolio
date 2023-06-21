@@ -8,7 +8,7 @@ export type PortfolioItem = {
     businessFeatures?: string[]
     screenShots: string[];
     promoVideo?: string;
-    order:number,
+    order?:number,
     technologiesIcons: string[];
     description: string;
     workInformation: string;

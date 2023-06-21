@@ -6,7 +6,6 @@ const projects: PortfolioItem[] = [
         client: "Freelance",
         id: '55',
         name: "JDM Contracts",
-        order: 1,
         primaryColor: "#EA5400",
         screenShots: [
             "https://drive.google.com/file/d/1NO9fMz63yfsHVI0X1MZL3n1myCqZ-Msv/view?usp=drive_link",
@@ -28,7 +27,6 @@ const projects: PortfolioItem[] = [
         client: "Freelance",
         id: '52',
         name: "Auto Parts Manager",
-        order: 2,
         primaryColor: "#3761E9",
         screenShots: [
             "https://drive.google.com/file/d/1GyYinbNefPTPi0xA47gJKljNzyoHXM4z/view?usp=sharing",
@@ -52,7 +50,36 @@ const projects: PortfolioItem[] = [
         url: ""
     },
     {
-        "order": 3,
+        "name": "Qr Code Germany",
+        "client": "ELKOOD Company",
+        "description": "Many companies use the QR code in their marketing and advertising campaigns, allowing various types of data to be added, such as: B. Website links, social media, account information, phone numbers, even coupons, opening hours, or a PDF file (with a list of product prices or the services you want to offer your customers).Here at QR Code Germany we have made sure that everything is easy and simple to use for the customer as you will find many simple and useful options that will help you a lot in providing useful and important information to your customers in the easiest and cheapest way to deliver way.",
+        "id": "1",
+        "screenShots": [
+            "https://drive.google.com/file/d/1JrzuTZwUU8SbG4qhdSZMSon0EZaLXr4-/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qgXnW8G9Ud1F97RE3fxIrl-X27zoQDk0/view?usp=sharing",
+            "https://drive.google.com/file/d/1p0NSQs9GlK5Rb5dukeUF_wk7BP_edpem/view?usp=sharing",
+            "https://drive.google.com/file/d/1aE88XxJ8D9D7QHdkVGYfDcx_YjsRwrN5/view?usp=sharing",
+            "https://drive.google.com/file/d/1YHPASRX2p2xCraWFj4D_0yBlNVVymI9u/view?usp=sharing",
+            "https://drive.google.com/file/d/1-nozIi4wi9m_y86W-os9jDE5nwQS34Oy/view?usp=sharing",
+        ],
+        "primaryColor": "#FDD636",
+
+        "status": "in Progress",
+        "type": [
+            "Landing Page",
+            "Web Application"
+        ],
+        "workInformation": "I Worked on this project for a german company at ELKOOD",
+        "technologiesIcons": [
+            "nuxt.svg",
+            "typescript.webp",
+            "tailwind.webp"
+        ],
+        "year": "2022",
+        "url": "https://qrcodegermany.de/",
+    },
+
+    {
         "name": "Al E'lm Nour",
         "client": "Al Elem Nour Publishing House",
         "description": "Landing page for publishing house in aleppo syria",
@@ -87,7 +114,6 @@ const projects: PortfolioItem[] = [
         "url": "https://www.alelmnour.com/"
     },
     {
-        "order": 6,
         "name": "Altin Saray",
         "client": "ELKOOD Company",
         "teamMates": [
@@ -133,7 +159,6 @@ const projects: PortfolioItem[] = [
         "url": "https://altinsaraygrup.com/"
     },
     {
-        "order": 3,
         "name": "Awija Metal Industries",
         "client": "ELKOOD Company",
         "teamMates": [
@@ -200,7 +225,6 @@ const projects: PortfolioItem[] = [
         "url": "https://www.awijatinplate.com/"
     },
     {
-        "order": 2,
         "name": "Broker Management",
         "client": "ELKOOD Company",
         description: "Broker Management is an application for automating the operations of a brokerage company electronically through various services, including human resource management, project and department management, document and correspondence management, and a file management system for storing files in the cloud via AWS. It also supports authentication for employees with different permissions.",
@@ -261,7 +285,6 @@ const projects: PortfolioItem[] = [
         "url": ""
     },
     {
-        "order": 4,
         "name": "Rivira Pharma",
         "businessFeatures": [
             "Website for customers that provides them with the ability to register, read articles and create orders",
@@ -324,7 +347,6 @@ const projects: PortfolioItem[] = [
         ]
     },
     {
-        "order": 7,
         "name": "Golden Wrap",
         "client": "ELKOOD Company",
         "description": "A simple menu display app for Golden Wrap Restaurant with a content dashboard",
@@ -363,7 +385,6 @@ const projects: PortfolioItem[] = [
         "url": "https://goldenwrap.elkood.com/"
     },
     {
-        "order": 5,
         "name": "Pro Marketing",
         "client": "ELKOOD Company",
         "description": "Landing Page For Marketing Company in Aleppo Syria",
@@ -396,7 +417,6 @@ const projects: PortfolioItem[] = [
         "url": ""
     },
     {
-        "order": 8,
         "name": "MR Course",
         "client": "ELKOOD Company",
         "description": "Dashboard For E-learn Mobile Application Content Management",
@@ -432,8 +452,7 @@ const projects: PortfolioItem[] = [
         ]
     },
     {
-        "order": 3,
-        "name": "Fly Order",
+        name: "Fly Order",
         "client": "ELKOOD Company",
         "description": "FlyOrder is an application for managing food delivery orders within the Damascus governorate. It is a Dashboard that includes many features, including management of areas and cities, management of stores and branches, management of products, processing orders created from the mobile application, processing invoices and sales and profit percentages for the stores and application management, management of notifications via WebSocket and Signal-R, and many other features.",
         "techFeatures": [

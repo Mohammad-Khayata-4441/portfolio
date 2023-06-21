@@ -30,7 +30,7 @@
 import ProjectsList from '~/data/projects'
 import "aos/dist/aos.css";
 import {api as viewer} from 'v-viewer'
-const projects = computed(() => ProjectsList.sort((a, b) => a.order > b.order ? 1 : -1))
+const projects = computed(() => ProjectsList)
 const websites = computed(() => projects.value.filter(p => !p.type.includes('Package')))
 const packages = computed(() => projects.value.filter(p => p.type.includes('Package')))
 

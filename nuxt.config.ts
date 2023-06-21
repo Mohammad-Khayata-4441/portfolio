@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '~/assets/scss/fonts.scss', '~/assets/scss/reusable.scss', '~/assets/scss/global.scss', 'viewerjs/dist/viewer.css'],
   ssr: true,
 
+  
 
   modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxtjs/google-fonts', '@nuxt/image',],
 
@@ -33,6 +34,10 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content: "3 Years + Forntent Web Developer Using Vuejs , React and TypeScript"
+        },
+        {
+          name:"og:image",
+          content:"https://drive.google.com/uc?export=view&id=18jqK9Mv9h2utFVOSHs0hz46Fs7rP7hJ1"
         }
       ],
       htmlAttrs: {
