@@ -50,8 +50,6 @@ const animate = () => {
                 duration: 0.8 ,
                 scrollTrigger: {
                     trigger: light,
-                    onEnter: () => console.log('enter to', light),
-                    toggleActions: 'play reverse play reverse'
                 }
             })
         })

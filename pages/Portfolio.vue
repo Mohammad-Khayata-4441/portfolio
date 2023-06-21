@@ -9,7 +9,7 @@
         <!-- <h2 class="text-center mt-12 text-2xl text-white">Web Applications & Landing Pages</h2> -->
         <div class="xl:container px-4 mx-auto space-y-12">
             <PortfolioItem v-memo class="items-center" @on-details="openGallery" data-aos-duration="1000"
-                v-for="(item, i) in websites" :key="item.id" :item="item">
+                v-for="(item, i) in websites" :index="i" :key="item.id" :item="item">
             </PortfolioItem>
 
         </div>

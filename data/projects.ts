@@ -80,6 +80,50 @@ const projects: PortfolioItem[] = [
     },
 
     {
+        name: "Fly Order",
+        "client": "ELKOOD Company",
+        "description": "FlyOrder is an application for managing food delivery orders within the Damascus governorate. It is a Dashboard that includes many features, including management of areas and cities, management of stores and branches, management of products, processing orders created from the mobile application, processing invoices and sales and profit percentages for the stores and application management, management of notifications via WebSocket and Signal-R, and many other features.",
+        "techFeatures": [
+            "Single Page Application",
+            "Responsive Design",
+            "Powered With Typescript",
+            "JWT Authentication",
+            "Real Time Notification System Build With Microsoft Signal-R And Web Socket"
+        ],
+        "primaryColor": "#F8AD24",
+        id: "10",
+        screenShots: [
+            "https://drive.google.com/file/d/1mxzgSV_DEKqOR-_3TiO1OLuhaeXRKwZv/view?usp=sharing",
+            "https://drive.google.com/file/d/1x5pb2HQstzT3en-D97Lr9PjY5esazYpA/view?usp=sharing",
+            "https://drive.google.com/file/d/1ySk-cgdgcYAutyHomT3ucoEhh9R-5bsy/view?usp=sharing",
+            "https://drive.google.com/file/d/1ffzH-xC1S3VkR7KfSBcyYx61rfCxtV3p/view?usp=sharing",
+            "https://drive.google.com/file/d/1DztSMowvlyHDV2ZiU0KJPpmcopBzgO2V/view?usp=sharing",
+            "https://drive.google.com/file/d/13bRFWIul6EXhTSXXXuQdEuhgcU5cTRla/view?usp=sharing",
+        ],
+
+        status: "Finished",
+        technologiesIcons: ["vue.webp", "typescript.webp", "tailwind.webp"],
+        type: ['Dashboard'],
+        "workInformation": "I Worked on it as Frontend Team Leader at <span class='dark:text-white text-primary font-bold '> Elkood </span> frontend  team ",
+        year: "2022",
+        businessFeatures: [
+            "Managing Orders That Created By Mobile App Users",
+            "Managing Customers , Employees , Drivers ",
+            "Managing Products , Products Categories ",
+            "Managing Cities , Areas , Streets ",
+            "Managing Markets , Shops and Resturants",
+            "Creating Orders Manually From Dashboard",
+            "Sending Notifications For Mobile App Users",
+            "Receiving Mobile Users Feedback",
+            "Managing Prices And Discounts",
+            "View financial statistics and bills ",
+            "Controlling profits from stores and delivery"
+        ],
+
+
+
+    },
+    {
         "name": "Al E'lm Nour",
         "client": "Al Elem Nour Publishing House",
         "description": "Landing page for publishing house in aleppo syria",
@@ -396,8 +440,8 @@ const projects: PortfolioItem[] = [
         ],
         "id": "9",
         "screenShots": [
-            "https://drive.google.com/file/d/15kNwM5AY6wEs-96W7BR71h4YPeAqKVnx/view?usp=sharing",
             "https://drive.google.com/file/d/1A6xqWTaWQZ7oCCESvJ6-boVLbw4en8Av/view?usp=sharing",
+            "https://drive.google.com/file/d/15kNwM5AY6wEs-96W7BR71h4YPeAqKVnx/view?usp=sharing",
             "https://drive.google.com/file/d/1J7zWCsesC-ljg7mMol3-q5RjJ9fsP0Vv/view?usp=sharing",
             "https://drive.google.com/file/d/1WtGtBIpaX41V9qonQjrh7xA0eT5lzmJJ/view?usp=sharing"
         ],
@@ -451,50 +495,7 @@ const projects: PortfolioItem[] = [
             "JWT Authentication And Authorization"
         ]
     },
-    {
-        name: "Fly Order",
-        "client": "ELKOOD Company",
-        "description": "FlyOrder is an application for managing food delivery orders within the Damascus governorate. It is a Dashboard that includes many features, including management of areas and cities, management of stores and branches, management of products, processing orders created from the mobile application, processing invoices and sales and profit percentages for the stores and application management, management of notifications via WebSocket and Signal-R, and many other features.",
-        "techFeatures": [
-            "Single Page Application",
-            "Responsive Design",
-            "Powered With Typescript",
-            "JWT Authentication",
-            "Real Time Notification System Build With Microsoft Signal-R And Web Socket"
-        ],
-        "primaryColor": "#F8AD24",
-        id: "10",
-        screenShots: [
-            "https://drive.google.com/file/d/13bRFWIul6EXhTSXXXuQdEuhgcU5cTRla/view?usp=sharing",
-            "https://drive.google.com/file/d/1DztSMowvlyHDV2ZiU0KJPpmcopBzgO2V/view?usp=sharing",
-            "https://drive.google.com/file/d/1ffzH-xC1S3VkR7KfSBcyYx61rfCxtV3p/view?usp=sharing",
-            "https://drive.google.com/file/d/1mxzgSV_DEKqOR-_3TiO1OLuhaeXRKwZv/view?usp=sharing",
-            "https://drive.google.com/file/d/1x5pb2HQstzT3en-D97Lr9PjY5esazYpA/view?usp=sharing",
-            "https://drive.google.com/file/d/1ySk-cgdgcYAutyHomT3ucoEhh9R-5bsy/view?usp=sharing"
-        ],
-
-        status: "Finished",
-        technologiesIcons: ["vue.webp", "typescript.webp", "tailwind.webp"],
-        type: ['Dashboard'],
-        "workInformation": "I Worked on it as Frontend Team Leader at <span class='dark:text-white text-primary font-bold '> Elkood </span> frontend  team ",
-        year: "2022",
-        businessFeatures: [
-            "Managing Orders That Created By Mobile App Users",
-            "Managing Customers , Employees , Drivers ",
-            "Managing Products , Products Categories ",
-            "Managing Cities , Areas , Streets ",
-            "Managing Markets , Shops and Resturants",
-            "Creating Orders Manually From Dashboard",
-            "Sending Notifications For Mobile App Users",
-            "Receiving Mobile Users Feedback",
-            "Managing Prices And Discounts",
-            "View financial statistics and bills ",
-            "Controlling profits from stores and delivery"
-        ],
-
-
-
-    }
+ 
 ];
 
 
