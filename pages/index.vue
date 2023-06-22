@@ -1,7 +1,7 @@
 <template>
   <div class="page home-page">
 
- 
+
 
     <LightsGenerator></LightsGenerator>
 
@@ -26,12 +26,11 @@
             </h2>
             <div ref="group" class="btn-group flex space-x-4 m-auto lg:m-0">
 
-              <a target="_blank" href=" https://docs.google.com/document/d/1sYRpK8tcoPdnADpcVO6mrJc3Gz3W6WGmkhvZEGo05vI/edit?usp=sharing">
+              <a class="bg-primary space-x-4 p-3 btn text-white rounded-lg px-6" target="_blank"
+                href=" https://docs.google.com/document/d/1sYRpK8tcoPdnADpcVO6mrJc3Gz3W6WGmkhvZEGo05vI/edit?usp=sharing">
 
-                <button class="bg-primary space-x-4 p-3 btn text-white rounded-lg px-6">
-                  Resume
-                  <Icon size="1.6rem" name="material-symbols:switch-account"></Icon>
-                </button>
+                Resume
+                <Icon size="1.6rem" name="material-symbols:switch-account"></Icon>
               </a>
 
 

@@ -49,7 +49,9 @@ export default defineNuxtConfig({
         { property: 'og:locale', content: 'en_US' },
       ],
       htmlAttrs: {
-        class: 'dark'
+        lang:'en',
+        class: 'dark',
+        
       }
     },
 

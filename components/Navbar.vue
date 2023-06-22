@@ -2,14 +2,17 @@
   <header class="flex fixed bottom-0 md:top-0 md:bottom-auto w-screen items-center justify-center p-5 z-10">
     <nav class="rounded-2xl  px-8 py-2 md:py-0 md:px-28 glass-paper">
       <ul class="flex items-center justify-center list-none space-x-12 md:space-x-16">
-        <nuxt-link class="py-2 md:py-6 flex space-x-1 items-center select-none " active-class="active-nav-link" ta
-          v-for="item in navLinks" :to="item.path">
-          <Icon class="text-4xl md:text-2xl select-none" :name="item.icon"></Icon>
-          <span class="text-text text-sm font-semibold hidden md:inline">
-            {{ item.title }}
-          </span>
+        <li v-for="item in navLinks" >
 
-        </nuxt-link>
+          <nuxt-link class="py-2 md:py-6 flex space-x-1 items-center select-none " active-class="active-nav-link"
+            :to="item.path">
+            <Icon class="text-4xl md:text-2xl select-none" :name="item.icon"></Icon>
+            <span class="text-text text-sm font-semibold hidden md:inline">
+              {{ item.title }}
+            </span>
+
+          </nuxt-link>
+        </li>
       </ul>
     </nav>
     <!-- <client-only>

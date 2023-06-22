@@ -30,12 +30,12 @@ definePageMeta({
     <div class="page about-page  relative z-0 flex flex-col ">
         <LightsGenerator></LightsGenerator>
         <div class="page-overlay "></div>
-
         <!-- Personal Info Section  -->
         <section class="container mx-auto">
-
-            <h1 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-primary dark:border-text w-max font-bold">
-                Personal Info</h1>
+            
+            <h1 class="text-white text-2xl  text-center hidden">About Mohammad Khayata</h1>
+            <h2 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-primary dark:border-text w-max font-bold">
+                Personal Info</h2>
 
             <div class="grid info grid-cols-12 py-12 lg:py-24">
 
@@ -109,7 +109,7 @@ definePageMeta({
                         <span class="text-text">Phone</span>
                         <span class="dark:text-white  font-bold">
                             <a class="hover:text-primary" href="tel:+963956954441">
-                                +963 956 954 441
+                                +963&nbsp;956&nbsp;954&nbsp;441
                             </a>
                         </span>
                     </div>
@@ -124,11 +124,11 @@ definePageMeta({
         <!-- Summary Section -->
         <section>
             <div
-                class="container max-w-7xl mx-auto dark:dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-primary dark:border-text rounded-2xl overflow-hidden  shadow-lg">
+                class="container summary max-w-7xl mx-auto dark:dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-primary dark:border-text rounded-2xl overflow-hidden  shadow-lg">
 
                 <h3 class="text-2xl font-bold bg-primary w-max  p-2 pr-4 rounded-br-3xl text-white ">
                     Summary</h3>
-                <summary
+                <p
                     class="mx-auto list-none text-gray-700 dark:text-white relative p-4 max-h-[400px] lg:max-h-max overflow-auto ">
 
                         My career in Web Applications Development began after entering the Faculty of Informatics
@@ -150,7 +150,7 @@ definePageMeta({
 
 
 
-                </summary>
+                </p>
             </div>
 
         </section>
@@ -191,9 +191,9 @@ definePageMeta({
                                         class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
                                         <h2 class="text-2xl mb-2 font-bold">
                                             Frontend Vue.js Developer</h2>
-                                        <h4 class="text-sm text-primary  font-bold">
+                                        <h3 class="text-sm text-primary  font-bold">
                                             MindTorches <span class="text-gray-500 ml-4">
-                                                Irbid - Jordan </span></h4>
+                                                Irbid - Jordan </span></h3>
                                         <p class="my-4  dark:text-gray-300">
 
                                             I Worked as Freelancer at
@@ -233,10 +233,10 @@ definePageMeta({
                                         class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
                                         <h2 class="text-2xl mb-2 font-bold">
                                             Frontend Team Lead</h2>
-                                        <h4 class="text-sm text-primary  font-bold">
+                                        <h3 class="text-sm text-primary  font-bold">
                                             ELKOOD <span class="text-gray-500 ml-4">
                                                 Syria - Aleppo </span>
-                                        </h4>
+                                        </h3>
                                         <p class="my-4 max-h-[220px] dark:text-gray-300 overflow-auto">
 
                                             In Jan - 2022 i started working
@@ -293,10 +293,10 @@ definePageMeta({
                                         class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
                                         <h2 class="text-2xl mb-2 font-bold">
                                             Frontend Vue.js Developer</h2>
-                                        <h4 class="text-sm text-primary  font-bold">
+                                        <h3 class="text-sm text-primary  font-bold">
                                             ELKOOD <span class="text-gray-500 ml-4">
                                                 Syria - Aleppo </span>
-                                        </h4>
+                                        </h3>
                                         <p class="my-4  dark:text-gray-300">
 
                                             I started in EKOOD as Vue.js
@@ -345,10 +345,10 @@ definePageMeta({
                                         class="mx-auto list-none text-gray-700 dark:text-white relative p-4  max-w-[350px] md:max-w-max md:w-[500px]">
                                         <h2 class="text-2xl mb-2 font-bold">
                                             Frontend Vue.js Developer</h2>
-                                        <h4 class="text-sm text-primary  font-bold">
+                                        <h3 class="text-sm text-primary  font-bold">
                                             Freelancer <span class="text-gray-500 ml-4">
                                                 online </span>
-                                        </h4>
+                                        </h3>
                                         <p class="my-4  dark:text-gray-300">
 
                                             After learning the basics of developing web applications, I created some
@@ -606,7 +606,7 @@ definePageMeta({
     height: auto !important;
     min-height: 100vh;
 
-    summary p {
+    .summary p {
 
         line-height: 35px;
     }

@@ -29,7 +29,7 @@
                                     class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:phone"></icon>
                                     <a href="tel:+963956954441">
-                                        +963 956 954 441
+                                        +963&nbsp;956&nbsp;954&nbsp;441
                                     </a>
                                 </span>
 
@@ -39,7 +39,7 @@
                                     class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:phone"></icon>
                                     <span>
-                                        +963 980 379 067
+                                        +963&nbsp;980&nbsp;379&nbsp;067
                                     </span>
                                 </a>
                             </li>
@@ -114,29 +114,32 @@
                     <form>
                         <div class="-mx-2 md:items-center md:flex">
                             <div class="flex-1 px-2">
-                                <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full
+                                <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full
                                     Name</label>
-                                <input type="text" placeholder="John Doe"
+                                <input name="name" id="name" type="text" placeholder="John Doe"
                                     class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                             </div>
 
                             <div class="flex-1 px-2 mt-4 md:mt-0">
-                                <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email
+                                <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email
                                     address</label>
-                                <input type="email" placeholder="johndoe@example.com"
+                                <input id="email" name="email" type="email" placeholder="johndoe@example.com"
                                     class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                             </div>
 
                         </div>
 
                         <div class="w-full mt-4">
-                            <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
+                            <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
                             <textarea
+                                id="message"
+                                name="message"
                                 class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                 placeholder="Message"></textarea>
                         </div>
 
                         <button
+                        type="submit"
                             class="w-full text-[1rem] px-4 py-2 mt-4 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-primary rounded-lg focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 ">
                             get in touch
                             <Icon name="tabler:send" size="1.5rem"></Icon>
