@@ -1,23 +1,7 @@
 <template>
   <div class="page home-page">
 
-<!-- 
-    <div ref="pageLights" class="page-lights absolute top-0 h-full">
-      <svg class="bottom-left-light absolute blur-[200px] bottom-0 right-0 hidden md:block md:left-0 " width="494"
-        height="309" viewBox="0 0 494 309" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle r="247" transform="matrix(1 0 0 -1 247 247)" fill="#436CFF" fill-opacity="0.77" />
-      </svg>
-
-      <svg class="light-top absolute blur-[200px] top-0  right-0 md:left-1/4" width="494" height="138"
-        viewBox="0 0 494 138" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle r="247" transform="matrix(1 0 0 -1 247 -109)" fill="#AC43FF" fill-opacity="0.77" />
-      </svg>
-
-      <svg class="absolute blur-[200px] right-32 md:right-0" width="486" height="377" viewBox="0 0 486 377" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <circle cx="243" cy="134" r="243" fill="#43D2FF" fill-opacity="0.42" />
-      </svg>
-    </div> -->
+ 
 
     <LightsGenerator></LightsGenerator>
 
@@ -29,17 +13,17 @@
 
           <article
             class="hero-text col-span-12 lg:col-span-7 self-center px-2 md:px-10 flex flex-col space-y-5 order-2 lg:order1 ">
-            <h6 ref="hi" class="text-3xl hidden lg:block text-text dark:text-gray-300">
-              Hey There , I'm</h6>
-            <h2 ref="name"
+            <p ref="hi" class="text-3xl hidden lg:block text-text dark:text-gray-300">
+              Hey There , I'm</p>
+            <h1 ref="name"
               class="text-4xl text-center lg:text-left sm:text-5xl lg:text-6xl font-bold capitalize gradiant-heading">
               Mohammad Khayata
-            </h2>
-            <p ref="text" class="text-md sm:text-xl text-center lg:text-left  text-text dark:text-white">
+            </h1>
+            <h2 ref="text" class="text-md sm:text-xl text-center lg:text-left  text-text dark:text-white">
               FullStack JavaScript/TypeScript Developer <br class="md:hidden" />
               Specialist in Frontend Development With <span class="text-primary font-bold">3 Years Of Experince </span> ,
               And Software Engineering Student
-            </p>
+            </h2>
             <div ref="group" class="btn-group flex space-x-4 m-auto lg:m-0">
 
               <a target="_blank" href=" https://docs.google.com/document/d/1sYRpK8tcoPdnADpcVO6mrJc3Gz3W6WGmkhvZEGo05vI/edit?usp=sharing">

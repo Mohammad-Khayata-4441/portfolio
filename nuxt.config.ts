@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
 
 
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxtjs/google-fonts', '@nuxt/image', 'nuxt-simple-sitemap'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxtjs/google-fonts', '@nuxt/image', 'nuxt-simple-sitemap' , '@nuxtjs/html-validator'],
   googleFonts: {
     families: {
       Poppins: true,
