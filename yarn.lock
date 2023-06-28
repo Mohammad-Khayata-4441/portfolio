@@ -427,6 +427,11 @@
   resolved "https://registry.yarnpkg.com/@fastify/accept-negotiator/-/accept-negotiator-1.1.0.tgz#c1c66b3b771c09742a54dd5bc87c582f6b0630ff"
   integrity sha512-OIHZrb2ImZ7XG85HXOONLcJWGosv7sIvM2ifAPQVhg9Lv7qdmMBNVaai4QTdyuaqbKM5eO6sLSQOYI7wEQeCJQ==
 
+"@headlessui/vue@^1.7.14":
+  version "1.7.14"
+  resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.7.14.tgz#cc10712044944bc728f5ef8b2df2174c1194a55e"
+  integrity sha512-aL9U9Sa7wdOzlrfjx6EjMIYNRCma5mngWcWzQBcHFwznpRZ8g/QZ/AYFtRDrZZUw22Ttttja4D7ZRXFwhONewA==
+
 "@html-validate/stylish@^4.0.1":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@html-validate/stylish/-/stylish-4.1.0.tgz#2683b64c3e845e413c86912c6239f7168e8fb941"
@@ -3822,6 +3827,11 @@ make-dir@^3.0.2, make-dir@^3.1.0, make-dir@~3.1.0:
   integrity sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==
   dependencies:
     semver "^6.0.0"
+
+maz-ui@^3.9.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/maz-ui/-/maz-ui-3.9.0.tgz#a3455628c7743e476e72c8095b355e55ff716f96"
+  integrity sha512-s0OCM2Eu5gHU2e4NerZnv7iTltW5Qowikyw0nQwY6kjfEjlMxiXntm/UBKo2aiGkQkDOfCaVLK2uetSfz0deBA==
 
 mdn-data@2.0.28:
   version "2.0.28"

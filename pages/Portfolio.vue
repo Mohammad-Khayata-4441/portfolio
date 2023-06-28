@@ -1,27 +1,38 @@
 <template>
     <div class="page portfolio-page  bg-opacity-5">
 
-            <LightsGenerator></LightsGenerator>
+ 
+        <LightsGenerator></LightsGenerator>
         <div class="page-overlay  flex-grow-1 min-h-full"></div>
 
 
 
-        <!-- <h2 class="text-center mt-12 text-2xl text-white">Web Applications & Landing Pages</h2> -->
         <div class="xl:container px-4 mx-auto space-y-12">
-            <PortfolioItem v-memo class="items-center"  data-aos-duration="1000"
-                v-for="(item, i) in websites" :index="i" :key="item.id" :item="item">
+            <PortfolioItem @on-details="setPreveiwScreenShots(item.screenShots)" v-memo class="items-center"
+                data-aos-duration="1000" v-for="(item, i) in websites" :index="i" :key="item.id" :item="item">
             </PortfolioItem>
 
         </div>
 
-        <!-- <h2 class="text-center mt-12 text-2xl text-white">Packages and Templates</h2>
-        <div class="container  px-4 mx-auto space-y-12">
-            <PortfolioItem v-memo class="items-center " data-aos-duration="1000" v-for="(item, i) in packages"
-                :key="item.id" :item="item">
-            </PortfolioItem>
 
 
-        </div> -->
+        <Transition name="showGallery" @enter="onEnter" @leave="onLeave">
+            <div v-if="showGallery" :class="{ 'bg-black bg-opacity-80': showGallery }"
+                class="gallery flex items-center justify-center h-screen w-screen z-20 transition fixed top-0 left-0">
+                <button class="absolute right-10 top-10 z-40" @click="closeGallery">
+                    <icon class="text-5xl text-gray-300" name="solar:close-circle-linear" />
+                </button>
+                <Swiper ref="swiper" wrapper-class="items-center">
+                    <SwiperSlide v-for="screen in screenShots" :key="screen" class="flex justify-center">
+                        <NuxtImg height="2160" width="3840"
+                            class="h-full w-auto " preload
+                            quality="0.2" placeholder="https://placehold.co/750x400/161A29/546192?text=Loading..."
+                              :src="useDriveResolver(screen)"
+                              />
+                    </SwiperSlide>
+                </Swiper>
+            </div>
+        </Transition>
     </div>
 </template>
 
@@ -29,12 +40,81 @@
 <script setup lang="ts">
 import ProjectsList from '~/data/projects'
 import "aos/dist/aos.css";
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import "swiper/css";
+import gsap from 'gsap'
+
+const swiper = ref(null);
+
+const showGallery = ref(false);
+
+const screenShots = ref<string[]>([])
+import {
+    onClickOutside,
+} from "@vueuse/core";
+
+const setPreveiwScreenShots = (e: string[]) => {
+    console.log(e)
+    showGallery.value = true;
+    document.documentElement.requestFullscreen();
+    screenShots.value = e
+}
+
+onClickOutside(swiper.value, () => {
+    showGallery.value = false;
+});
+
+
+
+const onEnter = (el: any, done: any) => {
+    console.log("on enter");
+
+    gsap.from(el.querySelector(".swiper"), {
+        opacity: 0,
+        duration: 0.4,
+        scale: 0,
+        onComplete: () => {
+            done();
+        },
+    });
+};
+
+
+const onLeave = (el: any, done: any) => {
+    console.log("on leave");
+
+    gsap.to(el.querySelector(".swiper"), {
+        opacity: 0,
+        duration: 0.4,
+        scale: 0,
+        onComplete: () => {
+            done();
+        },
+    });
+};
+function closeGallery() {
+    showGallery.value = false;
+    if (process.client) {
+        document.exitFullscreen();
+    }
+}
+
+
 const projects = computed(() => ProjectsList)
 const websites = computed(() => projects.value.filter(p => !p.type.includes('Package')))
 const packages = computed(() => projects.value.filter(p => p.type.includes('Package')))
 
+const bodyClass = computed(() =>
+    showGallery.value ? "overflow-hidden" : "overflow-auto"
+);
 
 
+
+useHead({
+    htmlAttrs: {
+        class: bodyClass,
+    },
+});
 // const openGallery = (images: string[]) => {
 //     console.log('open', images)
 //     viewer({
