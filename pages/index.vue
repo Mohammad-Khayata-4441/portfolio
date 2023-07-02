@@ -21,7 +21,7 @@
             </h1>
             <h2 ref="text" class="text-md sm:text-xl text-center lg:text-left  text-text dark:text-white">
               FullStack JavaScript/TypeScript Developer <br class="md:hidden" />
-              Specialist in Frontend Development With <span class="text-primary font-bold">3 Years Of Experince </span> ,
+              Specialist in Frontend Development With <span class="text-primary font-bold">3 Years Of Experience </span> ,
               And I'm a Software Engineering Student
             </h2>
             <div ref="group" class="btn-group flex space-x-4 m-auto lg:m-0">

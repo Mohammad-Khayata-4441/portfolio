@@ -47,7 +47,7 @@ const projects: PortfolioItem[] = [
         promoVideo: "",
         teamMates: [],
         techFeatures: [],
-        url: ""
+        url: "https://car-parts-client.vercel.app/"
     },
     {
         "name": "Qr Code Germany",

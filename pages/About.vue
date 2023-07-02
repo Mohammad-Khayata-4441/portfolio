@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import "aos/dist/aos.css";
 import AOS from "aos";
+const fontSize = ref(16)
+const pxFontSize = computed(() => fontSize.value.toString() + 'px')
 onMounted(() => {
     AOS.init();
 })
@@ -9,7 +11,7 @@ useHead({
     meta: [
         {
             name: "description",
-            content: "Mohammad Khayata  - about me page   , read about my  personal informations ,  work experince ,  web development (backend and frontend) skills ",
+            content: "Mohammad Khayata  - about me page   , read about my  personal informations ,  work experience ,  web development (backend and frontend) skills ",
 
         },
         {
@@ -32,7 +34,7 @@ definePageMeta({
         <div class="page-overlay "></div>
         <!-- Personal Info Section  -->
         <section class="container mx-auto">
-            
+
             <h1 class="text-white text-2xl  text-center hidden">About Mohammad Khayata</h1>
             <h2 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-primary dark:border-text w-max font-bold">
                 Personal Info</h2>
@@ -126,27 +128,38 @@ definePageMeta({
             <div
                 class="container summary max-w-7xl mx-auto dark:dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-primary dark:border-text rounded-2xl overflow-hidden  shadow-lg">
 
-                <h3 class="text-2xl font-bold bg-primary w-max  p-2 pr-4 rounded-br-3xl text-white ">
-                    Summary</h3>
-                <p
-                    class="mx-auto list-none text-gray-700 dark:text-white relative p-4 max-h-[400px] lg:max-h-max overflow-auto ">
+                <div class="flex items-center justify-between pr-4">
 
-                        My career in Web Applications Development began after entering the Faculty of Informatics
-                        Engineering, where I began to learn the basics of programming, OOP, algorithms, and data structures
-                        in C++ and Java languages. <br>
-                        I decided to use what I learned to develop web applications because I saw that the world tends
-                        towards web applications broadly. In 2019, I started learning HTML, CSS, and JavaScript. During the
-                        quarantine period in 2020, I benefited from learning a lot about Vue.js, React, Nuxt.js, and Next
-                        Frameworks. <br>
-                        I always like to search for and learn new and popular technologies, and I try to find the best
-                        practices. This has earned me the experience of searching the Internet and reaching the best
-                        solutions. <br>
-                        I worked in my career as a trainer, and after a long period of training and work, I worked as a
-                        mentor. This gave me experience in dealing with new employees and trainees and knowing the way most
-                        beginners think and how to help them. <br>
-                        I aim to learn everything related to web application development, and I seek to have a role in
-                        developing new technologies or improving existing ones. <br>
-                        I tend to be more interested in issues of logic and programming than those of graphics and design.
+                    <h3 class="text-2xl font-bold bg-primary w-max  p-2 pr-4 rounded-br-3xl text-white ">
+                        Summary</h3>
+                    <div class="flex items-center gap-4">
+                        <Icon class="text-[44px]" name="majesticons:font-size-line"></Icon>
+                        <input min="12" max="24" v-model="fontSize" type="range">
+
+                    </div>
+                </div>
+                <p
+                    class="mx-auto list-none text-gray-700 dark:text-white relative p-4 max-h-[400px] lg:max-h-max overflow-auto leading-1">
+                    My career in web application development began when I entered the Faculty of Informatics Engineering,
+                    where I learned the basics of programming, object-oriented programming, algorithms, and data structures
+                    using C++ and Java languages. I decided to focus on web applications because I saw the world was
+                    trending towards them. <br>
+
+                    In 2019, I started learning HTML, CSS, and JavaScript. During the quarantine period in 2020, I expanded
+                    my knowledge by learning Vue.js, React and Nuxt.js Frameworks. <br>
+
+                    I am always eager to learn new and
+                    popular technologies, and I strive to follow best practices. This has helped me become proficient in
+                    searching the internet for the best solutions. <br>
+
+                    I worked as a team leader with a group of employees. We worked on various large projects such as
+                    e-commerce stores, content management applications, educational apps, and other applications. <br>
+
+                    I have worked as a trainer and mentor, gaining experience in dealing with new employees and trainees.
+                    This has taught me how beginners think and how to help them. I aim to continue learning everything
+                    related to web application development and to have a role in developing new technologies or improving
+                    existing ones. I am particularly interested in issues of logic and programming rather than those of
+                    graphics and design. <br>
 
 
 
@@ -154,7 +167,7 @@ definePageMeta({
             </div>
 
         </section>
-        <!-- Work Experince Section -->
+        <!-- Work Experience Section -->
         <section class="my-20">
             <h3 class="text-3xl m-auto mt-16 dark:text-white border-b-2 border-primary dark:border-text w-max font-bold">
                 Work Experience</h3>
@@ -194,7 +207,7 @@ definePageMeta({
                                         <h3 class="text-sm text-primary  font-bold">
                                             MindTorches <span class="text-gray-500 ml-4">
                                                 Irbid - Jordan </span></h3>
-                                        <p class="my-4  dark:text-gray-300">
+                                        <p class="exp-text my-4  max-h-[220px] dark:text-gray-300 overflow-auto">
 
                                             I Worked as Freelancer at
                                             MindTorches Company on JetOrder
@@ -237,7 +250,7 @@ definePageMeta({
                                             ELKOOD <span class="text-gray-500 ml-4">
                                                 Syria - Aleppo </span>
                                         </h3>
-                                        <p class="my-4 max-h-[220px] dark:text-gray-300 overflow-auto">
+                                        <p class="exp-text my-4 max-h-[220px] dark:text-gray-300 overflow-auto">
 
                                             In Jan - 2022 i started working
                                             in a new position as Frontend
@@ -297,7 +310,7 @@ definePageMeta({
                                             ELKOOD <span class="text-gray-500 ml-4">
                                                 Syria - Aleppo </span>
                                         </h3>
-                                        <p class="my-4  dark:text-gray-300">
+                                        <p class="exp-text my-4 max-h-[220px] overflow-auto dark:text-gray-300">
 
                                             I started in EKOOD as Vue.js
                                             jonior developer , I Worked on
@@ -349,7 +362,7 @@ definePageMeta({
                                             Freelancer <span class="text-gray-500 ml-4">
                                                 online </span>
                                         </h3>
-                                        <p class="my-4  dark:text-gray-300">
+                                        <p class="my-4 dark:text-gray-300 exp-text max-h-[220px] overflow-auto">
 
                                             After learning the basics of developing web applications, I created some
                                             training projects for practicing .. in addition to working on some small
@@ -455,21 +468,28 @@ definePageMeta({
                     </span>
                     using Tools and Libraries</p>
 
-                <div class="grid gap-8  md:gap-0 grid-cols-12 my-20">
+                <div class="grid gap-8 md:gap-0 grid-cols-4 md:grid-cols-8 my-20">
 
                     <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
+                        class=" flex justify-center items-center">
                         <img height="100" width="100" src="/icons/vite.webp" class="w-16 md:w-28" alt="technology-vite"
                             title="vite">
-
-
-
                     </div>
+                    <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700"
+                        class=" flex justify-center items-center">
+                        <img height="100" width="100" src="/icons/material-ui.svg" class="w-16 md:w-28" alt="technology-vite"
+                            title="vite">
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700"
+                        class=" flex justify-center items-center">
+                        <img height="100" width="100" src="/icons/react-query.svg" class="w-16 md:w-28" alt="technology-vite"
+                            title="vite">
+                    </div>
+
+
+
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class=" flex justify-center items-center">
 
 
 
@@ -479,7 +499,7 @@ definePageMeta({
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class=" flex justify-center items-center">
 
 
 
@@ -489,7 +509,7 @@ definePageMeta({
 
                     </div>
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class=" flex justify-center items-center">
 
 
 
@@ -500,7 +520,7 @@ definePageMeta({
 
                     </div>
                     <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class=" flex justify-center items-center">
 
 
 
@@ -510,7 +530,7 @@ definePageMeta({
 
                     </div>
                     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class=" flex justify-center items-center">
 
 
 
@@ -526,7 +546,7 @@ definePageMeta({
 
                 <div class="grid gap-8  md:gap-0 grid-cols-12 my-20">
                     <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class="col-span-4 md:col-span-3 flex justify-center items-center">
 
 
 
@@ -536,7 +556,7 @@ definePageMeta({
 
                     </div>
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class="col-span-4 md:col-span-3 flex justify-center items-center">
 
 
 
@@ -547,7 +567,7 @@ definePageMeta({
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class="col-span-4 md:col-span-3 flex justify-center items-center">
 
 
 
@@ -557,7 +577,7 @@ definePageMeta({
 
                     </div>
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class="col-span-4 md:col-span-3 flex justify-center items-center">
 
 
 
@@ -567,26 +587,8 @@ definePageMeta({
 
 
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
 
 
-
-                        <img height="100" width="100" src="/icons/cs.webp" class="w-16 md:w-28" alt="technology-cs"
-                            title="cs">
-
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
-
-
-
-                        <img height="100" width="100" src="/icons/asp.webp" class="w-16 md:w-28" alt="technology-asp"
-                            title="asp">
-
-
-                    </div>
                 </div>
 
             </div>
@@ -606,8 +608,12 @@ definePageMeta({
     height: auto !important;
     min-height: 100vh;
 
-    .summary p {
-
-        line-height: 35px;
+    .summary p,
+    .exp-text {
+        line-height: 2.4rem;
+        font-size: v-bind(pxFontSize);
     }
-}</style>
+
+
+}
+</style>
