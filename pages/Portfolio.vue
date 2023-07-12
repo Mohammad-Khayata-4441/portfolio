@@ -25,7 +25,7 @@
                 <Swiper ref="swiper" wrapper-class="items-center">
                     <SwiperSlide v-for="screen in screenShots" :key="screen" class="flex justify-center">
                         <NuxtImg height="2160" width="3840"
-                            class="h-full w-auto " preload
+                            class="h-full w-auto mx-auto" preload
                             quality="0.2" placeholder="https://placehold.co/750x400/161A29/546192?text=Loading..."
                               :src="useDriveResolver(screen)"
                               />
