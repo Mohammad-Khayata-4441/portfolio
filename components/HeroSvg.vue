@@ -549,7 +549,6 @@ import gsap, { Back } from 'gsap'
 const myRefSvg = ref<SVGAElement | null>(null)
 onMounted(() => {
 
-    console.log('mounted', myRefSvg.value);
 
 
     if (process.client && myRefSvg.value) {

@@ -54,7 +54,6 @@ import {
 } from "@vueuse/core";
 
 const setPreveiwScreenShots = (e: string[]) => {
-    console.log(e)
     showGallery.value = true;
     document.documentElement.requestFullscreen();
     screenShots.value = e
@@ -67,7 +66,6 @@ onClickOutside(swiper.value, () => {
 
 
 const onEnter = (el: any, done: any) => {
-    console.log("on enter");
 
     gsap.from(el.querySelector(".swiper"), {
         opacity: 0,
@@ -81,7 +79,6 @@ const onEnter = (el: any, done: any) => {
 
 
 const onLeave = (el: any, done: any) => {
-    console.log("on leave");
 
     gsap.to(el.querySelector(".swiper"), {
         opacity: 0,

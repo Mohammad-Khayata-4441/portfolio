@@ -24,7 +24,7 @@
                         <hr class="border-text">
 
                         <ul>
-                            <li class="my-4">
+                            <li class="my-4 ">
                                 <span
                                     class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:phone"></icon>
@@ -34,7 +34,7 @@
                                 </span>
 
                             </li>
-                            <li class="my-4">
+                            <li class="my-4 ">
                                 <a href="tel:+963980379067"
                                     class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:phone"></icon>
@@ -43,21 +43,21 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="my-4">
+                            <li class="my-4 ">
+                                <a href="mailto:MohammadKhayata.gm@gmail.com"
+                                    class="dark:text-gray-300 text-md flex gap-2 items-center  transition-all  ">
+                                    <icon name="fa:at"></icon>
+                                    <span>
+                                        MohammadKhayata.gm@gmail.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="my-4 ">
                                 <a href="mailto:Mohammad_Khayata@outlook.com"
                                     class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:at"></icon>
                                     <span>
                                         Mohammad_Khayata@outlook.com
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="my-4">
-                                <a href="mailto:MohammadKhayata.gm@gmail.com"
-                                    class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
-                                    <icon name="fa:at"></icon>
-                                    <span>
-                                        MohammadKhayata.gm@gmail.com
                                     </span>
                                 </a>
                             </li>
