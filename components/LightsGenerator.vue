@@ -40,10 +40,7 @@ onMounted(() => {
 
 const animate = () => {
     if (process.client && pageLight.value) {
-
-
         pageLight.value.forEach((light) => {
-
             gsap.from(light, {
                 scale: 0,
                 opacity:0,
@@ -57,7 +54,6 @@ const animate = () => {
 }
 
 watch(pageLight, (nv) => {
-    console.log('number ', nv, document.querySelectorAll('svg'))
     if (nv)
         animate()
 })
