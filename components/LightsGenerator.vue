@@ -47,6 +47,7 @@ const animate = () => {
                 duration: 0.8 ,
                 scrollTrigger: {
                     trigger: light,
+                    toggleActions: 'play reverse play reverse'
                 }
             })
         })
