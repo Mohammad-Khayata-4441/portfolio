@@ -102,7 +102,7 @@ definePageMeta({
                         <span class="text-text">Email</span>
                         <span class="dark:text-white  font-bold">
                             <a class="hover:text-primary"
-                                href="mailto:mohammad_khayata@outlook.com">Mohammad_khayata@outlook.com</a>
+                                href="mailto:mohammad_khayata@outlook.com">MohammadKhayata.gm@gmail.com</a>
                         </span>
                     </div>
                     <div
