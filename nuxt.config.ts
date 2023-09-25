@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
 
 
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxtjs/google-fonts', '@nuxt/image', 'nuxt-simple-sitemap' , '@nuxtjs/html-validator'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxtjs/google-fonts', '@nuxt/image', 'nuxt-simple-sitemap', '@nuxtjs/html-validator'],
   googleFonts: {
     families: {
       Poppins: true,
@@ -34,6 +34,10 @@ export default defineNuxtConfig({
           content: 'Mohammad Khayata,Mohammed,Mohammad-Khayatam ,Mohammed-Khayata,Mohammed_Khayata,Mohammad_Khayata,Khayat,mohamed, mohamed khayata, developer, react, frontend, vue, typescript, javascript, nuxt, next, nuxtj, nextjs ,vuejs, vue developer  '
 
         },
+
+        { name: "google-site-verification", content: "ENsuS3EnuQGhVvDaFxsTWARY0G-wrHWC-jNeIbapvf4" },
+
+
         {
           name: 'description',
           content: "3 Years + Of Experience In Frontend Development Using Vuejs , React and TypeScript"
@@ -49,9 +53,9 @@ export default defineNuxtConfig({
         { property: 'og:locale', content: 'en_US' },
       ],
       htmlAttrs: {
-        lang:'en',
+        lang: 'en',
         class: 'dark',
-        
+
       }
     },
 
