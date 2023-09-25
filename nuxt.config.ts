@@ -34,8 +34,7 @@ export default defineNuxtConfig({
           content: 'Mohammad Khayata,Mohammed,Mohammad-Khayatam ,Mohammed-Khayata,Mohammed_Khayata,Mohammad_Khayata,Khayat,mohamed, mohamed khayata, developer, react, frontend, vue, typescript, javascript, nuxt, next, nuxtj, nextjs ,vuejs, vue developer  '
 
         },
-
-        { name: "google-site-verification", content: "ENsuS3EnuQGhVvDaFxsTWARY0G-wrHWC-jNeIbapvf4" },
+         { name: "google-site-verification", content: "ENsuS3EnuQGhVvDaFxsTWARY0G-wrHWC-jNeIbapvf4" },
 
 
         {
