@@ -78,7 +78,7 @@
 
                             </a>
                             <a class="mx-1.5 dark:hover:text-primary dark:text-gray-300 transition-colors duration-300 transform hover:primary"
-                                href="https://www.linkedin.com/in/mohammad-khayata-9169801a9">
+                                href="https://github.com/Mohammad-Khayata-4441">
                                 <icon class="text-2xl mt-1" name="ri:github-fill" />
 
                             </a>
