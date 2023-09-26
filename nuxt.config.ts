@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
 
 
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxtjs/google-fonts', '@nuxt/image', 'nuxt-simple-sitemap', '@nuxtjs/html-validator'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxtjs/google-fonts', '@nuxt/image', 'nuxt-simple-sitemap', '@nuxtjs/html-validator', '@nuxtseo/module', 'nuxt-gtag' ],
   googleFonts: {
     families: {
       Poppins: true,
@@ -14,9 +14,20 @@ export default defineNuxtConfig({
       Roboto: true,
     }
   },
+
+
+  gtag:{
+    id:'G-mk1234kh'
+  },
+
+
   sitemap: {
     siteUrl: 'https://mohammad-khayata.vercel.app/',
+    hostname: 'https://mohammad-khayata.vercel.app/',
+
+
   },
+  
 
   app: {
     head: {
@@ -34,7 +45,7 @@ export default defineNuxtConfig({
           content: 'Mohammad Khayata,Mohammed,Mohammad-Khayatam ,Mohammed-Khayata,Mohammed_Khayata,Mohammad_Khayata,Khayat,mohamed, mohamed khayata, developer, react, frontend, vue, typescript, javascript, nuxt, next, nuxtj, nextjs ,vuejs, vue developer  '
 
         },
-         { name: "google-site-verification", content: "ENsuS3EnuQGhVvDaFxsTWARY0G-wrHWC-jNeIbapvf4" },
+        { name: "google-site-verification", content: "ENsuS3EnuQGhVvDaFxsTWARY0G-wrHWC-jNeIbapvf4" },
 
 
         {

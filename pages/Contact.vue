@@ -26,7 +26,7 @@
                         <ul>
                             <li class="my-4 ">
                                 <span
-                                    class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
+                                    class="dark:text-gray-300 dark:hover:text-primary text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:phone"></icon>
                                     <a href="tel:+963956954441">
                                         +963&nbsp;956&nbsp;954&nbsp;441
@@ -36,7 +36,7 @@
                             </li>
                             <li class="my-4 ">
                                 <a href="tel:+963980379067"
-                                    class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
+                                    class="dark:text-gray-300 dark:hover:text-primary text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:phone"></icon>
                                     <span>
                                         +963&nbsp;980&nbsp;379&nbsp;067
@@ -45,7 +45,7 @@
                             </li>
                             <li class="my-4 ">
                                 <a href="mailto:MohammadKhayata.gm@gmail.com"
-                                    class="dark:text-gray-300 text-md flex gap-2 items-center  transition-all  ">
+                                    class="dark:text-gray-300 dark:hover:text-primary text-md flex gap-2 items-center  transition-all  ">
                                     <icon name="fa:at"></icon>
                                     <span>
                                         MohammadKhayata.gm@gmail.com
@@ -54,7 +54,7 @@
                             </li>
                             <li class="my-4 ">
                                 <a href="mailto:Mohammad_Khayata@outlook.com"
-                                    class="dark:text-gray-300 text-md flex gap-2 items-center hover:text-primary transition-all  ">
+                                    class="dark:text-gray-300 dark:hover:text-primary text-md flex gap-2 items-center hover:text-primary transition-all  ">
                                     <icon name="fa:at"></icon>
                                     <span>
                                         Mohammad_Khayata@outlook.com
@@ -73,6 +73,19 @@
                         <div class="flex mt-4 -mx-1.5 ">
 
                             <a class="mx-1.5 dark:hover:text-primary dark:text-gray-300 transition-colors duration-300 transform hover:primary"
+                                href="https://www.linkedin.com/in/mohammad-khayata-9169801a9">
+                                <icon class="text-2xl mt-1" name="ri:linkedin-fill" />
+
+                            </a>
+                            <a class="mx-1.5 dark:hover:text-primary dark:text-gray-300 transition-colors duration-300 transform hover:primary"
+                                href="https://www.linkedin.com/in/mohammad-khayata-9169801a9">
+                                <icon class="text-2xl mt-1" name="ri:github-fill" />
+
+                            </a>
+
+
+
+                            <a class="mx-1.5 dark:hover:text-primary dark:text-gray-300 transition-colors duration-300 transform hover:primary"
                                 href="https://t.me/Mohammadkh4441">
 
                                 <icon class="text-2xl mt-1" name="fa-brands:telegram-plane" />
@@ -85,11 +98,6 @@
                             </a>
 
 
-                            <a class="mx-1.5 dark:hover:text-primary dark:text-gray-300 transition-colors duration-300 transform hover:primary"
-                                href="https://www.linkedin.com/in/mohammad-khayata-9169801a9">
-                                <icon class="text-2xl mt-1" name="ri:linkedin-fill" />
-
-                            </a>
 
                             <a class="mx-1.5 dark:hover:text-primary dark:text-gray-300 transition-colors duration-300 transform hover:primary"
                                 href="https://www.facebook.com/mohammed.kh.165033/">
