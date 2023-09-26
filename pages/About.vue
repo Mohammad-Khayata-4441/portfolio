@@ -402,8 +402,9 @@ definePageMeta({
                 <p class="text-center my-10  dark:text-gray-200"> <span class="text-primary font-bold mx-1"> Proficient
                     </span> with languages and framewoks</p>
                 <div class="grid gap-8  md:gap-0 grid-cols-12 my-20">
+           
                     <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class="col-span-6 md:col-span-2 flex justify-center items-center">
 
 
 
@@ -413,7 +414,7 @@ definePageMeta({
 
                     </div>
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class="col-span-6 md:col-span-2 flex justify-center items-center">
 
 
 
@@ -424,7 +425,7 @@ definePageMeta({
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class="col-span-6 md:col-span-2 flex justify-center items-center">
 
 
 
@@ -435,61 +436,67 @@ definePageMeta({
 
                     </div>
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                        class="col-span-6 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img height="150" width="100" src="/icons/nuxt.svg" class="h-32 md:w-40" alt="technology-nuxt"
+                        <img height="150" width="100" src="/icons/nuxt.svg" class="h-44 md:w-40" alt="technology-nuxt"
                             title="nuxt">
 
 
                     </div>
                     <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                    class="col-span-6 md:col-span-2 flex justify-center items-center">
+                    
+                    
+                    
+                    <img height="100" width="100" src="/icons/react.webp" class="w-16 md:w-28" alt="technology-react"
+                    title="react">
+                    
+                    
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
+                    class="col-span-6 md:col-span-2 flex justify-center items-center">
 
 
 
-                        <img height="100" width="100" src="/icons/react.webp" class="w-16 md:w-28" alt="technology-react"
-                            title="react">
+                    <img  src="/icons/next.png" class="h-12 object-contain" alt="technology-nuxt"
+                        title="nuxt">
 
 
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
-                        class="col-span-4 md:col-span-2 flex justify-center items-center">
+                </div>
+                <!-- <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
+                        class="col-span-6 md:col-span-2 flex justify-center items-center">
 
 
                         <img height="100" width="100" src="/icons/sass.webp" class="w-16 md:w-28" alt="technology-sass"
                             title="sass">
 
 
-                    </div>
+                    </div> -->
                 </div>
                 <p class="text-center my-10  dark:text-gray-200"> <span class="text-primary font-bold mx-1"> Expert
                     </span>
                     using Tools and Libraries</p>
 
-                <div class="grid gap-8 md:gap-0 grid-cols-4 md:grid-cols-8 my-20">
+                <div class="grid gap-8 md:gap-0 grid-cols-12 my-20">
 
-                    <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700"
-                        class=" flex justify-center items-center">
+                    <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700" class=" flex justify-center items-center col-span-6 md:col-span-2">
                         <img height="100" width="100" src="/icons/vite.webp" class="w-16 md:w-28" alt="technology-vite"
                             title="vite">
                     </div>
                     <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700"
-                        class=" flex justify-center items-center">
+                        class=" flex justify-center items-center col-span-6 md:col-span-2">
                         <img height="100" width="100" src="/icons/material-ui.svg" class="w-16 md:w-28" alt="technology-vite"
                             title="vite">
                     </div>
                     <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="700"
-                        class=" flex justify-center items-center">
+                        class=" flex justify-center items-center col-span-6 md:col-span-2">
                         <img height="100" width="100" src="/icons/react-query.svg" class="w-16 md:w-28" alt="technology-vite"
                             title="vite">
                     </div>
-
-
-
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="700"
-                        class=" flex justify-center items-center">
+                        class=" flex justify-center items-center col-span-6 md:col-span-2">
 
 
 
@@ -497,9 +504,8 @@ definePageMeta({
 
 
                     </div>
-
                     <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="700"
-                        class=" flex justify-center items-center">
+                        class=" flex justify-center items-center col-span-6 md:col-span-2">
 
 
 
@@ -509,7 +515,7 @@ definePageMeta({
 
                     </div>
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
-                        class=" flex justify-center items-center">
+                        class=" flex justify-center items-center col-span-6 md:col-span-2">
 
 
 
@@ -520,7 +526,7 @@ definePageMeta({
 
                     </div>
                     <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700"
-                        class=" flex justify-center items-center">
+                        class=" flex justify-center items-center col-span-6 md:col-span-2">
 
 
 
@@ -530,12 +536,22 @@ definePageMeta({
 
                     </div>
                     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
-                        class=" flex justify-center items-center">
+                        class=" flex justify-center items-center col-span-6 md:col-span-2">
 
 
 
                         <img height="100" width="100" src="/icons/gsap.svg" class="w-16 md:w-28" alt="technology-gsap"
                             title="gsap">
+
+
+                    </div>
+
+                       <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
+                        class="col-span-6 md:col-span-2 flex justify-center items-center">
+
+
+                        <img height="100" width="100" src="/icons/sass.webp" class="w-16 md:w-28" alt="technology-sass"
+                            title="sass">
 
 
                     </div>
