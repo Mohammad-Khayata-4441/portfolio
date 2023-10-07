@@ -99,6 +99,7 @@ onMounted(() => {
       yPercent:15,
       duration: 0.5
     })
+    
     tl.from(`${selector} .tech-icon`,{
       xPercent:100,
       opacity:0,
