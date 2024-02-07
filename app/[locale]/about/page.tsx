@@ -1,7 +1,14 @@
 import LightsGenerator from '@/app/components/LightsGenerator'
+import { Metadata } from 'next'
 import Image from 'next/image'
 import React from 'react'
 import { AiOutlineFontSize } from 'react-icons/ai'
+export const metadata: Metadata = {
+    title: "About",
+  }
+
+  
+
 export default function page() {
     return (
         <div className="page about-page  relative z-0 flex flex-col ">
