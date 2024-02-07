@@ -1,15 +1,21 @@
 import { PortfolioItem } from '@/types/PortfolioItem'
 const projects: PortfolioItem[] = [
 
+
+
+
+
+
     {
         description: `Real Estate Landing Page Template Made with Next.js 13 and Tailwind`,
         client: "Freelance",
         id: '55',
         name: "JDM Contracts",
         primaryColor: "#EA5400",
-        screenShots: [
-            "https://drive.google.com/file/d/1NO9fMz63yfsHVI0X1MZL3n1myCqZ-Msv/view?usp=drive_link",
+        screenShots: ["cover.png",
         ],
+        key: 'jdm',
+        coverImage: '/projects/jdm/cover.png',
         status: 'in Progress',
         technologiesIcons: ['next.png', 'typescript.webp', 'tailwind.webp'],
         type: ['Dashboard'],
@@ -23,18 +29,21 @@ const projects: PortfolioItem[] = [
         url: "https://jdm-construction.vercel.app/"
     },
     {
+        key: 'carManagement',
+        coverImage: "/projects/carManagement/cover.png",
         description: `A web application for managing data and sales for an auto parts trading company. It includes management of inventory, products, invoice generation, account reconciliation, as well as profit and debt management and customer information. Built using React and Mui 5, in addition to Tailwind CSS.`,
         client: "Freelance",
         id: '52',
         name: "Auto Parts Manager",
         primaryColor: "#3761E9",
         screenShots: [
-            "https://drive.google.com/file/d/1GyYinbNefPTPi0xA47gJKljNzyoHXM4z/view?usp=sharing",
-            "https://drive.google.com/file/d/1PB9LijHrkE6UXqzeFj1ObG07BUPxFqNP/view?usp=sharing",
-            "https://drive.google.com/file/d/1Pe5G9kQdrNwHNJCXMdQ6ygiBgLTa_qXZ/view?usp=sharing",
-            "https://drive.google.com/file/d/1bfJ83bpxv25IohO9l2xLiV5gA2iH9ZtV/view?usp=sharing",
-            "https://drive.google.com/file/d/1oTk8T6WsO7yCvqmzzZfU-04_u87TCpmE/view?usp=sharing",
-            "https://drive.google.com/file/d/1stwQ18begJk6U1QW4vH9K3ue1SbgGTHn/view?usp=sharing"
+            "car-management-add-car.png",
+            "car-management-add-part.png",
+            "car-parts-brands.png",
+            "car-parts.png",
+            "cars.png",
+            "cover.png",
+            "create-invoice.png",
         ],
 
         status: 'in Progress',
@@ -50,17 +59,21 @@ const projects: PortfolioItem[] = [
         url: "https://car-parts-client.vercel.app/"
     },
     {
+        key: 'qrGermany',
+        coverImage: "/projects/qrGermany/cover.png",
+
         "name": "Qr Code Germany",
         "client": "ELKOOD Company",
         "description": "Many companies use the QR code in their marketing and advertising campaigns, allowing various types of data to be added, such as: B. Website links, social media, account information, phone numbers, even coupons, opening hours, or a PDF file (with a list of product prices or the services you want to offer your customers).Here at QR Code Germany we have made sure that everything is easy and simple to use for the customer as you will find many simple and useful options that will help you a lot in providing useful and important information to your customers in the easiest and cheapest way to deliver way.",
         "id": "1",
         "screenShots": [
-            "https://drive.google.com/file/d/1JrzuTZwUU8SbG4qhdSZMSon0EZaLXr4-/view?usp=drive_link",
-            "https://drive.google.com/file/d/1qgXnW8G9Ud1F97RE3fxIrl-X27zoQDk0/view?usp=sharing",
-            "https://drive.google.com/file/d/1p0NSQs9GlK5Rb5dukeUF_wk7BP_edpem/view?usp=sharing",
-            "https://drive.google.com/file/d/1aE88XxJ8D9D7QHdkVGYfDcx_YjsRwrN5/view?usp=sharing",
-            "https://drive.google.com/file/d/1YHPASRX2p2xCraWFj4D_0yBlNVVymI9u/view?usp=sharing",
-            "https://drive.google.com/file/d/1-nozIi4wi9m_y86W-os9jDE5nwQS34Oy/view?usp=sharing",
+            "car.png",
+            "cover.png",
+            "generate-code.png",
+            "home.png",
+            "pricing.png",
+            "qr-code.png",
+            "Screenshot 2023-06-21 114252.png",
         ],
         "primaryColor": "#FDD636",
 
@@ -80,6 +93,9 @@ const projects: PortfolioItem[] = [
     },
 
     {
+        key: 'flyOrder',
+        coverImage: "/projects/flyOrder/cover.jpg",
+
         name: "Fly Order",
         "client": "ELKOOD Company",
         "description": "FlyOrder is an application for managing food delivery orders within the Damascus governorate. It is a Dashboard that includes many features, including management of areas and cities, management of stores and branches, management of products, processing orders created from the mobile application, processing invoices and sales and profit percentages for the stores and application management, management of notifications via WebSocket and Signal-R, and many other features.",
@@ -93,12 +109,17 @@ const projects: PortfolioItem[] = [
         "primaryColor": "#F8AD24",
         id: "10",
         screenShots: [
-            "https://drive.google.com/file/d/1mxzgSV_DEKqOR-_3TiO1OLuhaeXRKwZv/view?usp=sharing",
-            "https://drive.google.com/file/d/1x5pb2HQstzT3en-D97Lr9PjY5esazYpA/view?usp=sharing",
-            "https://drive.google.com/file/d/1ySk-cgdgcYAutyHomT3ucoEhh9R-5bsy/view?usp=sharing",
-            "https://drive.google.com/file/d/1ffzH-xC1S3VkR7KfSBcyYx61rfCxtV3p/view?usp=sharing",
-            "https://drive.google.com/file/d/1DztSMowvlyHDV2ZiU0KJPpmcopBzgO2V/view?usp=sharing",
-            "https://drive.google.com/file/d/13bRFWIul6EXhTSXXXuQdEuhgcU5cTRla/view?usp=sharing",
+            "cover.jpg",
+            "create-order.png",
+            "edit-product.png",
+            "login.png",
+            "login2.jpg",
+            "notifications.png",
+            "order.png",
+            "order2.jpg",
+            "products.jpg",
+            "shops.png",
+            "subscriptions.jpg",
         ],
 
         status: "Finished",
@@ -124,6 +145,9 @@ const projects: PortfolioItem[] = [
 
     },
     {
+        key: 'alElemNour',
+        coverImage: "/projects/alElemNour/cover.png",
+
         "name": "Al E'lm Nour",
         "client": "Al Elem Nour Publishing House",
         "description": "Landing page for publishing house in aleppo syria",
@@ -139,7 +163,7 @@ const projects: PortfolioItem[] = [
         ],
         "id": "3",
         "screenShots": [
-            "https://drive.google.com/file/d/1ZL4zd-Y-dHNaD30jz784QwNAS190oZU3/view?usp=drive_link"
+            "cover.png"
         ],
         "primaryColor": "#FFD400",
         "status": "Finished",
@@ -158,6 +182,8 @@ const projects: PortfolioItem[] = [
         "url": "https://www.alelmnour.com/"
     },
     {
+        key: 'altinSaray',
+        coverImage: "/projects/altinSaray/index.jpg",
         "name": "Altin Saray",
         "client": "ELKOOD Company",
         "teamMates": [
@@ -186,7 +212,7 @@ const projects: PortfolioItem[] = [
             "Project Details Page"
         ],
         "screenShots": [
-            "https://drive.google.com/file/d/1MLxW0icmtH5zifORBmkAyuftPidVIlfN/view?usp=drive_link"
+            "cover.png"
         ],
         "primaryColor": "#153937",
         "status": "Finished",
@@ -203,6 +229,9 @@ const projects: PortfolioItem[] = [
         "url": "https://altinsaraygrup.com/"
     },
     {
+        key: 'awija',
+        coverImage: "/projects/awija/cover.jpg",
+
         "name": "Awija Metal Industries",
         "client": "ELKOOD Company",
         "teamMates": [
@@ -249,7 +278,7 @@ const projects: PortfolioItem[] = [
         ],
         "id": "4",
         "screenShots": [
-            "https://drive.google.com/file/d/1Nq2BPNTuB0zQHx8VoxcZ7EFAgackTNTV/view?usp=drive_link"
+            "cover.jpg"
         ],
         "primaryColor": "#1ac9fb",
         "status": "Finished",
@@ -269,17 +298,20 @@ const projects: PortfolioItem[] = [
         "url": "https://www.awijatinplate.com/"
     },
     {
+        key: 'broker',
+        coverImage: "/projects/broker/cover.png",
+
         "name": "Broker Management",
         "client": "ELKOOD Company",
         description: "Broker Management is an application for automating the operations of a brokerage company electronically through various services, including human resource management, project and department management, document and correspondence management, and a file management system for storing files in the cloud via AWS. It also supports authentication for employees with different permissions.",
         "id": "5",
-        "screenShots": [
-            "https://drive.google.com/file/d/1BKRqnb8vpG93iTvnyqb6lNOfr0djgDfn/view?usp=sharing",
-            "https://drive.google.com/file/d/1EYzbz8Y50G0vS0YM84OLCw8iEiKlc-5u/view?usp=sharing",
-            "https://drive.google.com/file/d/1JZqRcHU3ufYlecKAU-OmZNTOnjw3W-9l/view?usp=sharing",
-            "https://drive.google.com/file/d/1JvyRnDpkMBfqkbg0aP7lSN6DR21FfEmp/view?usp=sharing",
-            "https://drive.google.com/file/d/1NwKOiRa5wfzSLmpzZmb7SL4Jo_XALHNk/view?usp=sharing",
-            "https://drive.google.com/file/d/1i10qtEpTatBDllp-LuYGuR-Y_R2Ft2Bs/view?usp=sharing"
+        screenShots: [
+            "broker_employee_details.png",
+            "broker_file_management.pdf.png",
+            "broker_section.png",
+            "cover.png",
+            "employees.png",
+            "fileManagement.png",
         ],
         "teamMates": [
             {
@@ -329,6 +361,9 @@ const projects: PortfolioItem[] = [
         "url": ""
     },
     {
+        key: 'riviraPharma',
+        coverImage: "/projects/riviraPharma/cover.jpg",
+
         "name": "Rivira Pharma",
         "businessFeatures": [
             "Website for customers that provides them with the ability to register, read articles and create orders",
@@ -339,7 +374,7 @@ const projects: PortfolioItem[] = [
         "description": "Content Management System For Rivera Company for Pharmaceutical Industries and Food Supplements",
         "id": "6",
         "screenShots": [
-            "https://drive.google.com/file/d/1VtxgVrZfWtiMCnXw9iUntvj3cqc6PkKc/view?usp=drive_link"
+            "cover.jpg"
         ],
         "teamMates": [
             {
@@ -391,12 +426,15 @@ const projects: PortfolioItem[] = [
         ]
     },
     {
+        key: 'goldenWrap',
+        coverImage: "/projects/goldenWrap/cover.jpg",
+
         "name": "Golden Wrap",
         "client": "ELKOOD Company",
         "description": "A simple menu display app for Golden Wrap Restaurant with a content dashboard",
         "id": "8",
         "screenShots": [
-            "https://drive.google.com/file/d/1DMwPbI8bTnXTGqOpBXTjBiFaUMbqQcYT/view?usp=drive_link"
+            "cover.jpg"
         ],
         "teamMates": [
             {
@@ -429,6 +467,9 @@ const projects: PortfolioItem[] = [
         "url": "https://goldenwrap.elkood.com/"
     },
     {
+        key: 'proMarketing',
+        coverImage: "/projects/proMarketing/cover.jpg",
+
         "name": "Pro Marketing",
         "client": "ELKOOD Company",
         "description": "Landing Page For Marketing Company in Aleppo Syria",
@@ -440,10 +481,11 @@ const projects: PortfolioItem[] = [
         ],
         "id": "9",
         "screenShots": [
-            "https://drive.google.com/file/d/1A6xqWTaWQZ7oCCESvJ6-boVLbw4en8Av/view?usp=sharing",
-            "https://drive.google.com/file/d/15kNwM5AY6wEs-96W7BR71h4YPeAqKVnx/view?usp=sharing",
-            "https://drive.google.com/file/d/1J7zWCsesC-ljg7mMol3-q5RjJ9fsP0Vv/view?usp=sharing",
-            "https://drive.google.com/file/d/1WtGtBIpaX41V9qonQjrh7xA0eT5lzmJJ/view?usp=sharing"
+            "about.png",
+            "contact.png",
+            "cover.jpg",
+            "services.png"
+
         ],
         "primaryColor": "#F28003",
         "status": "in Progress",
@@ -461,12 +503,14 @@ const projects: PortfolioItem[] = [
         "url": ""
     },
     {
+        key: 'mrCourse',
+        coverImage: "/projects/mrCourse/cover.jpg",
         "name": "MR Course",
         "client": "ELKOOD Company",
         "description": "Dashboard For E-learn Mobile Application Content Management",
         "id": "10",
         "screenShots": [
-            "https://drive.google.com/file/d/1PgyjvGi-xRmwk5XMo6cFlJXK9p1HTsoP/view?usp=drive_link"
+            "cover.jpg"
         ],
         "primaryColor": "#2ec4b6",
         "businessFeatures": [
@@ -495,7 +539,7 @@ const projects: PortfolioItem[] = [
             "JWT Authentication And Authorization"
         ]
     },
- 
+
 ];
 
 

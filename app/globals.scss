@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply bg-white dark:bg-dark text-text;
+
+    }
+}
+
+@layer components{
+    .glass-paper{
+        @apply dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-primary dark:border-text
+        shadow-lg backdrop-blur-xl;
+    }
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 7px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: theme("colors.primary");
+  filter: drop-shadow(10px 10px theme('colors.primary') );
+  scrollbar-shadow-color: theme('colors.primary');
+}
+
+
+.gradiant-heading {
+    background: linear-gradient(270deg,
+        theme('colors.primary') 25.21%,
+        theme('colors.seconadry') 75.88%);
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .page {
+    padding-bottom: 102px;
+  
+    @media (min-width:768px) {
+      padding-bottom: 0px;
+      padding-top: 112px;
+    }
+  
+    min-height: 100vh;
+  
+  
+  
+    .page-overlay {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      min-height: 100%;
+      top: 0;
+    }
+  
+    .page-lights {
+      z-index: -1;
+  
+      top: 0;
+      min-height: 100%;
+      width: 100%;
+    }
+  }
+
+  body{
+    background-color: theme('colors.dark');
+  }
+
+
+
+  .page-lights {
+
+    svg:nth-child(odd) {
+        left: 0;
+        ellipse {
+            @apply  dark:fill-lightPurple ;
+        }
+    }
+
+    svg:nth-child(even) {
+        right: 0;
+        transform: rotate(90deg);
+        ellipse {
+            @apply dark:fill-lightBlue;
+        }
+
+    }
+}
+
+.nav-link-active{
+  @apply   text-white border-t-3 border-secondary; 
+
+}
