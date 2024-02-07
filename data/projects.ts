@@ -1,7 +1,23 @@
 import { PortfolioItem } from '@/types/PortfolioItem'
 const projects: PortfolioItem[] = [
 
+    {
+        name: 'Unique Line',
+        url:'https://unqline.com',
+        coverImage: '/projects/unqline/cover.png',
+        description: '',
+        id: "21aca513-5090-4dc2-adf2-0b42aa282e1d",
+        key: 'unqline',
+        primaryColor: "#f3dab2",
+        screenShots: ["cover.png"],
+        status: 'Finished',
+        type: ['Landing Page', 'Website'],
+        technologiesIcons: ['next.png','typescript.webp','tailwind.webp'],
+        workInformation: "",
+        year: '2024',
+        businessFeatures: ['']
 
+    },
 
 
 

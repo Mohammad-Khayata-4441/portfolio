@@ -1,5 +1,5 @@
 import ReadMore from '@/app/components/ReadMore'
-import {  Button} from '@nextui-org/button'
+import { Button } from '@nextui-org/button'
 import Image from 'next/image'
 import React from 'react'
 import { BsGithub, BsImage } from 'react-icons/bs'
@@ -10,7 +10,7 @@ export default function PortfolioItem({ item }: { className: string, item: Portf
   return (
 
     <div>
-      <div className="grid grid-cols-12 project py-12 md:py-10" v-if="item">
+      <div className="grid grid-cols-12 project py-12 md:py-10 gap-8 lg:gap-0" v-if="item">
         <div className="info col-span-12 lg:col-span-6 order-2 lg:order-1 flex flex-col justify-center px-4">
           <h2 className="text-5xl text-primary dark:text-white text-center lg:text-left lg:text-6xl font-bold">
             {item.name}
@@ -31,18 +31,18 @@ export default function PortfolioItem({ item }: { className: string, item: Portf
               }
             </div>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 lg:gap-4">
             {
               !!item.gitRepo &&
-              <a href="item.gitRepo" className="w-full lg:w-auto" >
+              <a href="item.gitRepo" className="flex-grow lg:flex-grow-0" >
 
-                <Button startContent={<BsGithub />} className='bg-black' size='lg' type="button">
+                <Button startContent={<BsGithub />} className='bg-black w-full lg:w-auto' size='lg' type="button">
                   Github
                 </Button>
               </a>
             }
-            <a href={item.url} >
-              <Button variant='shadow' size='lg' startContent={<CiRead className='text-xl'></CiRead>} color='primary'>
+            <a href={item.url} className='flex-grow lg:flex-grow-0'>
+              <Button variant='shadow' className=' w-full lg:w-auto' size='lg' startContent={<CiRead className='text-xl'></CiRead>} color='primary'>
                 Live Preview
               </Button>
             </a>
@@ -53,8 +53,8 @@ export default function PortfolioItem({ item }: { className: string, item: Portf
           item?.screenShots && item.screenShots.length &&
           <div className="image col-span-12 lg:col-span-6 order-1 lg:order-2 cursor-pointer">
             <Link href={`/portfolio?project=${item.key}`} scroll={false}>
-            <Image height={1080} width={1920} className="work-cover h-auto md:h-[400px] w-full object-contain lg:object-cover rounded-3xl border-4 border-seconadry dark:border-text shadow-lg" quality="0.2" src={item.coverImage} alt={''}   >
-            </Image>
+              <Image height={1080} width={1920} className="work-cover h-auto md:h-[400px] w-full object-contain lg:object-cover rounded-3xl border-4 border-seconadry dark:border-text shadow-lg" quality="0.2" src={item.coverImage} alt={''}   >
+              </Image>
             </Link>
             {/* <span className="bg-primary text-white p-2 rounded-xl relative left-4 bottom-12">{item?.screenShots.length}
               <BsImage />

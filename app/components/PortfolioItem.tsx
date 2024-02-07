@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
-interface PortfolioItem {
-  name: string;
+interface PortfolioItem {  name: string;
   type: string[];
   description: string;
   workInformation: string;
