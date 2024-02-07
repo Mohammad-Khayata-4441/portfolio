@@ -41,7 +41,7 @@ export default function HeroSvg() {
                     scale: 0,
                     ease: Back.easeOut.config(0.8)
                 })
-    })
+    },[])
 
 
     return (
