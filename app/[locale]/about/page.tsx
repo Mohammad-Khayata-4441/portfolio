@@ -23,7 +23,7 @@ export default function page() {
                         alt="mohammad_khayata"
                         className="w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] object-cover m-auto bg-dark rounded-[90px] md:rounded-4xl"
                         style="object-position: 0 30%;" /> */}
-                        <div className="relative w-[300px] h-[300px]  bg-dark  rounded-4xl overflow-hidden shadow-xl border border-text">
+                        <div className="relative w-[300px] h-[300px]  bg-dark  rounded-4xl overflow-hidden shadow-xl border border-text mx-auto lg:mx-0">
 
                             <Image style={{ objectPosition: '0 -30px' }} objectFit='cover' fill src='/about/personal-1.webp' className='rounded-4xl ' alt='personal'>
 

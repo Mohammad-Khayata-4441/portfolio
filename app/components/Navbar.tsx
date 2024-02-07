@@ -45,8 +45,9 @@ const MyComponent: React.FC = () => {
   return (
     <header className="grid grid-cols-12 fixed bottom-0 md:top-0 md:bottom-auto w-screen items-center justify-between  p-5 z-10">
 
-      <div className="content col-span-3"></div>
-      <nav className="rounded-2xl col-span-6 px-8 py-2 md:py-0 md:px-28 glass-paper hover:scale-[1.01] hover:border-secondary transition duration-[3000ms] hover:shadow-2xl">
+      <div className="content hidden lg:block col-span-3"></div>
+
+      <nav className="rounded-2xl col-span-12 md:col-span-6 px-8 py-2 md:py-0 md:px-28 glass-paper hover:scale-[1.01] hover:border-secondary transition duration-[3000ms] hover:shadow-2xl">
         <ul className="flex items-center justify-center list-none space-x-12 md:space-x-16">
           {navLinks.map((item) => (
             <li key={item.path} className={'text-text  font-bold transition ' + `${isActivePath(item.path) ? 'nav-link-active' : 'hover:text-white'}`}>
@@ -61,7 +62,7 @@ const MyComponent: React.FC = () => {
         </ul>
       </nav>
 
-      <div className="content col-span-3 flex justify-end">
+      <div className="content hidden col-span-3 lg:flex justify-end">
 
         <ul className='flex items-center gap-8 flex-col fixed right-5 top-1/2 -translate-y-1/2' >
           <li>
