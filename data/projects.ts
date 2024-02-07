@@ -183,7 +183,7 @@ const projects: PortfolioItem[] = [
     },
     {
         key: 'altinSaray',
-        coverImage: "/projects/altinSaray/index.jpg",
+        coverImage: "/projects/altinSaray/cover.png",
         "name": "Altin Saray",
         "client": "ELKOOD Company",
         "teamMates": [

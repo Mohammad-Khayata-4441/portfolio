@@ -117,8 +117,8 @@ export default function page() {
                         <h3 className="text-2xl font-bold bg-primary w-max  p-2 pr-4 rounded-br-3xl text-white ">
                             Summary</h3>
                         <div className="flex items-center gap-4">
-                            <AiOutlineFontSize className="text-[44px]" name="majesticons:font-size-line"></AiOutlineFontSize>
-                            <input placeholder='font size' min="12" max="24" v-model="fontSize" type="range" />
+                            {/* <AiOutlineFontSize className="text-[44px]" name="majesticons:font-size-line"></AiOutlineFontSize> */}
+                            {/* <input placeholder='font size' min="12" max="24"  type="range" /> */}
 
                         </div>
                     </div>
