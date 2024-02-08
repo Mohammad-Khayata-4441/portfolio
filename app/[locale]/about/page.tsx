@@ -116,8 +116,8 @@ export default function page() {
 
 
 
-            <section>
-                <div className="container summary max-w-7xl mx-auto dark:dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-primary dark:border-text rounded-2xl overflow-hidden  shadow-lg">
+            <section >
+                <div className="container summary max-w-5xl mx-auto dark:dark:bg-dark-overlay dark:dark:bg-opacity-10 border border-primary dark:border-text rounded-2xl overflow-hidden  shadow-lg">
 
                     <div className="flex items-center justify-between pr-4">
 

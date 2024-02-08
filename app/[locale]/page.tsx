@@ -35,7 +35,7 @@ const Home: React.FC<HomeProps> = () => {
   },[]);
 
   return (
-    <div className="page portfolio-page  relative z-0 flex flex-col ">
+    <div className="page portfolio-page  relative z-0 flex flex-col justify-center ">
     <LightsGenerator />
       <div className="page-overlay"></div>
       <main className="h-full">

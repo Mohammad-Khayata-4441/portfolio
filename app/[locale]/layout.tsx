@@ -6,6 +6,7 @@ import Providers from '../components/Providers';
 import { locales } from '@/i18n';
 import Navbar from '@/app/components/Navbar'
 import LightsGenerator from '@/app/components/LightsGenerator'
+import Image from 'next/image';
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -28,6 +29,7 @@ export default async function LocaleLayout({ children, params: { locale } }: any
 
           {children}
         </Providers>
+        <Image src='/freePalastine.png' className='fixed top-5 right-5' alt='free palastine' height={40} width={70}></Image>
         <LightsGenerator></LightsGenerator>
         </NextIntlClientProvider>
       </body>
