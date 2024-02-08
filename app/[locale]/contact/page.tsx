@@ -1,7 +1,8 @@
 import LightsGenerator from '@/app/components/LightsGenerator'
+import { Button } from '@nextui-org/button'
 import React from 'react'
 import { BsFacebook, BsGithub, BsInstagram, BsLinkedin, BsTelegram, BsTwitterX, BsWhatsapp } from 'react-icons/bs'
-import { CiAt, CiFacebook, CiInstagram, CiLinkedin, CiPhone } from 'react-icons/ci'
+import { CiAt, CiFacebook, CiInstagram, CiLinkedin, CiPaperplane, CiPhone } from 'react-icons/ci'
 
 export default function page() {
   return (
@@ -146,14 +147,14 @@ export default function page() {
                                 <label  className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full
                                     Name</label>
                                 <input name="name" id="name" type="text" placeholder="John Doe"
-                                    className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 transition-all duration-700" />
                             </div>
 
                             <div className="flex-1 px-2 mt-4 md:mt-0">
                                 <label  className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email
                                     address</label>
                                 <input id="email" name="email" type="email" placeholder="johndoe@example.com"
-                                    className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 transition-all duration-700" />
                             </div>
 
                         </div>
@@ -163,16 +164,21 @@ export default function page() {
                             <textarea
                                 id="message"
                                 name="message"
-                                className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 transition-all duration-700"
                                 placeholder="Message"></textarea>
                         </div>
 
-                        <button
+                        <Button
+                        
                         type="submit"
-                            className="w-full text-[1rem] px-4 py-2 mt-4 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-primary rounded-lg focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 ">
-                            get in touch
-                            {/* <Icon name="tabler:send" size="1.5rem"></Icon> */}
-                        </button>
+                        color='primary'
+                        fullWidth
+                        variant='shadow'
+                        className='mt-4'
+                        startContent={<CiPaperplane className='text-xl'/> }
+                            >
+                            Get in touch
+                         </Button>
                     </form>
                 </div>
             </section>
