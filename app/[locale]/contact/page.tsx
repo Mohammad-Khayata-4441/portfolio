@@ -5,7 +5,7 @@ import { CiAt, CiFacebook, CiInstagram, CiLinkedin, CiPhone } from 'react-icons/
 
 export default function page() {
   return (
-    <div className="page ">
+    <div className="page flex flex-col justify-center relative z-0 ">
         <LightsGenerator></LightsGenerator>
 
         <div className="page-overlay"></div>
