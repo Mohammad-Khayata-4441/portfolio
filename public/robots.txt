@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Allow: /about
+
+User-agent: *
+Allow: /portfolio
+
+User-agent: *
+Allow: /contact
