@@ -6,7 +6,7 @@ import { AiOutlineFontSize } from 'react-icons/ai'
 export const metadata: Metadata = {
     title: "About",
     alternates:{
-        canonical:`${process.env.NEXT_BASE_URL}/about`
+        canonical:`https://mohammad-khayata.vercel.app/en/about`
     }
   }
 
