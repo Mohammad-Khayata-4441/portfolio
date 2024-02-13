@@ -164,7 +164,8 @@ export default function page() {
                             <textarea
                                 id="message"
                                 name="message"
-                                className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 transition-all duration-700"
+                                className="
+                                block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-dark-overlay/10 backdrop-blur-2xl dark:bg-opacity-60 dark:dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 transition-all duration-700"
                                 placeholder="Message"></textarea>
                         </div>
 

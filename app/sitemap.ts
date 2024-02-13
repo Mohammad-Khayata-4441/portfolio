@@ -12,5 +12,8 @@ export default async function sitemap():Promise<MetadataRoute.Sitemap>{
         {
             url:`https://mohammad-khayata.vercel.app/en/portfolio`,
         },
+        {
+            url:`https://mohammad-khayata.vercel.app/en/contact`,
+        },
     ]
 }

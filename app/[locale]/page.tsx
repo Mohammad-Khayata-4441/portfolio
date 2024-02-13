@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+
 "use client"
 import '@/styles/home.scss'
 import React, { useRef } from 'react';
@@ -10,10 +11,11 @@ import { useGsap } from '@/hooks/useGsap';
 import { Button, Input, Link as UiLink } from '@nextui-org/react';
 import Link from 'next/link';
 import { CiGrid41, CiGrid42, CiMemoPad, CiStar } from 'react-icons/ci';
+import { Metadata } from 'next';
+import HomePageAnimator from './components/HomePageAnimator';
 
-interface HomeProps { }
 
-const Home: React.FC<HomeProps> = () => {
+const Home = () => {
   const pageLights = useRef<HTMLDivElement | null>(null);
   const hi = useRef<any | null>(null);
   const name = useRef<any | null>(null);
@@ -37,6 +39,7 @@ const Home: React.FC<HomeProps> = () => {
   return (
     <div className="page portfolio-page  relative z-0 flex flex-col justify-center ">
     <LightsGenerator />
+    <HomePageAnimator/>
       <div className="page-overlay"></div>
       <main className="h-full">
         <div className="container overflow-visible m-auto h-full">
