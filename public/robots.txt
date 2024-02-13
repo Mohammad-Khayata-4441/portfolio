@@ -1,4 +1,17 @@
 User-agent: *
+Allow: /en
+
+User-agent: *
+Allow: /en/about
+
+User-agent: *
+Allow: /en/portfolio
+
+User-agent: *
+Allow: /en/contact
+
+
+User-agent: *
 Allow: /
 
 User-agent: *
@@ -9,3 +22,4 @@ Allow: /portfolio
 
 User-agent: *
 Allow: /contact
+
