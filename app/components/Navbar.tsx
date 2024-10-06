@@ -13,8 +13,6 @@ import { CiGrid41, CiHome, CiPhone, CiUser } from "react-icons/ci";
 
 const MyComponent: React.FC = () => {
   const isActivePath = useActiveLink();
-  // const isDark = useDark({ initialValue: 'dark' });
-  // const toggleDark = useToggle(isDark);
 
   const navLinks = [
     {

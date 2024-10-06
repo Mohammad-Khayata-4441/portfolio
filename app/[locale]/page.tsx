@@ -8,12 +8,12 @@ import HeroSvg from '@/app/components/HeroSvg';
 import LightsGenerator from '@/app/components/LightsGenerator';
 
 import { useGsap } from '@/hooks/useGsap';
-import { Button, Input, Link as UiLink } from '@nextui-org/react';
+import {   Input, Link as UiLink } from '@nextui-org/react';
 import Link from 'next/link';
 import { CiGrid41, CiGrid42, CiMemoPad, CiStar } from 'react-icons/ci';
 import { Metadata } from 'next';
 import HomePageAnimator from './components/HomePageAnimator';
-
+import { Button} from '@nextui-org/button'
 
 const Home = () => {
   const pageLights = useRef<HTMLDivElement | null>(null);
