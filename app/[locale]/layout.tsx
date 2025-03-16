@@ -1,18 +1,13 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
-import { ReactNode } from 'react';
-import { Inter } from 'next/font/google'
-import Providers from '../components/Providers';
-import { locales } from '@/i18n';
-import Navbar from '@/app/components/Navbar'
-import LightsGenerator from '@/app/components/LightsGenerator'
-import Image from 'next/image';
-const inter = Inter({ subsets: ['latin'] })
+import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import Providers from "../components/Providers";
+import { locales } from "@/i18n";
+import Navbar from "@/app/components/Navbar";
+import LightsGenerator from "@/app/components/LightsGenerator";
 
-
-
-export default async function LocaleLayout({ children, params: { locale } }: any) {
+export default async function LocaleLayout({ children, params }: any) {
   let messages;
+  const { locale } = await params;
   try {
     messages = (await import(`../../translations/${locale}.json`)).default;
   } catch (error) {
@@ -21,16 +16,16 @@ export default async function LocaleLayout({ children, params: { locale } }: any
   if (!locales.includes(locale as any)) notFound();
 
   return (
-    <html lang={locale} className='dark'>
-      <body>
+    <html lang={locale} className="dark">
+      <body className="bg-background dark">
         <NextIntlClientProvider locale={locale} messages={messages}>
-        <Providers>
-          <Navbar/>
+          <Providers>
+            <Navbar />
 
-          {children}
-        </Providers>
-        {/* <Image src='/freePalastine.png' className='fixed top-5 right-5' alt='free palastine' height={40} width={70}></Image> */}
-        <LightsGenerator></LightsGenerator>
+            {children}
+          </Providers>
+          {/* <Image src='/freePalastine.png' className='fixed top-5 right-5' alt='free palastine' height={40} width={70}></Image> */}
+          <LightsGenerator></LightsGenerator>
         </NextIntlClientProvider>
       </body>
     </html>

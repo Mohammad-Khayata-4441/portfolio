@@ -1,15 +1,15 @@
-"use client"
-import React, { useEffect, useRef, useState } from 'react';
-import { useGsap } from '@/hooks/useGsap';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import { useGsap } from "@/hooks/useGsap";
 
 const LightsGenerator: React.FC = () => {
   const [lightsCount, setLightsCount] = useState(2);
 
-  const lightsContainerRef = useRef<HTMLDivElement>()
+  const lightsContainerRef = useRef<HTMLDivElement>(null);
   const devidedTo = () => 100 / lightsCount;
 
   useEffect(() => {
-    const html = document.querySelector('html') as HTMLHtmlElement;
+    const html = document.querySelector("html") as HTMLHtmlElement;
     const windowHeight = window.innerHeight;
     const pageLength = Math.max(
       document.body.scrollHeight,
@@ -22,31 +22,35 @@ const LightsGenerator: React.FC = () => {
       const count = Math.ceil(pageLength / windowHeight);
       setLightsCount(count > 2 ? count : 2);
     }
-  }, [lightsCount,setLightsCount]);
+  }, [lightsCount, setLightsCount]);
 
-
-
-  useGsap((gsap) => {
-    if (lightsContainerRef.current) {
-      const lights = lightsContainerRef.current.querySelectorAll('svg')
-      console.log('should start',lights)
-      lights.forEach((light) => {
-        gsap.from(light, {
-          scale: 0,
-          opacity: 0,
-          scrollTrigger: {
-            trigger: light,
-            toggleActions: 'play reverse play reverse',
-            start:'-100'
-          },
+  useGsap(
+    (gsap) => {
+      if (lightsContainerRef.current) {
+        const lights = lightsContainerRef.current.querySelectorAll("svg");
+        console.log("should start", lights);
+        lights.forEach((light) => {
+          gsap.from(light, {
+            scale: 0,
+            opacity: 0,
+            scrollTrigger: {
+              trigger: light,
+              toggleActions: "play reverse play reverse",
+              // start:'-100'
+            },
+          });
         });
-      });
-    }
-  },[lightsContainerRef.current]);
+      }
+    },
+    [lightsContainerRef.current]
+  );
 
   return (
-    <div ref={lightsContainerRef as any} className="page-lights dark:block absolute top-0 left-0 h-full flex-grow-1 overflow-x-hidden overflow-hidden">
-       {[...Array(lightsCount)].map((_, index) => (
+    <div
+      ref={lightsContainerRef as any}
+      className="page-lights dark:block absolute top-0 left-0 h-full flex-grow-1 overflow-x-hidden overflow-hidden"
+    >
+      {[...Array(lightsCount)].map((_, index) => (
         <svg
           key={index}
           width="950"
@@ -54,7 +58,7 @@ const LightsGenerator: React.FC = () => {
           viewBox="0 0 1020 696"
           style={{
             top: index === 0 ? 0 : `${devidedTo() * index}%`,
-            position: 'absolute',
+            position: "absolute",
           }}
           className="svg-light blur-[200px] absolute z-10"
           fill="none"

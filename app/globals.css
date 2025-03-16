@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color-scheme: dark;
+  scrollbar-width: thin;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text;
+  }
+  :root {
+    --background: 255 100% 100%;
+    --foreground: 221 25% 56%;
+    --card: 255 100% 100%;
+    --card-foreground: 221 25% 56%;
+    --popover: 255 100% 100%;
+    --popover-foreground: 221 25% 56%;
+    --primary: 192 100% 46%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 289 100% 60%;
+    --secondary-foreground: 192 100% 46%;
+    --muted: 289 100% 60%;
+    --muted-foreground: 221 25% 56%;
+    --accent: 289 100% 60%;
+    --accent-foreground: 192 100% 46%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 221 25% 56%;
+    --input: 221 25% 56%;
+    --ring: 221 25% 56%;
+    --chart-1: 192 100% 46%;
+    --chart-2: 289 100% 60%;
+    --chart-3: 221 25% 56%;
+    --chart-4: 289 100% 60%;
+    --chart-5: 192 100% 46%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 240 10% 6%;
+    --foreground: 221 25% 56%;
+    --card: 240 10% 6%;
+    --card-foreground: 221 25% 56%;
+    --popover: 240 10% 6%;
+    --popover-foreground: 221 25% 56%;
+    --primary: 192 100% 46%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 289 100% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 289 100% 60%;
+    --muted-foreground: 221 25% 56%;
+    --accent: 289 100% 60%;
+    --accent-foreground: 221 25% 56%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 221 25% 56%;
+    --input: 221 25% 56%;
+    --ring: 221 25% 56%;
+    --chart-1: 192 100% 46%;
+    --chart-2: 289 100% 60%;
+    --chart-3: 221 25% 56%;
+    --chart-4: 289 100% 60%;
+    --chart-5: 192 100% 46%;
+  }
+}
+
+@layer components {
+  .glass-paper {
+    @apply dark:bg-dark-overlay dark:bg-opacity-10 border border-primary dark:border-text shadow-lg backdrop-blur-xl;
+  }
+}
+
+.gradient-heading {
+  background: linear-gradient(
+    270deg,
+    theme("colors.primary.DEFAULT") 25.21%,
+    theme("colors.secondary.DEFAULT") 75.88%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.page {
+  padding-bottom: 102px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 0px;
+    padding-top: 60px;
+  }
+
+  min-height: 100vh;
+
+  .page-overlay {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+  }
+
+  .page-lights {
+    z-index: -1;
+    top: 0;
+    min-height: 100%;
+    width: 100%;
+  }
+}
+
+body {
+  background-color: var(--dark-surface);
+}
+
+.page-lights {
+  svg:nth-child(odd) {
+    left: 0;
+    ellipse {
+      @apply dark:fill-lightPurple;
+    }
+  }
+
+  svg:nth-child(even) {
+    right: 0;
+    transform: rotate(90deg);
+    ellipse {
+      @apply dark:fill-lightBlue;
+    }
+  }
+}
+
+.nav-link-active {
+  @apply text-white lg:border-t-2 border-secondary;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

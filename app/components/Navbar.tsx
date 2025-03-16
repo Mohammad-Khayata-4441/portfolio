@@ -1,6 +1,7 @@
 "use client";
 import { useActiveLink } from "@/hooks/useActivePath";
 import { Link } from "@/i18n";
+import { Newspaper } from "lucide-react";
 import {
   BsGithub,
   BsInstagram,
@@ -21,12 +22,7 @@ const MyComponent: React.FC = () => {
       disabled: false,
       icon: CiHome,
     },
-    {
-      title: "About",
-      path: "/about",
-      disabled: false,
-      icon: CiUser,
-    },
+
     {
       title: "Portfolio",
       path: "/portfolio",
@@ -39,12 +35,12 @@ const MyComponent: React.FC = () => {
       disabled: false,
       icon: CiPhone,
     },
-    // {
-    //   title: 'Blog',
-    //   path: '/blog',
-    //   disabled: false,
-    //   icon: 'newspaper',
-    // },
+    {
+      title: "Blog",
+      path: "/blog",
+      disabled: false,
+      icon: Newspaper,
+    },
   ];
 
   return (

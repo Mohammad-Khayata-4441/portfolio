@@ -3,7 +3,7 @@ const projects: PortfolioItem[] = [
 
     {
         name: 'Unique Line',
-        url:'https://unqline.com',
+        url: 'https://unqline.com',
         coverImage: '/projects/unqline/cover.png',
         description: 'Unique Line for Architectural Engineering and Interior Decoration was founded in 2006 in the Kingdom of Saudi Arabia. a company specialized in planning and designing interior and exterior spaces in a unique and innovative style to ensure they reflect the personality and needs of our clients. We also provide project execution services to ensure their implementation at the highest levels of quality and precision.',
         id: "21aca513-5090-4dc2-adf2-0b42aa282e1d",
@@ -11,11 +11,11 @@ const projects: PortfolioItem[] = [
         primaryColor: "#f3dab2",
         screenShots: ["cover.png"],
         status: 'Finished',
-        type: ['Landing Page', 'Website','Dashboard'],
-        technologiesIcons: ['next.png','typescript.webp','tailwind.webp'],
+        type: ['Landing Page', 'Website', 'Dashboard'],
+        technologiesIcons: ['next.png', 'typescript.webp', 'tailwind.webp'],
         workInformation: "I worked on this project as a freelancer for a saudi company in KSA .",
         year: '2024',
-        businessFeatures: ['Localization','Responsive','Server Side Rendering',]
+        businessFeatures: ['Localization', 'Responsive', 'Server Side Rendering',]
 
     },
 
