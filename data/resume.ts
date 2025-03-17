@@ -137,5 +137,21 @@ export const resume = {
             "Docker",
             "Linux"
         ]
-    }
+    },
+    'webDevSkills': [
+        { src: "/icons/vue.webp", alt: "vue", color: "rgba(65, 184, 131, 1)" },
+        { src: "/icons/react.webp", alt: "react", color: "rgba(97, 218, 251, 1)" },
+        { src: "/icons/nuxt.svg", alt: "nuxt", color: "rgba(0, 220, 130, 1)" },
+        { src: "/icons/nextjs.png", alt: "nextjs", color: "rgba(255, 255, 255, 1)" },
+        { src: "/icons/typescript.webp", alt: "typescript", color: "rgba(36, 150, 237, 1)" },
+        { src: "/icons/vite.webp", alt: "vite", color: "rgba(36, 150, 237, 1)" },
+        { src: "/icons/nest.webp", alt: "nest", color: "rgba(224, 35, 78, 1)" },
+        { src: "/icons/docker.webp", alt: "docker", color: "rgba(36, 150, 237, 1)" },
+    ],
+    'achievements': [
+        { icon: "BiDevices", title: "Stunning & Responsive UI", description: "Delivering visually captivating, fully responsive web applications for seamless user experiences." },
+        { icon: "MdSpeed", title: "Optimized Performance & SEO", description: "I build websites that load quickly, rank well on search engines, and provide a smooth user experience." },
+        { icon: "MdOutlineAutoAwesomeMotion", title: "Engaging Animations & Interactive UI", description: "I bring websites to life with smooth animations and interactive elements, making them more engaging and user-friendly." },
+        { icon: "HiCode", title: "Scalable & Clean Code", description: "Building modular, maintainable architectures for long-term efficiency." },
+    ]
 }

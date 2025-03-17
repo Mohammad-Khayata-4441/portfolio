@@ -44,10 +44,10 @@ const MyComponent: React.FC = () => {
   ];
 
   return (
-    <header className="flex fixed bottom-0 md:top-0 md:bottom-auto w-screen items-center justify-center  p-5 z-10">
+    <header className="flex  fixed bottom-0 md:top-0 md:bottom-auto w-screen items-center justify-center  p-5 z-10">
       <div className="content hidden md:block col-span-3"></div>
 
-      <nav className="rounded-2xl col-span-12 sm:col-span-8 px-8 py-2 md:py-0 md:px-28  bg-dark/60 backdrop-blur-xl border border-text hover:scale-[1.01] hover:border-secondary transition duration-[3000ms] hover:shadow-2xl">
+      <nav className="rounded-2xl col-span-12 sm:col-span-8 px-8 glass-paper py-2 md:py-0 md:px-28 backdrop-blur-xl border border-text hover:scale-[1.01] hover:border-secondary transition duration-[3000ms] hover:shadow-2xl">
         <ul className="flex items-center justify-center list-none space-x-8 sm:space-x-12 md:space-x-16">
           {navLinks.map((item) => (
             <li

@@ -80,7 +80,7 @@ export default function HeroSvg() {
               <path
                 id="Vector_12"
                 d="M611.333 269.158C621.553 275.038 629.79 289.318 629.743 301.055L628.997 569.085C628.997 580.751 620.667 585.535 610.47 579.631L218.283 353.298C208.087 347.418 199.827 333.138 199.873 321.425L200.667 53.3014C200.667 41.6347 208.997 36.9681 219.193 42.7314L611.333 269.158Z"
-                stroke="#B391FF"
+                stroke="hsl(var(--secondary))"
                 strokeWidth="0.555541"
                 strokeMiterlimit={10}
               />
@@ -914,12 +914,28 @@ export default function HeroSvg() {
           y2="465.461"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#8B68FF" />
-          <stop offset="0.01" stopColor="#8A67FE" stopOpacity="0.99" />
-          <stop offset="0.38" stopColor="#7553E7" stopOpacity="0.57" />
-          <stop offset="0.68" stopColor="#6543D6" stopOpacity="0.26" />
-          <stop offset="0.9" stopColor="#5C3ACB" stopOpacity="0.07" />
-          <stop offset={1} stopColor="#5836C7" stopOpacity={0} />
+          <stop stopColor="hsl(200, 100%, 50%)" />
+          <stop
+            offset="0.01"
+            stopColor="hsl(200, 100%, 50%)"
+            stopOpacity="0.99"
+          />
+          <stop
+            offset="0.38"
+            stopColor="hsl(190, 100%, 50%)"
+            stopOpacity="0.57"
+          />
+          <stop
+            offset="0.68"
+            stopColor="hsl(180, 100%, 50%)"
+            stopOpacity="0.26"
+          />
+          <stop
+            offset="0.9"
+            stopColor="hsl(170, 100%, 50%)"
+            stopOpacity="0.07"
+          />
+          <stop offset={1} stopColor="hsl(170, 100%, 50%)" stopOpacity={0} />
         </linearGradient>
         <linearGradient
           id="paint7_linear_203_12"
@@ -940,9 +956,8 @@ export default function HeroSvg() {
           y2="479.433"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#8B68FF" />
-          <stop offset="0.61" stopColor="#6947DA" />
-          <stop offset={1} stopColor="#5836C7" />
+          <stop stopColor="hsl(200, 100%, 50%)" />
+          <stop offset="0.61" stopColor="hsl(190, 100%, 50%)" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_203_12"

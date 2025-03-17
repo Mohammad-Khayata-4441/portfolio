@@ -15,8 +15,13 @@ interface GradientTextProps {
 export default function GradientText({
   children,
   className = "",
-  colors = ["hsl(192 100% 46%)", "#9c40ff"],
-  animationSpeed = 8,
+  colors = [
+    `hsl(var(--primary))`,
+    "hsl(var(--secondary))",
+    `hsl(var(--primary))`,
+    "hsl(var(--secondary))",
+  ],
+  animationSpeed = 5,
   showBorder = false,
 }: GradientTextProps) {
   const gradientStyle = {
@@ -51,7 +56,7 @@ export default function GradientText({
         </div>
       )}
       <div
-        className="inline-block relative z-2 text-transparent bg-cover animate-gradient"
+        className="inline-block relative z-2 text-transparent bg-cover animate-gradient font-bold pb-3 text-[4rem]"
         style={{
           ...gradientStyle,
           backgroundClip: "text",

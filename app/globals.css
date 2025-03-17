@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 * {
+  scroll-behavior: smooth;
   color-scheme: dark;
   scrollbar-width: thin;
 }
@@ -18,26 +19,27 @@
     --card-foreground: 221 25% 56%;
     --popover: 255 100% 100%;
     --popover-foreground: 221 25% 56%;
-    --primary: 192 100% 46%;
+    --primary: 317 100% 50%; /* Neon Pink */
     --primary-foreground: 0 0% 98%;
-    --secondary: 289 100% 60%;
-    --secondary-foreground: 192 100% 46%;
+    --secondary: 200 100% 50%; /* Neon Cyan */
+    --secondary-foreground: 317 100% 50%;
     --muted: 289 100% 60%;
     --muted-foreground: 221 25% 56%;
     --accent: 289 100% 60%;
-    --accent-foreground: 192 100% 46%;
+    --accent-foreground: 317 100% 50%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 221 25% 56%;
     --input: 221 25% 56%;
     --ring: 221 25% 56%;
-    --chart-1: 192 100% 46%;
-    --chart-2: 289 100% 60%;
+    --chart-1: 317 100% 50%;
+    --chart-2: 200 100% 50%;
     --chart-3: 221 25% 56%;
     --chart-4: 289 100% 60%;
-    --chart-5: 192 100% 46%;
+    --chart-5: 200 100% 50%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 240 10% 6%;
     --foreground: 221 25% 56%;
@@ -45,9 +47,9 @@
     --card-foreground: 221 25% 56%;
     --popover: 240 10% 6%;
     --popover-foreground: 221 25% 56%;
-    --primary: 192 100% 46%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 289 100% 60%;
+    --primary: 200 100% 50%; /* Neon Blue  */
+    --secondary: 170 100% 50%; /* Neon Cyan */
     --secondary-foreground: 0 0% 100%;
     --muted: 289 100% 60%;
     --muted-foreground: 221 25% 56%;
@@ -58,17 +60,17 @@
     --border: 221 25% 56%;
     --input: 221 25% 56%;
     --ring: 221 25% 56%;
-    --chart-1: 192 100% 46%;
-    --chart-2: 289 100% 60%;
+    --chart-1: 317 100% 50%;
+    --chart-2: 200 100% 50%;
     --chart-3: 221 25% 56%;
     --chart-4: 289 100% 60%;
-    --chart-5: 192 100% 46%;
+    --chart-5: 200 100% 50%;
   }
 }
 
 @layer components {
   .glass-paper {
-    @apply dark:bg-dark-overlay dark:bg-opacity-10 border border-primary dark:border-text shadow-lg backdrop-blur-xl;
+    @apply dark:bg-dark/30 border border-primary dark:border-primary/30 shadow-lg backdrop-blur-xl;
   }
 }
 
@@ -116,7 +118,7 @@ body {
   svg:nth-child(odd) {
     left: 0;
     ellipse {
-      @apply dark:fill-lightPurple;
+      @apply dark:fill-primary;
     }
   }
 
@@ -124,7 +126,7 @@ body {
     right: 0;
     transform: rotate(90deg);
     ellipse {
-      @apply dark:fill-lightBlue;
+      @apply dark:fill-seconadry;
     }
   }
 }

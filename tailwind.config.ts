@@ -54,9 +54,7 @@ const config: Config = {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
-				seconadry: '#D834FF',
-				lightPurple: '#D834FF',
-				lightBlue: '#00B3EC',
+				seconadry: 'hsl(var(--secondary))',
 				dark: '#07071C',
 				text: '#546192',
 				'dark-overlay': '#423769',
