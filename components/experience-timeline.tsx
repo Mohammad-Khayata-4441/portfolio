@@ -36,14 +36,19 @@ export default function ExperienceTimeline() {
   return (
     <div className="relative">
       {/* Timeline line */}
-      <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-300 dark:bg-slate-700 transform -translate-x-1/2 md:translate-x-0"></div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-300 dark:bg-slate-700 transform -translate-x-1/2 md:translate-x-0 -z-10"
+      ></motion.div>
 
       {resume.experience.map((experience, index) => (
         <motion.div
           key={experience.company}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: index * 0.2 }}
+          initial={{ x: index % 2 === 0 ? "50%" : "-50%", scale: 0 }}
+          whileInView={{ x: "0%", scale: 1 }}
+          transition={{ type: "spring", stiffness: 100, damping: 20 }}
           className={`relative mb-12 md:mb-16 ${
             index % 2 !== 0
               ? "md:pl-12 md:ml-auto md:ml-1/2"
@@ -52,7 +57,7 @@ export default function ExperienceTimeline() {
         >
           {/* Timeline dot */}
           <div
-            className={`h-[1px] border-dashed w-12 absolute glass-paper top-1/2 ${
+            className={`h-[1px] hidden md:block border-dashed w-12 absolute glass-paper top-1/2 ${
               index % 2 == 0 ? "right-0" : "left-0"
             }`}
           ></div>
@@ -61,22 +66,22 @@ export default function ExperienceTimeline() {
             className="
               w-full
               glass-paper 
-              ml-10 md:ml-0 overflow-hidden 
+              md:ml-0 overflow-hidden 
           shadow-md hover:shadow-lg transition-shadow duration-300"
           >
-            <CardHeader className="  pb-2">
+            <CardHeader className="pb-2">
               <div className="flex justify-between items-start">
                 <div>
-                  <CardTitle className="text-xl font-bold text-primary">
-                    {experience.position}
+                  <CardTitle className="text-2xl font-bold text-white">
+                    {experience.company}
                   </CardTitle>
                   <CardDescription className="text-lg font-medium text-slate-700 dark:text-slate-300">
-                    {experience.company}
+                    {experience.position}
                   </CardDescription>
                 </div>
                 <Badge
                   variant="outline"
-                  className="flex items-center gap-1 px-2 py-1 text-sm"
+                  className="flex border-primary text-xs text-primary items-center gap-1 px-2 py-1"
                 >
                   <Calendar className="h-3.5 w-3.5" />
                   <span>
@@ -84,10 +89,12 @@ export default function ExperienceTimeline() {
                   </span>
                 </Badge>
               </div>
-              <div className="flex items-center mt-2 text-sm text-slate-500 dark:text-slate-400">
-                <MapPin className="h-4 w-4 mr-1" />
-                <span>{experience.location}</span>
-              </div>
+              {experience.location && (
+                <div className="flex items-center mt-2 text-sm text-slate-500 dark:text-slate-400">
+                  <MapPin className="h-4 w-4 mr-1" />
+                  <span>{experience.location}</span>
+                </div>
+              )}
             </CardHeader>
 
             <CardContent className="pt-4">
@@ -95,11 +102,12 @@ export default function ExperienceTimeline() {
                 {experience.projects.map((project, projectIndex) => (
                   <AccordionItem
                     key={projectIndex}
+                    className="border-none bg-seconadry/5 px-4 rounded mb-2"
                     value={`${experience.company}-${projectIndex}`}
                   >
-                    <AccordionTrigger className="text-left font-medium hover:no-underline">
+                    <AccordionTrigger className="text-left  font-medium hover:no-underline">
                       <div className="flex items-center">
-                        <Briefcase className="h-4 w-4 mr-2 text-primary" />
+                        <Briefcase className="h-4 w-4 mr-2 text-seconadry" />
                         <span>{project.title}</span>
                         {project.url && (
                           <a
@@ -130,8 +138,6 @@ export default function ExperienceTimeline() {
                 ))}
               </Accordion>
             </CardContent>
-            {/* <BorderTrail delay={index} size={200} /> */}
-            {/* <BorderTrail delay={index + 2.5} size={200} /> */}
           </Card>
         </motion.div>
       ))}

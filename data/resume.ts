@@ -86,6 +86,32 @@ export const resume = {
                 },
             ],
         },
+        {
+            company: "Freelance",
+            position: "Frontend Developer",
+            startYear: 2021,
+            endYear: 'Present',
+            projects: [
+                {
+                    title: "Al'Elm Nour",
+                    url: "https://https://www.alelmnour.com/",
+                    achievements: [
+                        "Built Attractive Ui with Vue.js",
+                        "Added Interactive animations Using GSAP",
+                    ],
+                },
+                {
+                    title: "Unique Line",
+                    url: "https://www.unqline.com/",
+                    achievements: [
+                        "Built Heig Performance Website with Next.js",
+                        "Implemented CMS using Strapi",
+                        "Optimized SEO implementation",
+                    ],
+                },
+
+            ],
+        },
     ],
     "education": [
         {

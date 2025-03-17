@@ -91,7 +91,7 @@ export function BioShowcase() {
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 container mx-auto px-4">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold dark:text-white mb-2">
           Professional Overview

@@ -59,6 +59,7 @@ export default function GradientText({
         className="inline-block relative z-2 text-transparent bg-cover animate-gradient font-bold pb-3 text-[4rem]"
         style={{
           ...gradientStyle,
+          lineHeight: 1,
           backgroundClip: "text",
           WebkitBackgroundClip: "text",
           backgroundSize: "300% 100%",

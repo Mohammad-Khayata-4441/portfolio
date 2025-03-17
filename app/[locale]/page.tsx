@@ -31,7 +31,7 @@ import { BioShowcase } from "../components/Overview";
 import SectionTitle from "@/components/SectionTitle";
 
 const Home = () => {
-  const frontendSkills = [
+  const webDevSkills = [
     { src: "/icons/vue.webp", alt: "vue", color: "rgba(65, 184, 131, 1)" }, // #41B883
     { src: "/icons/react.webp", alt: "react", color: "rgba(97, 218, 251, 1)" }, // #61DAFB
     { src: "/icons/nuxt.svg", alt: "nuxt", color: "rgba(0, 220, 130, 1)" }, // #00DC82
@@ -55,24 +55,54 @@ const Home = () => {
       <LightsGenerator />
       <div className="page-overlay"></div>
       <main className="space-y-32">
-        <section className="container overflow-visible m-auto h-screen">
-          <div className="hero grid grid-cols-12 h-full items-end lg:items-center ">
-            <article className="hero-text col-span-12 lg:col-span-7 self-center px-2 md:px-10 flex flex-col space-y-5 order-2 lg:order1 ">
+        <section className="overflow-hidden h-screen flex items-center">
+          <div
+            className="hero 
+            container 
+            mx-auto 
+            px-4
+            max-w-screen-xl 
+            flex 
+            flex-wrap-reverse
+            lg:flex-nowrap
+           items-center
+           justify-center
+           flex-col-reverse lg:flex-row
+            "
+          >
+            <div
+              className="
+            hero-text
+            grow
+            flex
+            flex-col
+            justify-center
+            items-center
+            lg:items-start
+            lg:justify-start
+            space-y-4
+            
+            "
+            >
               <Animator>
-                <p className="text-3xl hidden lg:block text-text dark:text-gray-300">
+                <p className="text-3xl hidden lg:block text-slate-400 dark:text-gray-300">
                   Hey There , I'm
                 </p>
               </Animator>
-              <Animator>
-                <GradientText
-                  // ref={name}
-                  className="text-4xl text-center lg:text-left sm:text-5xl lg:text-6xl font-bold capitalize "
-                >
+              <div className="hidden lg:block my-0">
+                <Animator>
+                  <GradientText className=" text-center lg:text-left  font-bold capitalize ">
+                    Mohammad Khayata
+                  </GradientText>
+                </Animator>
+              </div>
+              <div className="lg:hidden">
+                <div className="gradient-heading lg:hidden text-3xl font-bold text-center">
                   Mohammad Khayata
-                </GradientText>
-              </Animator>
+                </div>
+              </div>
               <Animator>
-                <h2 className="text-md sm:text-xl text-center lg:text-left text-text dark:text-white">
+                <h2 className="text-md sm:text-xl text-center lg:text-left text-slate-400 dark:text-white">
                   Front-end developer with over 4 years of experience in
                   building enterprise-level web applications using Vue.js and
                   React.js.
@@ -84,25 +114,29 @@ const Home = () => {
                     target="_blank"
                     href="https://docs.google.com/document/d/1sYRpK8tcoPdnADpcVO6mrJc3Gz3W6WGmkhvZEGo05vI/edit?usp=sharing"
                   >
-                    <Button size="lg" variant={"outline"}>
+                    <Button
+                      className="w-full lg:w-auto"
+                      size="lg"
+                      variant={"outline"}
+                    >
                       <CiStar size={24} />
                       Resume
                     </Button>
                   </Link>
-                  <Button size="lg">
+                  <Button className="w-full md:w-auto" size="lg">
                     <CiGrid41 className="text-2xl"></CiGrid41>
                     Portfolio
                   </Button>
                 </div>
               </Animator>
-            </article>
-            <div className="col-span-12 lg:col-span-5 order-1 lg:order-2">
+            </div>
+            <div className="basis-[100px]">
               <HeroSvg />
             </div>
           </div>
         </section>
 
-        <section className="container mx-auto max-w-screen-xl">
+        <section className=" overflow-hidden mx-auto max-w-screen-xl px-4 md:px-0">
           <Animator>
             <h1 className="text-4xl md:text-5xl font-bold text-center mb-24 text-slate-800 dark:text-slate-100">
               Personal Information
@@ -125,27 +159,27 @@ const Home = () => {
 
             <div className="info-text col-span-12 lg:col-span-8 grid grid-cols-12 gap-y-8 lg:space-y-0 p-5 md:mt-10 lg:mt-0">
               <Animator className="col-span-12 md:col-span-6  flex lg:space-x-4 flex-col lg:flex-row md:items-center lg:items-start w-full">
-                <span className="text-text">Full Name</span>
+                <span className="text-slate-400">Full Name</span>
                 <span className="dark:text-white  font-bold">
                   Mohammad Sabah Khayata
                 </span>
               </Animator>
               <Animator className="col-span-12 md:col-span-6  flex lg:space-x-4 flex-col lg:flex-row md:items-center lg:items-start w-full">
-                <span className="text-text">Birthday</span>
+                <span className="text-slate-400">Birthday</span>
                 <span className="dark:text-white  font-bold">2 May 2001</span>
               </Animator>
               <Animator className="col-span-12 md:col-span-6  flex lg:space-x-4 flex-col lg:flex-row md:items-center lg:items-start w-full">
-                <span className="text-text">Nationality</span>
+                <span className="text-slate-400">Nationality</span>
                 <span className="dark:text-white  font-bold">Syrian</span>
               </Animator>
               <Animator className="col-span-12 md:col-span-6  flex lg:space-x-4 flex-col lg:flex-row md:items-center lg:items-start w-full">
-                <span className="text-text">Current Address</span>
+                <span className="text-slate-400">Current Address</span>
                 <span className="dark:text-white  font-bold">
                   Aleppo / Syria
                 </span>
               </Animator>
               <Animator className="col-span-12 md:col-span-6  flex lg:space-x-4 flex-col lg:flex-row md:items-center lg:items-start w-full">
-                <span className="text-text">Email</span>
+                <span className="text-slate-400">Email</span>
                 <span className="dark:text-white  font-bold">
                   <a
                     className="hover:text-primary"
@@ -156,7 +190,7 @@ const Home = () => {
                 </span>
               </Animator>
               <Animator className="col-span-12 md:col-span-6  flex lg:space-x-4 flex-col lg:flex-row md:items-center lg:items-start w-full">
-                <span className="text-text">Phone</span>
+                <span className="text-slate-400">Phone</span>
                 <span className="dark:text-white  font-bold">
                   <a className="hover:text-primary" href="tel:+963956954441">
                     +963&nbsp;956&nbsp;954&nbsp;441
@@ -174,7 +208,7 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <div className="container max-w-screen-md mx-auto">
+          <div className=" overflow-hidden max-w-screen-md mx-auto">
             <div className="relative">
               <BioShowcase />
             </div>
@@ -182,7 +216,7 @@ const Home = () => {
         </section>
 
         <section>
-          <div className="container mx-auto grid grid-cols-1 max-w-screen-xl">
+          <div className=" overflow-hidden mx-auto grid grid-cols-1 max-w-screen-xl px-4 md:px-0">
             <SectionTitle
               title="Web Development Skills"
               subtitle="I Utilize the most powerful technologies to save your time and build modern , high-performance and scalable web applications."
@@ -190,8 +224,8 @@ const Home = () => {
             <div className="features-wrapper">
               {/* Frontend Skills */}
               <div className="features">
-                <div className="flex justify-between gap-8 px-8">
-                  {frontendSkills.map((skill, index) => (
+                <div className="flex justify-evenly md:justify-between gap-y-4  flex-wrap md:flex-nowrap">
+                  {webDevSkills.map((skill, index) => (
                     <Animator variant="scale-down" key={index}>
                       <SpotlightCard
                         spotlightColor={skill.color as any}
@@ -212,80 +246,79 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
-            <div className="container summary max-w-5xl mx-auto overflow-hidden ">
-              <div className="flex items-center justify-between pr-4">
-                <div className="flex items-center gap-4"></div>
-              </div>
-            </div>
           </div>
         </section>
-        <ScrollVelocity
-          texts={["Heigh performance", "Clean Code", "Scalable Architecture"]}
-          className="custom-scroll-text text-white/10"
-        />
 
         <section>
-          <SectionTitle
-            title="What will we achieve together?"
-            subtitle="Elevating your web presence with high-performance, visually stunning, and engaging experiences."
-          ></SectionTitle>
-
-          <div className="container max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto gap-4">
-            {[
-              {
-                icon: (
-                  <BiDevices size={45} className="text-primary-foreground" />
-                ),
-                title: "Stunning & Responsive UI",
-                description:
-                  "Delivering visually captivating, fully responsive web applications for seamless user experiences.",
-              },
-              {
-                icon: <MdSpeed size={45} className="text-primary-foreground" />,
-                title: "Optimized Performance & SEO",
-                description:
-                  "I build websites that load quickly, rank well on search engines, and provide a smooth user experience without slowdowns.",
-              },
-              {
-                icon: (
-                  <MdOutlineAutoAwesomeMotion
-                    size={45}
-                    className="text-primary-foreground"
-                  />
-                ),
-                title: "Engaging Animations & Interactive UI",
-                description:
-                  "I bring websites to life with smooth animations and interactive elements, making them more engaging and user-friendly.",
-              },
-              {
-                icon: <HiCode size={45} className="text-primary-foreground" />,
-                title: "Scalable & Clean Code",
-                description:
-                  "Building modular, maintainable architectures for long-term efficiency.",
-              },
-            ].map((item, index) => (
-              <Animator className="h-full" variant="scale-up" key={index}>
-                <SpotlightCard className="glass-paper flex flex-col gap-4 h-full">
-                  {item.icon}
-                  <h2 className="text-2xl font-bold text-primary-foreground">
-                    {item.title}
-                  </h2>
-                  <p>{item.description}</p>
-                </SpotlightCard>
-              </Animator>
-            ))}
+          <div
+            className="container
+          max-w-screen-xl px-4 md:px-0 mx-auto
+          "
+          >
+            <SectionTitle
+              title="What will we achieve together?"
+              subtitle="Elevating your web presence with high-performance, visually stunning, and engaging experiences."
+            ></SectionTitle>
+            <div className=" overflow-hidden  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto gap-4">
+              {[
+                {
+                  icon: (
+                    <BiDevices size={45} className="text-primary-foreground" />
+                  ),
+                  title: "Stunning & Responsive UI",
+                  description:
+                    "Delivering visually captivating, fully responsive web applications for seamless user experiences.",
+                },
+                {
+                  icon: (
+                    <MdSpeed size={45} className="text-primary-foreground" />
+                  ),
+                  title: "Optimized Performance & SEO",
+                  description:
+                    "I build websites that load quickly, rank well on search engines, and provide a smooth user experience without slowdowns.",
+                },
+                {
+                  icon: (
+                    <MdOutlineAutoAwesomeMotion
+                      size={45}
+                      className="text-primary-foreground"
+                    />
+                  ),
+                  title: "Engaging Animations & Interactive UI",
+                  description:
+                    "I bring websites to life with smooth animations and interactive elements, making them more engaging and user-friendly.",
+                },
+                {
+                  icon: (
+                    <HiCode size={45} className="text-primary-foreground" />
+                  ),
+                  title: "Scalable & Clean Code",
+                  description:
+                    "Building modular, maintainable architectures for long-term efficiency.",
+                },
+              ].map((item, index) => (
+                <Animator className="h-full" variant="scale-up" key={index}>
+                  <SpotlightCard className="glass-paper flex flex-col gap-4 h-full">
+                    {item.icon}
+                    <h2 className="text-2xl font-bold text-primary-foreground">
+                      {item.title}
+                    </h2>
+                    <p>{item.description}</p>
+                  </SpotlightCard>
+                </Animator>
+              ))}
+            </div>
           </div>
         </section>
 
         <section className="min-h-screen bg-gradient-to-b">
-          <div className="container mx-auto ">
+          <div className=" overflow-hidden max-w-screen-xl px-4 md:px-0 mx-auto ">
             <SectionTitle
               title="Professional Experience"
               subtitle="A journey through my professional career, showcasing projects and achievements across different companies."
             />
 
-            <div className="container mx-auto max-w-screen-xl">
+            <div className=" overflow-hidden mx-auto max-w-screen-xl px-4 md:px-0">
               <ExperienceTimeline />
             </div>
           </div>
@@ -296,10 +329,6 @@ const Home = () => {
               </a>
             </Button>
           </div>
-        </section>
-
-        <section>
-          <div className="container"></div>
         </section>
       </main>
     </div>
