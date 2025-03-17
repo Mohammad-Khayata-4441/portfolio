@@ -35,7 +35,7 @@ export default function page() {
             </h1>
 
             <p className="mt-4 text-gray-500 dark:dark:text-gray-300">
-              I'd love to connect and collaborate! Feel free to send me a
+              I&apos;d love to connect and collaborate! Feel free to send me a
               message or reach out through my social media links below 🚀.
             </p>
 

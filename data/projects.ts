@@ -1,5 +1,5 @@
 import { PortfolioItem } from '@/types/PortfolioItem'
-const projects: PortfolioItem[] = [
+const projects: any[] = [
 
     {
         name: 'Unique Line',

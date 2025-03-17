@@ -18,6 +18,7 @@ export function MacbookMockUp({
     >
       <div className="relative z-[1] mx-auto my-0 h-[418px] w-[618px] overflow-hidden rounded-[20px] border-2 border-[rgb(200,202,203)] px-[9px] pt-[9px] pb-[23px] [background:rgb(13,13,13)]">
         {children || (
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             alt="Macbook Pro background"
             className="relative h-[375px] w-full rounded-t-[10px] border-2 border-[rgb(18,18,18)] border-solid bg-amber-200 bg-cover object-cover"

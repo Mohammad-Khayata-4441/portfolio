@@ -39,7 +39,6 @@ export default function ExperienceTimeline() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
         className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-300 dark:bg-slate-700 transform -translate-x-1/2 md:translate-x-0 -z-10"
       ></motion.div>
 

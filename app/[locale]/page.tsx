@@ -24,7 +24,6 @@ import StarBorder from "../components/animations/StarBorder/StarBorder";
 import GradientText from "../components/text/GradientText/GradientText";
 import SlideUpText from "../components/SlideUpText";
 import { ArrowRightIcon, ArrowUp, ArrowUpRightIcon } from "lucide-react";
-import ScrollVelocity from "../components/text/ScrollVelocity/ScrollVelocity";
 import Animator from "../components/Animator";
 import DashedPattern from "@/components/ui/DashedPattern";
 import { BioShowcase } from "../components/Overview";
@@ -55,7 +54,10 @@ const Home = () => {
       <LightsGenerator />
       <div className="page-overlay"></div>
       <main className="space-y-32">
-        <section className="overflow-hidden h-screen flex items-center">
+        <section
+          className="overflow-hidden h-screen flex items-center"
+          id="hero"
+        >
           <div
             className="hero 
             container 
@@ -147,11 +149,11 @@ const Home = () => {
             <div className="img col-span-12 lg:col-span-4 w-full  flex md:justify-center">
               <div className="relative w-[300px] h-[300px]  bg-dark  rounded-4xl overflow-hidden shadow-xl border border-text mx-auto lg:mx-0">
                 <Image
-                  style={{ objectPosition: "0 -30px" }}
+                  style={{ objectPosition: "0 -45px" }}
                   objectFit="cover"
                   fill
-                  src="/about/personal-1.webp"
-                  className="rounded-4xl "
+                  src="/about/photo.png"
+                  className="rounded-4xl object-cover object-bottom"
                   alt="personal"
                 ></Image>
               </div>
@@ -324,7 +326,7 @@ const Home = () => {
           </div>
           <div className="flex justify-center">
             <Button asChild variant={"outline"} className="mx-auto text-center">
-              <a href={"#"}>
+              <a href={"#hero"}>
                 Go Back To Top <ArrowUp />{" "}
               </a>
             </Button>
