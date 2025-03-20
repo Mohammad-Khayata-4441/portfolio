@@ -51,16 +51,16 @@ export default function BlogsList({ posts }: { posts: DevToPost[] }) {
     <div>
       <div className="container max-w-screen-xl mx-auto">
         <Tabs defaultValue="all" className="mb-8">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl font-bold tracking-tight">
+          <div className="flex items-center justify-between my-4">
+            <h2 className="text-4xl font-bold tracking-tight text-primary-foreground">
               Latest Articles
             </h2>
-            <TabsList className="glass-paper">
+            {/* <TabsList className="glass-paper">
               <TabsTrigger value="all">All</TabsTrigger>
               <TabsTrigger value="technology">Technology</TabsTrigger>
               <TabsTrigger value="design">Design</TabsTrigger>
               <TabsTrigger value="business">Business</TabsTrigger>
-            </TabsList>
+            </TabsList> */}
           </div>
 
           <TabsContent value="all" className="mt-0">

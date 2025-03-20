@@ -50,7 +50,7 @@
     --primary-foreground: 0 0% 100%;
     --primary: 200 100% 50%; /* Neon Blue  */
     --secondary: 170 100% 50%; /* Neon Cyan */
-    --secondary-foreground: 0 0% 100%;
+    --secondary-foreground: 240 10% 6%;
     --muted: 289 100% 60%;
     --muted-foreground: 221 25% 56%;
     --accent: 289 100% 60%;

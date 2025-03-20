@@ -121,7 +121,7 @@ export default function PortfolioItem({
             variant={"default"}
           >
             <HiPhotograph />
-            Screen Shots
+            Screen Shots ({item.images.length})
           </Button>
         </div>
       </div>

@@ -109,6 +109,15 @@ export const resume = {
                         "Optimized SEO implementation",
                     ],
                 },
+                {
+                    title: "Voucher Buyer",
+                    url: "https://www.VoucnerBuyer.com/",
+                    achievements: [
+                        "Built Heig Performance Website with Next.js",
+                        "Linked with Asp Core Rest API",
+                        "Optimized SEO implementation",
+                    ],
+                },
 
             ],
         },

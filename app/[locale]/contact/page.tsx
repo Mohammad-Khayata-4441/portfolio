@@ -8,17 +8,9 @@ import {
   BsInstagram,
   BsLinkedin,
   BsTelegram,
-  BsTwitterX,
   BsWhatsapp,
 } from "react-icons/bs";
-import {
-  CiAt,
-  CiFacebook,
-  CiInstagram,
-  CiLinkedin,
-  CiPaperplane,
-  CiPhone,
-} from "react-icons/ci";
+import { CiAt, CiPhone } from "react-icons/ci";
 
 export default function page() {
   return (
@@ -164,7 +156,7 @@ export default function page() {
                 ></textarea>
               </div>
 
-              <Button className="bg-seconadry mt-4 hover:bg-seconadry/80">
+              <Button className="mt-4 hover:bg-seconadry/80">
                 <AiOutlineMessage></AiOutlineMessage>
                 Send Message
               </Button>

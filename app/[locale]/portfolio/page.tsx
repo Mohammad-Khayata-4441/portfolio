@@ -17,6 +17,8 @@ const page: NextPage = async (props: any) => {
     .from("projects")
     .select<string, PortfolioItemType>(`* , project_skills(id,  skills(*))`);
 
+  console.log(error);
+  console.log();
   return (
     <>
       <div className="page portfolio-page  relative z-0 flex flex-col ">

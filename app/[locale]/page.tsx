@@ -325,7 +325,11 @@ const Home = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <Button asChild variant={"outline"} className="mx-auto text-center">
+            <Button
+              asChild
+              variant={"outline"}
+              className="mx-auto text-center mb-4"
+            >
               <a href={"#hero"}>
                 Go Back To Top <ArrowUp />{" "}
               </a>
