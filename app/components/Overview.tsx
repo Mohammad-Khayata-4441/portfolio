@@ -71,7 +71,6 @@ export function BioShowcase() {
   ];
 
   const toggleSection = (sectionId: string) => {
-    console.log("toggle", sectionId);
     if (expandedSections.has(sectionId)) {
       const newSet = new Set(expandedSections);
       newSet.delete(sectionId);

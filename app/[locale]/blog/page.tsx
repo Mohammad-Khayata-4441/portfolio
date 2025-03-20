@@ -8,7 +8,6 @@ export default async function BlogPage() {
 
   const data = await fetch(DEV_DOT_TO_ENDPOINT);
   const posts: DevToPost[] = await data.json();
-  console.log(posts);
 
   return (
     <div className="min-h-screen  page relative z-0">

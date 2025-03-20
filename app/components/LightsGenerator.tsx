@@ -28,7 +28,6 @@ const LightsGenerator: React.FC = () => {
     (gsap) => {
       if (lightsContainerRef.current) {
         const lights = lightsContainerRef.current.querySelectorAll("svg");
-        console.log("should start", lights);
         lights.forEach((light) => {
           gsap.from(light, {
             scale: 0,

@@ -8,7 +8,6 @@ export const useActiveLink = () => {
 
 
     const isActive = (to: string) => {
-        console.log(path, to)
         return path === to
     }
 
