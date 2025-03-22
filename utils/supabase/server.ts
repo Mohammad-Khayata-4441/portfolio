@@ -4,7 +4,6 @@ import { cookies } from 'next/headers'
 export async function createClient() {
     const cookieStore = await cookies()
     console.log('Create Client !')
-    console.log('process.env', process.env)
     console.log('supa base SUPABASE_URL', process.env.SUPABASE_URL)
     console.log('supa base SUPABASE_ANON_KEY', process.env.SUPABASE_ANON_KEY)
 
@@ -25,7 +24,9 @@ export async function createClient() {
                         cookiesToSet.forEach(({ name, value, options }) =>
                             cookieStore.set(name, value, options)
                         )
-                    } catch {
+                    } catch (er) {
+                        console.error(er)
+                        console.error(JSON.stringify(er))
                         // The `setAll` method was called from a Server Component.
                         // This can be ignored if you have middleware refreshing
                         // user sessions.
