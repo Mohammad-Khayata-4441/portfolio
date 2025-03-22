@@ -9,6 +9,18 @@ import { createClient } from "@/utils/supabase/server";
 import BlurAppearVariant1, { MotionWrapper } from "@/components/MotionWrapper";
 
 const page: NextPage = async () => {
+  const response = await fetch(
+    "https://ruhmvzueumswzfdbjlto.supabase.co/rest/v1/projects?select=*",
+    {
+      headers: {
+        apikey: process.env.SUPABASE_ANON_KEY!,
+      },
+    }
+  );
+
+  const data = await response.json();
+
+  console.log("Data using fetch: ", data);
   const supabase = await createClient();
 
   let { data: projects, error } = await supabase
