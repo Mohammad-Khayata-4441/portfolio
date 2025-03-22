@@ -1,6 +1,5 @@
 import LightsGenerator from "@/app/components/LightsGenerator";
 import { Button } from "@/components/ui/button";
-import React from "react";
 import { AiOutlineMessage } from "react-icons/ai";
 import {
   BsFacebook,
@@ -13,6 +12,19 @@ import {
 import { CiAt, CiPhone } from "react-icons/ci";
 
 export default function page() {
+  async function handleSubmit(formData: FormData) {
+    "use server";
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    await fetch(
+      `https://api.web3forms.com/submit?access_key=${process.env.WEB3FORMS_ACCESS_KEY}&to=${process.env.NEXT_PUBLIC_EMAIL}&subject=Contact Form Submission - ${name}&message=${message}&replyTo=${email}`
+    );
+    // const formData = new FormData(event.target);
+    // const response = await sendEmail(formData);
+    // setStatus(response.message);
+  }
   return (
     <div className="page flex flex-col justify-center relative z-0 ">
       <LightsGenerator></LightsGenerator>
@@ -114,7 +126,7 @@ export default function page() {
           </div>
 
           <div className="flex flex-col justify-center w-full p-8 pt-0 lg:w-1/2 lg:px-12 xl:px-24 ">
-            <form>
+            <form action={"https://api.web3forms.com/submit"} method="POST">
               <div className="-mx-2 md:items-center md:flex">
                 <div className="flex-1 px-2">
                   <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
@@ -155,8 +167,18 @@ export default function page() {
                   placeholder="Message"
                 ></textarea>
               </div>
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://web3forms.com/success"
+              />
+              <input
+                type="hidden"
+                name="access_key"
+                value={process.env.WEB3_FORM_KEY}
+              />
 
-              <Button className="mt-4 hover:bg-seconadry/80">
+              <Button type="submit" className="mt-4 hover:bg-seconadry/80">
                 <AiOutlineMessage></AiOutlineMessage>
                 Send Message
               </Button>
