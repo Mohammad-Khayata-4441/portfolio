@@ -87,12 +87,12 @@ export default function PortfolioItem({
             ))}
           </div>
         </div>
-        <div className="flex justify-center  gap-2 xl:gap-4 ">
+        <div className="flex justify-center flex-wrap gap-2 xl:gap-4 ">
           {!!item.repo_url && (
             <Button
               asChild
               size={"lg"}
-              className=" w-[220px] text-white bg-black hover:bg-gray-800"
+              className=" w-[220px] flex-grow xl:flex-grow-0  text-white bg-black hover:bg-gray-800"
             >
               <a href={item.repo_url}>
                 <BsGithub />
