@@ -8,9 +8,7 @@ import PortfolioItem from "./PortfolioItem";
 import { createClient } from "@/utils/supabase/server";
 import BlurAppearVariant1, { MotionWrapper } from "@/components/MotionWrapper";
 
-const page: NextPage = async (props: any) => {
-  // let projectDetails: PortfolioItemType | undefined = projects.find(p => p.key === props.searchParams.project);
-
+const page: NextPage = async () => {
   const supabase = await createClient();
 
   let { data: projects, error } = await supabase
@@ -39,8 +37,6 @@ const page: NextPage = async (props: any) => {
           </div>
         </div>
       </div>
-
-      {/* <ProjectDetails project={projectDetails}></ProjectDetails> */}
     </>
   );
 };

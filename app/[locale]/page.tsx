@@ -147,7 +147,10 @@ const Home = () => {
 
           <div className="grid info grid-cols-12  ">
             <div className="img col-span-12 lg:col-span-4 w-full  flex md:justify-center">
-              <div className="relative w-[300px] h-[300px]  bg-dark  rounded-4xl overflow-hidden shadow-xl border border-text mx-auto lg:mx-0">
+              <Animator
+                variant="scale-down"
+                className="relative w-[300px] h-[300px]  bg-dark  rounded-4xl overflow-hidden shadow-xl border border-text mx-auto lg:mx-0"
+              >
                 <Image
                   style={{ objectPosition: "0 -45px" }}
                   objectFit="cover"
@@ -156,7 +159,7 @@ const Home = () => {
                   className="rounded-4xl object-cover object-bottom"
                   alt="personal"
                 ></Image>
-              </div>
+              </Animator>
             </div>
 
             <div className="info-text col-span-12 lg:col-span-8 grid grid-cols-12 gap-y-8 lg:space-y-0 p-5 md:mt-10 lg:mt-0">
