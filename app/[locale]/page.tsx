@@ -229,7 +229,7 @@ const Home = () => {
             <div className="features-wrapper">
               {/* Frontend Skills */}
               <div className="features">
-                <div className="flex justify-evenly md:justify-between gap-y-4  flex-wrap md:flex-nowrap">
+                <div className="flex justify-evenly md:justify-between gap-x-2 gap-y-4  flex-wrap md:flex-nowrap">
                   {webDevSkills.map((skill, index) => (
                     <Animator variant="scale-down" key={index}>
                       <SpotlightCard
