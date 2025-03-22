@@ -10,7 +10,7 @@ import BlurAppearVariant1, { MotionWrapper } from "@/components/MotionWrapper";
 
 const page: NextPage = async () => {
   const response = await fetch(
-    "https://ruhmvzueumswzfdbjlto.supabase.co/rest/v1/projects?select=*",
+    "https://ruhmvzueumswzfdbjlto.supabase.co/rest/v1/projects?select=*,project_skills(id,  skills(*))",
     {
       headers: {
         apikey: process.env.SUPABASE_ANON_KEY!,
@@ -18,17 +18,10 @@ const page: NextPage = async () => {
     }
   );
 
-  const data = await response.json();
+  const projects: PortfolioItemType[] = await response.json();
 
-  console.log("Data using fetch: ", data);
+  console.log("Data using fetch: ", projects);
   const supabase = await createClient();
-
-  let { data: projects, error } = await supabase
-    .from("projects")
-    .select<string, PortfolioItemType>(`* , project_skills(id,  skills(*))`);
-
-  console.log("DATA : ", projects);
-  console.log("error : ", error);
 
   return (
     <>
