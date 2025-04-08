@@ -114,7 +114,7 @@ const Home = () => {
                 <div className="btn-group flex space-x-4 m-auto lg:m-0">
                   <Link
                     target="_blank"
-                    href="https://docs.google.com/document/d/1sYRpK8tcoPdnADpcVO6mrJc3Gz3W6WGmkhvZEGo05vI/edit?usp=sharing"
+                    href="https://docs.google.com/document/d/1gkeG0JCpvpfxjXxXd64PqcON_FVlfosGOxHVa52_wkY/edit?usp=sharing"
                   >
                     <Button
                       className="w-full lg:w-auto"
