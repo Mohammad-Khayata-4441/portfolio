@@ -2,7 +2,7 @@ import Animator from "@/app/components/Animator";
 import HeroSvg from "@/app/components/HeroSvg";
 import GradientText from "@/app/components/text/GradientText/GradientText";
 import { Button } from "@/components/ui/button";
-import { Link } from "lucide-react";
+import { Link } from "@/i18n";
 import { CiStar, CiGrid41 } from "react-icons/ci";
 
 export const HeroSection = () => (
@@ -48,9 +48,11 @@ export const HeroSection = () => (
                 Resume
               </Button>
             </Link>
-            <Button className="w-full md:w-auto" size="lg">
-              <CiGrid41 className="text-2xl"></CiGrid41>
-              Portfolio
+            <Button asChild className="w-full md:w-auto" size="lg">
+              <Link href="/portfolio">
+                <CiGrid41 className="text-2xl"></CiGrid41>
+                Portfolio
+              </Link>
             </Button>
           </div>
         </Animator>
