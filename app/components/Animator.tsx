@@ -55,6 +55,16 @@ const variants: Record<
       filter: "blur(0px)",
     },
   },
+  fade: {
+    initial: {
+      opacity: 0,
+      filter: "blur(10px)",
+    },
+    whileInView: {
+      opacity: 1,
+      filter: "blur(0px)",
+    },
+  },
 };
 
 export default function Animator(

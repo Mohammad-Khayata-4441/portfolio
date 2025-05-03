@@ -26,7 +26,7 @@ export default function PortfolioItem({
           <div className="hidden md:block">
             <MacbookMockUp>
               <div
-                className="relative rounded-lg cursor-pointer h-full"
+                className="relative rounded-lg bg-black py-4 cursor-pointer h-full"
                 onClick={() => setVisible(true)}
               >
                 <Image

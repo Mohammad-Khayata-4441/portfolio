@@ -14,7 +14,7 @@ export const PersonalInfoSection = () => (
     <div className="grid info grid-cols-12">
       <div className="img col-span-12 lg:col-span-4 w-full flex md:justify-center">
         <Animator
-          variant="scale-down"
+          variant="fade"
           className="relative w-[300px] h-[300px] bg-dark rounded-4xl overflow-hidden shadow-xl border border-text mx-auto lg:mx-0"
         >
           <Image

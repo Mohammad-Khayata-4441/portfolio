@@ -1,4 +1,3 @@
-import "@/styles/home.scss";
 import LightsGenerator from "@/app/components/LightsGenerator";
 import { BioShowcase } from "../components/Overview";
 import { generatePageMetadata } from "@/lib/metaData";

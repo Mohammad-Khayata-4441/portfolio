@@ -14,17 +14,14 @@ export default async function LocaleLayout({ children, params }: any) {
     notFound();
   }
   if (!locales.includes(locale as any)) notFound();
-
   return (
     <html lang={locale} className="dark">
       <body className="bg-background dark">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>
             <Navbar />
-
             {children}
           </Providers>
-          {/* <Image src='/freePalastine.png' className='fixed top-5 right-5' alt='free palastine' height={40} width={70}></Image> */}
           <LightsGenerator></LightsGenerator>
         </NextIntlClientProvider>
       </body>

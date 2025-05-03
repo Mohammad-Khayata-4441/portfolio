@@ -1,6 +1,5 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
   title: { default: "Mohammad Khayata", template: "%s | Mohammad Khayata" },
