@@ -7,6 +7,13 @@ import ProjectDetails from "./ProjectDetails";
 import PortfolioItem from "./PortfolioItem";
 import { createClient } from "@/utils/supabase/server";
 import BlurAppearVariant1, { MotionWrapper } from "@/components/MotionWrapper";
+import { generatePageMetadata } from "@/lib/metaData";
+export const metadata = generatePageMetadata({
+  title: "Portfolio",
+  description:
+    "Portfolio of Mohammad Khayata, a frontend developer specialized in scalable and modular web apps using React, Next.js, and modern technologies.",
+  slug: "portfolio",
+});
 
 const page: NextPage = async () => {
   // const supabase = await createClient();

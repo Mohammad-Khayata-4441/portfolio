@@ -1,4 +1,3 @@
-"use client";
 import { HiCode } from "react-icons/hi";
 import { MdOutlineAutoAwesomeMotion } from "react-icons/md";
 import { MdSpeed } from "react-icons/md";
@@ -6,28 +5,27 @@ import { BiDevices } from "react-icons/bi";
 /* eslint-disable react/no-unescaped-entities */
 
 import "@/styles/home.scss";
-import React from "react";
 import HeroSvg from "@/app/components/HeroSvg";
 import LightsGenerator from "@/app/components/LightsGenerator";
-import { motion } from "motion/react";
 import Link from "next/link";
 import { CiGrid41, CiStar } from "react-icons/ci";
-import { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import ScrollReveal from "../components/text/ScrollReveal/ScrollReveal";
-import { resume } from "@/data/resume";
 import ExperienceTimeline from "@/components/experience-timeline";
-import InfiniteScroll from "../components/InfinityScroll";
 import SpotlightCard from "../components/SpotlightCard/SpotlightCard";
-import StarBorder from "../components/animations/StarBorder/StarBorder";
 import GradientText from "../components/text/GradientText/GradientText";
-import SlideUpText from "../components/SlideUpText";
-import { ArrowRightIcon, ArrowUp, ArrowUpRightIcon } from "lucide-react";
+import { ArrowRightIcon, ArrowUp } from "lucide-react";
 import Animator from "../components/Animator";
-import DashedPattern from "@/components/ui/DashedPattern";
 import { BioShowcase } from "../components/Overview";
 import SectionTitle from "@/components/SectionTitle";
+import { generatePageMetadata } from "@/lib/metaData";
+
+export const metadata = generatePageMetadata({
+  title: "Home",
+  description:
+    "Portfolio of Mohammad Khayata, a frontend developer specialized in scalable and modular web apps using React, Next.js, and modern technologies.",
+  slug: "About",
+});
 
 const Home = () => {
   const webDevSkills = [

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { motion, TargetAndTransition } from "motion/react";
 import { HTMLMotionProps } from "framer-motion";
