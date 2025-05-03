@@ -15,7 +15,7 @@ const page: NextPage = async () => {
   //   .select<string, PortfolioItemType>(`* , project_skills(id,  skills(*))`);
 
   const response = await fetch(
-    "https://ruhmvzueumswzfdbjlto.supabase.co/rest/v1/projects?select=*,project_skills(id,  skills(*))",
+    "https://ruhmvzueumswzfdbjlto.supabase.co/rest/v1/projects?select=*,project_skills(id,skills(*))&order=order",
     {
       headers: {
         apikey: process.env.SUPABASE_ANON_KEY!,
